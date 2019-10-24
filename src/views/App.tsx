@@ -1,15 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
+import { gutter } from '../styles';
 import logo from '../images/logo.svg';
 
 const AppMain = styled.main`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 100vh;
   background-color: #282c34;
+  min-height: 100vh;
 
-  // non-prod CSS guardrails
+  /* non-prod CSS guardrails */
   ${() => {
     if (process.env.NODE_ENV !== 'production') {
       /* Accessibility: All imgs must have an alt attribute,
@@ -27,16 +28,17 @@ const AppMain = styled.main`
 `;
 
 const AppHeader = styled.header`
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
   min-height: 10vh;
-  display: flex;
   font-size: calc(10px + 2vmin);
   color: white;
-  margin-left: 16px;
+
+  margin-left: ${gutter}px;
   > * {
-    margin-right: 16px;
+    margin-right: ${gutter}px;
   }
 `;
 

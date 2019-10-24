@@ -7,6 +7,7 @@ const AppMain = styled.main`
   flex-direction: column;
   justify-content: space-between;
   min-height: 100vh;
+  background-color: #282c34;
 
   // non-prod CSS guardrails
   ${() => {
@@ -29,11 +30,11 @@ const AppHeader = styled.header`
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  background-color: #282c34;
-  min-height: 100vh;
+  min-height: 10vh;
   display: flex;
   font-size: calc(10px + 2vmin);
   color: white;
+  margin-left: 16px;
   > * {
     margin-right: 16px;
   }
@@ -44,7 +45,7 @@ const App: React.FC = () => {
     <AppMain>
       <AppHeader>
         <img src={logo} height={40} alt="logo" />
-        <p>shaewatson.com</p>
+        <p>Shae Watson</p>
       </AppHeader>
     </AppMain>
   );

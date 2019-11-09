@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { gutter } from '../styles';
 import logo from '../images/logo.svg';
-import { CurrentWorkPage } from './pages';
+import { FeaturedWorkPage } from './pages';
 
 const AppMain = styled.main`
   display: flex;
@@ -35,11 +35,10 @@ const AppHeader = styled.header`
   justify-content: flex-start;
   min-height: 10vh;
   font-size: calc(10px + 2vmin);
-  color: white;
 
-  margin-left: ${gutter}px;
+  margin-left: ${gutter(1)}px;
   > * {
-    margin-right: ${gutter}px;
+    margin-right: ${gutter(1)}px;
   }
 `;
 
@@ -49,8 +48,8 @@ const App: React.FC = () => {
       <AppHeader>
         <img src={logo} height={40} alt="logo" />
         <p>Shae Watson</p>
-        <CurrentWorkPage />
       </AppHeader>
+      <FeaturedWorkPage />
     </AppMain>
   );
 };

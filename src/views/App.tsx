@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { gutter } from '../styles';
 import logo from '../images/logo.svg';
+import { CurrentWorkPage } from './pages';
 
 const AppMain = styled.main`
   display: flex;
@@ -48,6 +49,7 @@ const App: React.FC = () => {
       <AppHeader>
         <img src={logo} height={40} alt="logo" />
         <p>Shae Watson</p>
+        <CurrentWorkPage />
       </AppHeader>
     </AppMain>
   );

@@ -1,11 +1,11 @@
 import React from 'react';
 import { Page } from '.';
-import { StyledCard } from '../components/Card';
+import { ClaraPowerPricingCard } from '../cards';
 
 const FeaturedWorkPage: React.FC = () => {
   return (
     <Page>
-      <StyledCard>Hello FeaturedWorkPage!</StyledCard>
+      <ClaraPowerPricingCard />
     </Page>
   );
 };

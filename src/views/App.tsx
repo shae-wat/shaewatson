@@ -4,6 +4,8 @@ import { gutter } from '../styles';
 import logo from '../images/logo.svg';
 import { FeaturedWorkPage } from './pages';
 
+const HEADER_HEIGHT = 10;
+
 const AppMain = styled.main`
   display: flex;
   flex-direction: column;
@@ -33,13 +35,17 @@ const AppHeader = styled.header`
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  min-height: 10vh;
+  min-height: ${HEADER_HEIGHT}vh;
   font-size: calc(10px + 2vmin);
 
   margin-left: ${gutter(1)}px;
   > * {
     margin-right: ${gutter(1)}px;
   }
+`;
+
+const PageContainer = styled.div`
+  min-height: ${100 - HEADER_HEIGHT}vh;
 `;
 
 const App: React.FC = () => {
@@ -49,7 +55,9 @@ const App: React.FC = () => {
         <img src={logo} height={40} alt="logo" />
         <p>Shae Watson</p>
       </AppHeader>
-      <FeaturedWorkPage />
+      <PageContainer>
+        <FeaturedWorkPage />
+      </PageContainer>
     </AppMain>
   );
 };

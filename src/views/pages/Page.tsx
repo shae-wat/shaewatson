@@ -56,18 +56,20 @@ interface PageProps {
 
 const StyledPage = styled.section`
   position: relative;
-  max-width: ${column(12) + gutter(11)}px;
   margin-left: auto;
   margin-right: auto;
+
+  ${({ maxWidth }: PageProps) =>
+    maxWidth
+      ? `max-width: ${maxWidth}px;`
+      : `max-width: ${column(12) + gutter(13)}px;`};
+
   padding: ${rhythm(2)}px ${column(1) + gutter(1)}px ${rhythm(3)}px
     ${column(1) - gutter(1)}px;
-
-  ${({ maxWidth }: PageProps) => (maxWidth ? `max-width: ${maxWidth}px;` : ``)};
-
   ${tabletMediaQuery(
     `padding: ${rhythm(2)}px ${gutter(2)}px ${rhythm(3)}px ${gutter(2)}px;`,
   )};
-  ${mobileMediaQuery(`padding: ${rhythm(3 / 2)}px ${gutter}px;`)};
+  ${mobileMediaQuery(`padding: ${rhythm(3 / 2)}px ${gutter(1)}px;`)};
 `;
 
 export const Page = (props: PageProps) => (

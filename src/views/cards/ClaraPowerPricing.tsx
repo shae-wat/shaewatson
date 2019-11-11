@@ -1,22 +1,24 @@
 import React from 'react';
-import { Card, CardTextContent } from '.';
+import { Card, CardTextContent, CardImageContent } from '.';
 import { PowerPricerImage } from '../../images';
 
 const ClaraPowerPricing: React.FC = () => {
   return (
     <Card>
-      <img
-        src={PowerPricerImage}
-        alt="Dashboard with inputs and search results for mortgage products at Clara Lending"
-        role="presentation"
-        style={{
-          display: 'block',
-          maxWidth: '1431px',
-          maxHeight: '810px',
-          width: 'auto',
-          height: 'auto',
-        }}
-      />
+      <CardImageContent>
+        <img
+          src={PowerPricerImage}
+          alt="Dashboard with inputs and search results for mortgage products at Clara Lending"
+          role="presentation"
+          style={{
+            display: 'block',
+            maxWidth: '1431px',
+            maxHeight: '810px',
+            width: '100%',
+            height: 'auto',
+          }}
+        />
+      </CardImageContent>
       <CardTextContent>
         <b>Power Pricing Page</b>
         <p>

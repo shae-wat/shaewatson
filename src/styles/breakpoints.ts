@@ -30,7 +30,6 @@ export const mobileMediaQuery = (cssForQueryToApply: string) =>
 
 export const tabletMediaQuery = (cssForQueryToApply: string) =>
   mediaQuery({
-    min: breakpoints.mobile + 1,
     max: breakpoints.tablet,
     cssForQueryToApply,
   });

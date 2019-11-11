@@ -1,11 +1,21 @@
 import React from 'react';
-import { Page } from '.';
-import { ClaraPowerPricingCard } from '../cards';
+import { Page, PageCardLayout } from '.';
+import {
+  ClaraPowerPricingCard,
+  FlightStatsArrivalsDeparturesCard,
+  OroxWebsiteCard,
+  UTFunctionalGenomicsLabCard,
+} from '../cards';
 
 const FeaturedWorkPage: React.FC = () => {
   return (
     <Page>
-      <ClaraPowerPricingCard />
+      <PageCardLayout>
+        <ClaraPowerPricingCard />
+        <FlightStatsArrivalsDeparturesCard />
+        <OroxWebsiteCard />
+        <UTFunctionalGenomicsLabCard />
+      </PageCardLayout>
     </Page>
   );
 };

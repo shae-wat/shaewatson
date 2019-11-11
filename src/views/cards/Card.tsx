@@ -1,4 +1,3 @@
-import _ from 'lodash';
 import styled from 'styled-components';
 import { rhythm, gutter, Colors, tabletMediaQuery } from '../../styles';
 
@@ -36,9 +35,7 @@ export const CardTextContent = styled.div`
   padding: ${rhythm(1)}px ${gutter(1)}px ${rhythm(2 / 3)}px ${gutter(2)}px;
 `;
 
-export const CardImageContent = styled.div`
-  padding: ${rhythm(1)}px ${gutter(1)}px ${rhythm(2 / 3)}px ${gutter(2)}px;
-`;
+export const CardImageContent = styled.div``;
 
 // ${(props: { rightPercentage: number; leftPercentage: number }) => {
 //   return `

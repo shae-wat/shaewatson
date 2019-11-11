@@ -20,19 +20,19 @@ const ClaraPowerPricing: React.FC = () => {
         />
       </CardImageContent>
       <CardTextContent>
-        <b>Power Pricing Page</b>
+        <h2>Power Pricing Page</h2>
         <p>
           The Power Pricing Page is a product I delivered at Clara Lending. It
-          is an admin page designed to be used by loan officers in the context
-          of a loan application. The loan officer enters all the inputs then can
-          work with the borrower to select a loan product.
+          is an admin page for loan officers to use for loan applications. The
+          loan officer enters relevant information into the inputs of the page,
+          then can choose from clearly differentiated loan products returned as
+          search results.
         </p>
         <p>
           This page is important because it allowed the intial connection of the
           Clara Lending Borrower Portal to a new pricing engine, LenderPrice,
-          while also allowing the factoring in of Clara-specific variables such
-          as different pricing results for Clara Lending promotions and limiting
-          selectable options to mortgage configurations.
+          while also factoring-in Clara-specific variables such as different
+          pricing results for Clara Lending promotions.
         </p>
       </CardTextContent>
     </Card>

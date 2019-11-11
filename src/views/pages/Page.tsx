@@ -43,9 +43,9 @@ export const PageSectionHeader = styled.div`
 `;
 
 // uniform space between elements in a section
-export const PageSectionElementLayout = styled.div`
+export const PageCardLayout = styled.div`
   > * {
-    margin-bottom: ${rhythm(3 / 4)}px;
+    margin-bottom: ${rhythm(3 / 2)}px;
   }
 `;
 

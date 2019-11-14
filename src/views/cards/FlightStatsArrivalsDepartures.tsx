@@ -1,6 +1,7 @@
 import React from 'react';
-import { Card, CardTextContent, CardImageContent } from '.';
+import { HeaderFont, ParagraphFont } from '../../styles';
 import { FSDepArrImage } from '../../images';
+import { Card, CardTextContent, CardImageContent } from '.';
 
 const FlightStatsArrivalsDepartures: React.FC = () => {
   return (
@@ -18,23 +19,12 @@ const FlightStatsArrivalsDepartures: React.FC = () => {
         />
       </CardImageContent>
       <CardTextContent>
-        <h2>Airport Departures and Arrivals Page</h2>
-        <p>
-          React elements are cheap to create and can be used to render items
-          expected to re-render on a webpage such as a list of results. On the
-          FlightStats Departures and Arrivals page, the rows of the results
-          table are all React components that render with basic styling
-          depending on information about the flight status.
-        </p>
-        <p>
-          On the departures and arrivals page, several filters can be applied to
-          see a list of relevant departing and arriving flights. The experience
-          of seeing an instantly updated results list of flight statuses and
-          airport statistics based on filters prevents information overload for
-          users. Not waiting for a reload builds user confidence, and is
-          possible by triggering a simple and cheap re-render of the results
-          when a filter is applied.
-        </p>
+        <HeaderFont>Airport Departures and Arrivals Page</HeaderFont>
+        <ParagraphFont>
+          On the departures and arrivals page of FlightStats, several filters
+          could be applied to see a list of relevant departing and arriving
+          flights.
+        </ParagraphFont>
       </CardTextContent>
     </Card>
   );

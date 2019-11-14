@@ -10,7 +10,7 @@ export const Card = styled.section`
   background-color: ${Colors.cardBackground};
   border-radius: 4px;
 
-  padding: ${rhythm(2 / 3)}px ${gutter(1)}px;
+  padding: ${rhythm(2 / 3)}px ${gutter(1 / 3)}px;
 
   > *:first-child {
     display: flex;
@@ -33,6 +33,17 @@ export const CardTextContent = styled.div`
   flex-direction: column;
 
   padding: ${rhythm(1)}px ${gutter(1)}px ${rhythm(2 / 3)}px ${gutter(2)}px;
+
+  ${tabletMediaQuery(`padding: ${rhythm(1)}px ${gutter(1)}px`)}
+
+  > *:first-child {
+    margin-bottom: ${rhythm(1)}px;
+    ${tabletMediaQuery(`margin-bottom: ${rhythm(2 / 3)}px;`)}
+  }
+  > *:not(:first-child) {
+    margin-bottom: ${rhythm(1 / 2)}px;
+    ${tabletMediaQuery(`margin-bottom: ${rhythm(1 / 4)}px;`)}
+  }
 `;
 
 export const CardImageContent = styled.div``;

@@ -1,6 +1,7 @@
 import React from 'react';
-import { Card, CardTextContent, CardImageContent } from '.';
+import { HeaderFont, ParagraphFont } from '../../styles';
 import { PowerPricerImage } from '../../images';
+import { Card, CardTextContent, CardImageContent } from '.';
 
 const ClaraPowerPricing: React.FC = () => {
   return (
@@ -20,20 +21,16 @@ const ClaraPowerPricing: React.FC = () => {
         />
       </CardImageContent>
       <CardTextContent>
-        <h2>Power Pricing Page</h2>
-        <p>
-          The Power Pricing Page is a product I delivered at Clara Lending. It
-          is an admin page for loan officers to use for loan applications. The
-          loan officer enters relevant information into the inputs of the page,
-          then can choose from clearly differentiated loan products returned as
-          search results.
-        </p>
-        <p>
-          This page is important because it allowed the intial connection of the
-          Clara Lending Borrower Portal to a new pricing engine, LenderPrice,
-          while also factoring-in Clara-specific variables such as different
-          pricing results for Clara Lending promotions.
-        </p>
+        <HeaderFont>Power Pricing Page</HeaderFont>
+        <ParagraphFont>
+          The Power Pricing Page was an admin page that loan officers used for
+          managing mortgage applications at Clara Lending.
+        </ParagraphFont>
+        <ParagraphFont>
+          The loan officer could enter relevant information into the inputs of
+          the page, then can choose from the search results of clearly
+          differentiated loan products.
+        </ParagraphFont>
       </CardTextContent>
     </Card>
   );

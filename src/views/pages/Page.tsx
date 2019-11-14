@@ -69,7 +69,7 @@ const StyledPage = styled.section`
   ${tabletMediaQuery(
     `padding: ${rhythm(2)}px ${gutter(2)}px ${rhythm(3)}px ${gutter(2)}px;`,
   )};
-  ${mobileMediaQuery(`padding: ${rhythm(3 / 2)}px ${gutter(1)}px;`)};
+  ${mobileMediaQuery(`padding: ${rhythm(3 / 2)}px ${gutter(1 / 3)}px;`)};
 `;
 
 export const Page = (props: PageProps) => (

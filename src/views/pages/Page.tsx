@@ -51,27 +51,19 @@ export const PageCardLayout = styled.div`
 
 interface PageProps {
   children: React.ReactNode;
-  maxWidth?: number;
 }
 
 const StyledPage = styled.section`
   position: relative;
+  max-width: ${column(14) + gutter(13)}px;
+
   margin-left: auto;
   margin-right: auto;
-
-  ${({ maxWidth }: PageProps) =>
-    maxWidth
-      ? `max-width: ${maxWidth}px;`
-      : `max-width: ${column(12) + gutter(13)}px;`};
-
-  padding: ${rhythm(2)}px ${column(1) + gutter(1)}px ${rhythm(3)}px
-    ${column(1) - gutter(1)}px;
-  ${tabletMediaQuery(
-    `padding: ${rhythm(2)}px ${gutter(2)}px ${rhythm(3)}px ${gutter(2)}px;`,
-  )};
+  padding: ${rhythm(2)}px 0;
+  ${tabletMediaQuery(`padding: ${rhythm(2)}px ${gutter(1)}px`)};
   ${mobileMediaQuery(`padding: ${rhythm(3 / 2)}px ${gutter(1 / 3)}px;`)};
 `;
 
 export const Page = (props: PageProps) => (
-  <StyledPage maxWidth={props.maxWidth}>{props.children}</StyledPage>
+  <StyledPage>{props.children}</StyledPage>
 );

@@ -4,24 +4,24 @@ import { rhythm, gutter, Colors, tabletMediaQuery } from '../../styles';
 export const Card = styled.section`
   position: relative;
   display: flex;
+
   flex-direction: row;
-  ${tabletMediaQuery(`flex-direction: column;`)}
+  padding: ${rhythm(1)}px ${gutter(1)}px;
+  ${tabletMediaQuery(`
+    flex-direction: column;
+    padding: ${rhythm(2 / 3)}px ${gutter(1 / 3)}px;
+  `)}
+
   justify-content: space-between;
   background-color: ${Colors.cardBackground};
   border-radius: 4px;
 
-  padding: ${rhythm(2 / 3)}px ${gutter(1 / 3)}px;
-
   > *:first-child {
-    display: flex;
-    align-items: center;
     position: relative;
     width: 60%;
     ${tabletMediaQuery(`width: auto;`)}
   }
   > *:last-child {
-    display: flex;
-    align-items: center;
     position: relative;
     width: 40%;
     ${tabletMediaQuery(`width: auto;`)}

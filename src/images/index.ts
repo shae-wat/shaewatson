@@ -14,3 +14,4 @@ export {
 export {
   default as ClaraSecondaryFinancingGifSrc,
 } from './second-financing-inputs.gif';
+export { default as SauceLabsDashboardImageSrc } from './sauce_dashboard.png';

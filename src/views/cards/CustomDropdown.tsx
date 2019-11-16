@@ -15,6 +15,8 @@ class CustomDropdown extends React.Component {
             role="presentation"
             style={{
               display: 'block',
+              maxWidth: '810px',
+              maxHeight: '404px',
               width: '100%',
               height: 'auto',
             }}

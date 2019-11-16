@@ -13,6 +13,8 @@ const FlightStatsArrivalsDepartures: React.FC = () => {
           role="presentation"
           style={{
             display: 'block',
+            maxWidth: '653px',
+            maxHeight: '536px',
             width: '100%',
             height: 'auto',
           }}

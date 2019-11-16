@@ -1,31 +1,31 @@
 import React from 'react';
 import { HeaderFont, ParagraphFont } from '../../styles';
-import { ClaraRecommendedLoanImageSrc } from '../../images';
+import { SauceLabsDashboardImageSrc } from '../../images';
 import { Card, CardTextContent, CardImageContent } from '.';
 
-const ClaraRecommendedLoan: React.FC = () => {
+const SauceTesting: React.FC = () => {
   return (
     <Card>
-      <CardTextContent>
-        <HeaderFont>Recommended Loan</HeaderFont>
-        <ParagraphFont>Clara Lending Recommended Loan</ParagraphFont>
-      </CardTextContent>
       <CardImageContent>
         <img
-          src={ClaraRecommendedLoanImageSrc}
+          src={SauceLabsDashboardImageSrc}
           alt="Dashboard with inputs and search results for mortgage products at Clara Lending"
           role="presentation"
           style={{
             display: 'block',
-            maxWidth: '438px',
-            maxHeight: '595px',
+            maxWidth: '800px',
+            maxHeight: '357px',
             width: '100%',
             height: 'auto',
           }}
         />
       </CardImageContent>
+      <CardTextContent>
+        <HeaderFont>Sauce Labs Testing</HeaderFont>
+        <ParagraphFont>Sauce Labs Testing</ParagraphFont>
+      </CardTextContent>
     </Card>
   );
 };
 
-export default ClaraRecommendedLoan;
+export default SauceTesting;

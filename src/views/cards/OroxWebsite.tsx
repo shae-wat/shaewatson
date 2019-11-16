@@ -13,6 +13,8 @@ const OroxWebsite: React.FC = () => {
           role="presentation"
           style={{
             display: 'block',
+            maxWidth: '500px',
+            maxHeight: '581px',
             width: '100%',
             height: 'auto',
           }}

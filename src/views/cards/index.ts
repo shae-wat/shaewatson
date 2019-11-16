@@ -11,5 +11,6 @@ export { default as ClaraRecommendedLoanCard } from './ClaraRecommendedLoan';
 export {
   default as ClaraSecondaryFinancingCard,
 } from './ClaraSecondaryFinancing';
+export { default as SauceTestingCard } from './SauceTesting';
 
 export * from './Card';

@@ -16,6 +16,8 @@ const UTFunctionalGenomicsLab: React.FC = () => {
           role="presentation"
           style={{
             display: 'block',
+            maxWidth: '809px',
+            maxHeight: '450px',
             width: '100%',
             height: 'auto',
           }}

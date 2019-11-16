@@ -6,6 +6,10 @@ import { Card, CardTextContent, CardImageContent } from '.';
 const ClaraSecondaryFinancing: React.FC = () => {
   return (
     <Card>
+      <CardTextContent>
+        <HeaderFont>Secondary Financing</HeaderFont>
+        <ParagraphFont>Clara Secondary Financing dynamic inputs</ParagraphFont>
+      </CardTextContent>
       <CardImageContent>
         <img
           src={ClaraSecondaryFinancingGifSrc}
@@ -13,17 +17,13 @@ const ClaraSecondaryFinancing: React.FC = () => {
           role="presentation"
           style={{
             display: 'block',
-            maxWidth: '1431px',
-            maxHeight: '810px',
+            maxWidth: '320px',
+            maxHeight: '482px',
             width: '100%',
             height: 'auto',
           }}
         />
       </CardImageContent>
-      <CardTextContent>
-        <HeaderFont>Secondary Financing</HeaderFont>
-        <ParagraphFont>Clara Secondary Financing dynamic inputs</ParagraphFont>
-      </CardTextContent>
     </Card>
   );
 };

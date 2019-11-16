@@ -1,5 +1,8 @@
 import React from 'react';
-import { UTFunctionalGenomicsLabImage } from '../../images';
+import {
+  UTFunctionalGenomicsLabImageSrc,
+  UTFunctionalGenomicsLabLogoSrc,
+} from '../../images';
 import { HeaderFont, ParagraphFont } from '../../styles';
 import { Card, CardTextContent, CardImageContent } from '.';
 
@@ -8,7 +11,7 @@ const UTFunctionalGenomicsLab: React.FC = () => {
     <Card>
       <CardImageContent>
         <img
-          src={UTFunctionalGenomicsLabImage}
+          src={UTFunctionalGenomicsLabImageSrc}
           alt="Dashboard with inputs and search results for flight arrivals and departures"
           role="presentation"
           style={{
@@ -40,6 +43,12 @@ const UTFunctionalGenomicsLab: React.FC = () => {
           results, removing noise and allowing researchers to see the results of
           their work in an intuitive way where patterns could be recognized.
         </ParagraphFont>
+        <img
+          src={UTFunctionalGenomicsLabLogoSrc}
+          width="30px"
+          height="auto"
+          alt="UT Austin Functional Genomics logo"
+        />
       </CardTextContent>
     </Card>
   );

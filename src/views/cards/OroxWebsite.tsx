@@ -1,5 +1,5 @@
 import React from 'react';
-import { OroxWebsiteImage } from '../../images';
+import { OroxWebsiteImageSrc } from '../../images';
 import { HeaderFont, ParagraphFont } from '../../styles';
 import { Card, CardTextContent, CardImageContent } from '.';
 
@@ -8,7 +8,7 @@ const OroxWebsite: React.FC = () => {
     <Card>
       <CardImageContent>
         <img
-          src={OroxWebsiteImage}
+          src={OroxWebsiteImageSrc}
           alt="Dashboard with inputs and search results for mortgage products at Clara Lending"
           role="presentation"
           style={{

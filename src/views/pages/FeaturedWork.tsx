@@ -2,6 +2,9 @@ import React from 'react';
 import { Page, PageCardLayout } from '.';
 import {
   ClaraPowerPricingCard,
+  CustomDropdownCard,
+  ClaraRecommendedLoanCard,
+  ClaraSecondaryFinancingCard,
   FlightStatsArrivalsDeparturesCard,
   OroxWebsiteCard,
   UTFunctionalGenomicsLabCard,
@@ -12,6 +15,9 @@ const FeaturedWorkPage: React.FC = () => {
     <Page>
       <PageCardLayout>
         <ClaraPowerPricingCard />
+        <ClaraRecommendedLoanCard />
+        <ClaraSecondaryFinancingCard />
+        <CustomDropdownCard />
         <FlightStatsArrivalsDeparturesCard />
         <OroxWebsiteCard />
         <UTFunctionalGenomicsLabCard />

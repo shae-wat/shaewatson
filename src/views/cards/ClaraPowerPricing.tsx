@@ -23,13 +23,13 @@ const ClaraPowerPricing: React.FC = () => {
       <CardTextContent>
         <HeaderFont>Power Pricing Page</HeaderFont>
         <ParagraphFont>
-          The Power Pricing Page was an admin page that loan officers used for
-          managing mortgage applications at Clara Lending.
+          At Clara Lending, loan officers used the Power Pricing Page as an
+          admin page to manage mortgage applications.
         </ParagraphFont>
         <ParagraphFont>
-          The loan officer could enter relevant information into the inputs of
-          the page, then can choose from the search results of clearly
-          differentiated loan products.
+          Loan officers input information relevant to Clara Lending into the
+          page, then choose from the search results of clearly differentiated
+          loan products with Clara Lending pricing estimates.
         </ParagraphFont>
       </CardTextContent>
     </Card>

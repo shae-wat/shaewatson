@@ -7,8 +7,19 @@ const ClaraRecommendedLoan: React.FC = () => {
   return (
     <Card>
       <CardTextContent>
-        <HeaderFont>Recommended Loan</HeaderFont>
-        <ParagraphFont>Clara Lending Recommended Loan</ParagraphFont>
+        <HeaderFont>Loan Recommendation - Customer UI</HeaderFont>
+        <ParagraphFont>
+          One step of buying a home is getting pre-approved for a mortgage,
+          which is often required by realtors before showing the house.
+        </ParagraphFont>
+        <ParagraphFont>
+          At the end of a step-by-step flow with a clear questions for a
+          mortgage pre-qualification application, the user is recommended a loan
+          that they can apply for pre-approval for along with the option to
+          select an alternative. Clearly, Clara Lending had a powerful backend
+          which was interfaced with the user in a clear, well deisgined way. The
+          Clara Lending
+        </ParagraphFont>
       </CardTextContent>
       <CardImageContent>
         <img

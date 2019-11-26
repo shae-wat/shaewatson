@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components';
 import { mobileMediaQuery } from './breakpoints';
 
 export const FontCSS = css`
-  letter-spacing: 0px;
+  letter-spacing: 0.08px;
   word-break: keep-all; /* dont split a word */
   word-spacing: 1px;
   text-decoration: none;
@@ -25,7 +25,7 @@ export const HeaderFont = styled.h1`
 
 export const ParagraphFont = styled.p`
   ${FontCSS}
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 20px;
 

@@ -4,8 +4,6 @@ import {
   ClaraPowerPricingCard,
   CustomDropdownCard,
   ClaraRecommendedLoanCard,
-  ClaraSecondaryFinancingCard,
-  SauceTestingCard,
   FlightStatsArrivalsDeparturesCard,
   OroxWebsiteCard,
   UTFunctionalGenomicsLabCard,
@@ -17,9 +15,7 @@ const FeaturedWorkPage: React.FC = () => {
       <PageCardLayout>
         <ClaraPowerPricingCard />
         <ClaraRecommendedLoanCard />
-        <ClaraSecondaryFinancingCard />
         <CustomDropdownCard />
-        <SauceTestingCard />
         <FlightStatsArrivalsDeparturesCard />
         <OroxWebsiteCard />
         <UTFunctionalGenomicsLabCard />

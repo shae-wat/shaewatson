@@ -13,8 +13,8 @@ const FeaturedWorkPage: React.FC = () => {
   return (
     <Page>
       <PageCardLayout>
-        <ClaraPowerPricingCard />
         <ClaraRecommendedLoanCard />
+        <ClaraPowerPricingCard />
         <CustomDropdownCard />
         <FlightStatsArrivalsDeparturesCard />
         <OroxWebsiteCard />

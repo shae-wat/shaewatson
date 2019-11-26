@@ -6,20 +6,6 @@ import { Card, CardTextContent, CardImageContent } from '.';
 const OroxWebsite: React.FC = () => {
   return (
     <Card>
-      <CardImageContent>
-        <img
-          src={OroxWebsiteImageSrc}
-          alt="Dashboard with inputs and search results for mortgage products at Clara Lending"
-          role="presentation"
-          style={{
-            display: 'block',
-            maxWidth: '500px',
-            maxHeight: '581px',
-            width: '100%',
-            height: 'auto',
-          }}
-        />
-      </CardImageContent>
       <CardTextContent>
         <HeaderFont>Orox Leather Branded Website</HeaderFont>
         <ParagraphFont>
@@ -35,6 +21,20 @@ const OroxWebsite: React.FC = () => {
           existing Shopify theme to match their requested design updates.`}
         </ParagraphFont>
       </CardTextContent>
+      <CardImageContent>
+        <img
+          src={OroxWebsiteImageSrc}
+          alt="Dashboard with inputs and search results for mortgage products at Clara Lending"
+          role="presentation"
+          style={{
+            display: 'block',
+            maxWidth: '500px',
+            maxHeight: '581px',
+            width: '100%',
+            height: 'auto',
+          }}
+        />
+      </CardImageContent>
     </Card>
   );
 };

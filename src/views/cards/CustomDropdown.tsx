@@ -8,6 +8,16 @@ class CustomDropdown extends React.Component {
   render() {
     return (
       <Card>
+        <CardTextContent>
+          <HeaderFont>Customizable Dropdown React Component</HeaderFont>
+          <ParagraphFont>
+            I contibuted to a third party Javascript commenting app that could
+            could be customized to match its host webpage- mostly newspapers.
+            Because of this, it was a nice touch to build a dropdown menu that
+            could inherit the colors of the site dynamically.
+          </ParagraphFont>
+          <Dropdown />
+        </CardTextContent>
         <CardImageContent>
           <img
             src={AlaskaDispatchNewsDropdownImageSrc}
@@ -22,16 +32,6 @@ class CustomDropdown extends React.Component {
             }}
           />
         </CardImageContent>
-        <CardTextContent>
-          <HeaderFont>Customizable Dropdown React Component</HeaderFont>
-          <ParagraphFont>
-            I contibuted to a third party Javascript commenting app that could
-            could be customized to match its host webpage- mostly newspapers.
-            Because of this, it was a nice touch to build a dropdown menu that
-            could inherit the colors of the site dynamically.
-          </ParagraphFont>
-          <Dropdown />
-        </CardTextContent>
       </Card>
     );
   }

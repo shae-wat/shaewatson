@@ -1,3 +1,3 @@
-export { default as CurrentWorkPage } from './CurrentWork';
+export { default as TechBabblePage } from './TechBabble';
 export { default as FeaturedWorkPage } from './FeaturedWork';
 export * from './Page';

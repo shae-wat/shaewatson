@@ -1,13 +1,14 @@
 import React from 'react';
+import { HeaderFont, ParagraphFont } from '../../styles';
+import { PowerPricerImageSrc } from '../../images';
 import { Card, CardTextContent, CardImageContent } from '.';
-import { PowerPricerImage } from '../../images';
 
 const ClaraPowerPricing: React.FC = () => {
   return (
     <Card>
       <CardImageContent>
         <img
-          src={PowerPricerImage}
+          src={PowerPricerImageSrc}
           alt="Dashboard with inputs and search results for mortgage products at Clara Lending"
           role="presentation"
           style={{
@@ -20,20 +21,16 @@ const ClaraPowerPricing: React.FC = () => {
         />
       </CardImageContent>
       <CardTextContent>
-        <b>Power Pricing Page</b>
-        <p>
-          The Power Pricing Page is a product I delivered at Clara Lending. It
-          is an admin page designed to be used by loan officers in the context
-          of a loan application. The loan officer enters all the inputs then can
-          work with the borrower to select a loan product.
-        </p>
-        <p>
-          This page is important because it allowed the intial connection of the
-          Clara Lending Borrower Portal to a new pricing engine, LenderPrice,
-          while also allowing the factoring in of Clara-specific variables such
-          as different pricing results for Clara Lending promotions and limiting
-          selectable options to mortgage configurations.
-        </p>
+        <HeaderFont>Mortgage Pricing - Loan Officer UI</HeaderFont>
+        <ParagraphFont>
+          At Clara Lending, loan officers used the Power Pricing Page as an
+          admin page to manage mortgage applications.
+        </ParagraphFont>
+        <ParagraphFont>
+          Loan officers input information relevant to Clara Lending into the
+          page, then choose from the search results of clearly differentiated
+          Clara Lending-priced loan products.
+        </ParagraphFont>
       </CardTextContent>
     </Card>
   );

@@ -5,40 +5,68 @@ import { rhythm, gutter, Colors, tabletMediaQuery } from '../../styles';
 export const Card = styled.section`
   position: relative;
   display: flex;
+
   flex-direction: row;
-  ${tabletMediaQuery(`flex-direction: column;`)}
+  padding: ${rhythm(1)}px ${gutter(1)}px;
+  ${tabletMediaQuery(`
+    flex-direction: column;
+    padding: ${rhythm(2 / 3)}px ${gutter(1 / 3)}px;
+  `)}
+
   justify-content: space-between;
   background-color: ${Colors.cardBackground};
   border-radius: 4px;
 
-  padding: ${rhythm(2 / 3)}px ${gutter(1)}px;
-
-  > *:first-child {
+  ${({
+    firstWidth,
+    firstJustifyContentCenter,
+    lastWidth,
+    lastJustifyContentCenter,
+  }: {
+    firstWidth?: number;
+    firstJustifyContentCenter?: boolean;
+    lastWidth?: number;
+    lastJustifyContentCenter?: boolean;
+  }) => `> *:first-child {
     display: flex;
-    align-items: center;
+    align-items: ${firstJustifyContentCenter ? 'center' : 'flex-start'};
     position: relative;
-    width: 60%;
+    width: ${firstWidth || 60}%;
     ${tabletMediaQuery(`width: auto;`)}
   }
   > *:last-child {
     display: flex;
-    align-items: center;
+    justify-content: ${lastJustifyContentCenter ? 'center' : 'flex-start'};
     position: relative;
-    width: 40%;
+    width: ${lastWidth || 40}%;
     ${tabletMediaQuery(`width: auto;`)}
-  }
+  }`}
 `;
 
 export const CardTextContent = styled.div`
+  position: relative;
   display: flex;
   flex-direction: column;
 
-  padding: ${rhythm(1)}px ${gutter(1)}px ${rhythm(2 / 3)}px ${gutter(2)}px;
+  padding: ${rhythm(2)}px ${gutter(1)}px ${rhythm(2 / 3)}px ${gutter(2)}px;
+  ${({ paddingTop }: { paddingTop?: number }) =>
+    !_.isNil(paddingTop) ? `&&&{ padding-top: ${paddingTop}px; }` : ''}
+
+  ${tabletMediaQuery(
+    `padding: ${rhythm(1)}px ${gutter(1)}px`,
+  )}
+
+  > *:first-child {
+    margin-bottom: ${rhythm(1)}px;
+    ${tabletMediaQuery(`margin-bottom: ${rhythm(2 / 3)}px;`)}
+  }
+  > *:not(:first-child) {
+    margin-bottom: ${rhythm(1 / 2)}px;
+    ${tabletMediaQuery(`margin-bottom: ${rhythm(1 / 4)}px;`)}
+  }
 `;
 
-export const CardImageContent = styled.div`
-  padding: ${rhythm(1)}px ${gutter(1)}px ${rhythm(2 / 3)}px ${gutter(2)}px;
-`;
+export const CardImageContent = styled.div``;
 
 // ${(props: { rightPercentage: number; leftPercentage: number }) => {
 //   return `

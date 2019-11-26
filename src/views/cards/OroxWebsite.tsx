@@ -5,7 +5,7 @@ import { Card, CardTextContent, CardImageContent } from '.';
 
 const OroxWebsite: React.FC = () => {
   return (
-    <Card>
+    <Card firstWidth={40} lastWidth={50} lastJustifyContentCenter>
       <CardTextContent>
         <HeaderFont>Orox Leather Branded Website</HeaderFont>
         <ParagraphFont>
@@ -18,7 +18,7 @@ const OroxWebsite: React.FC = () => {
           </a>
           {` website. Orox sells unique, fine leather products and needed a website
           to reflect their unique and special style. I made CSS and JS changes to the
-          existing Shopify theme to match their requested design updates.`}
+          existing Shopify theme to match their requested website design, pictured here.`}
         </ParagraphFont>
       </CardTextContent>
       <CardImageContent>

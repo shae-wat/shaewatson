@@ -5,7 +5,7 @@ import { Card, CardTextContent, CardImageContent } from '.';
 
 const ClaraRecommendedLoan: React.FC = () => {
   return (
-    <Card>
+    <Card firstWidth={50} lastWidth={50} lastJustifyContentCenter>
       <CardTextContent>
         <HeaderFont>Loan Recommendation - Customer UI</HeaderFont>
         <ParagraphFont>

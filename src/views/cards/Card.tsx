@@ -1,3 +1,4 @@
+import _ from 'lodash';
 import styled from 'styled-components';
 import { rhythm, gutter, Colors, tabletMediaQuery } from '../../styles';
 
@@ -16,25 +17,44 @@ export const Card = styled.section`
   background-color: ${Colors.cardBackground};
   border-radius: 4px;
 
-  > *:first-child {
+  ${({
+    firstWidth,
+    firstJustifyContentCenter,
+    lastWidth,
+    lastJustifyContentCenter,
+  }: {
+    firstWidth?: number;
+    firstJustifyContentCenter?: boolean;
+    lastWidth?: number;
+    lastJustifyContentCenter?: boolean;
+  }) => `> *:first-child {
+    display: flex;
+    align-items: ${firstJustifyContentCenter ? 'center' : 'flex-start'};
     position: relative;
-    width: 60%;
+    width: ${firstWidth || 60}%;
     ${tabletMediaQuery(`width: auto;`)}
   }
   > *:last-child {
+    display: flex;
+    justify-content: ${lastJustifyContentCenter ? 'center' : 'flex-start'};
     position: relative;
-    width: 40%;
+    width: ${lastWidth || 40}%;
     ${tabletMediaQuery(`width: auto;`)}
-  }
+  }`}
 `;
 
 export const CardTextContent = styled.div`
+  position: relative;
   display: flex;
   flex-direction: column;
 
-  padding: ${rhythm(1)}px ${gutter(1)}px ${rhythm(2 / 3)}px ${gutter(2)}px;
+  padding: ${rhythm(2)}px ${gutter(1)}px ${rhythm(2 / 3)}px ${gutter(2)}px;
+  ${({ paddingTop }: { paddingTop?: number }) =>
+    !_.isNil(paddingTop) ? `&&&{ padding-top: ${paddingTop}px; }` : ''}
 
-  ${tabletMediaQuery(`padding: ${rhythm(1)}px ${gutter(1)}px`)}
+  ${tabletMediaQuery(
+    `padding: ${rhythm(1)}px ${gutter(1)}px`,
+  )}
 
   > *:first-child {
     margin-bottom: ${rhythm(1)}px;

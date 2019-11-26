@@ -3,7 +3,7 @@ import {
   UTFunctionalGenomicsLabImageSrc,
   UTFunctionalGenomicsLabLogoSrc,
 } from '../../images';
-import { HeaderFont, ParagraphFont } from '../../styles';
+import { HeaderFont, ParagraphFont, rhythm } from '../../styles';
 import { Card, CardTextContent, CardImageContent } from '.';
 
 const UTFunctionalGenomicsLab: React.FC = () => {
@@ -23,7 +23,7 @@ const UTFunctionalGenomicsLab: React.FC = () => {
           }}
         />
       </CardImageContent>
-      <CardTextContent>
+      <CardTextContent paddingTop={rhythm(1)}>
         <HeaderFont>Visualization of Changes in Gene Expression</HeaderFont>
         <ParagraphFont>
           {`I got into design and visualization during college while working in

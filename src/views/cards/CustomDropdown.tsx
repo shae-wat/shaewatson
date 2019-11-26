@@ -1,5 +1,5 @@
 import React from 'react';
-import { HeaderFont, ParagraphFont } from '../../styles';
+import { HeaderFont, ParagraphFont, rhythm } from '../../styles';
 import { AlaskaDispatchNewsDropdownImageSrc } from '../../images';
 import { Dropdown } from '../components';
 import { Card, CardTextContent, CardImageContent } from '.';
@@ -7,8 +7,8 @@ import { Card, CardTextContent, CardImageContent } from '.';
 class CustomDropdown extends React.Component {
   render() {
     return (
-      <Card>
-        <CardTextContent>
+      <Card firstWidth={55} lastWidth={45}>
+        <CardTextContent paddingTop={rhythm(1 / 2)}>
           <HeaderFont>Customizable Dropdown React Component</HeaderFont>
           <ParagraphFont>
             I contibuted to a third party Javascript commenting app that could

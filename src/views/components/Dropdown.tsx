@@ -23,19 +23,41 @@ interface DropdownState {
   open: boolean;
 }
 
-const StyledDropdown = styled.select`
+const StyledDropdownContainer = styled.div`
   position: relative;
   display: flex;
   align-items: center;
 
+  cursor: pointer;
   width: 100%;
   max-width: ${column(3) + gutter(4)}px;
+
+  &:after {
+    position: absolute;
+    right: ${gutter(1)}px;
+    top: ${rhythm(1 / 2)}px;
+    ${FontCSS}
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+    color: ${Colors.white};
+
+    content: '<>';
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+  }
+`;
+
+const StyledSelect = styled.select`
+  width: 100%;
   padding: ${rhythm(1 / 2)}px ${gutter(1)}px;
 
-  border: 2px solid #ddd;
-  border-radius: 4px;
   color: transparent;
   text-shadow: 0 0 0 ${Colors.white};
+  border: 2px solid #ddd;
+  border-radius: 4px;
 
   ${FontCSS}
   font-weight: 400;
@@ -62,15 +84,17 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
   render() {
     const { options } = this.props;
     return (
-      <StyledDropdown>
-        {_.map(options, (option: DropdownOption) => {
-          return (
-            <option key={option.value} value={option.value}>
-              {option.label}
-            </option>
-          );
-        })}
-      </StyledDropdown>
+      <StyledDropdownContainer>
+        <StyledSelect>
+          {_.map(options, (option: DropdownOption) => {
+            return (
+              <option key={option.value} value={option.value}>
+                {option.label}
+              </option>
+            );
+          })}
+        </StyledSelect>
+      </StyledDropdownContainer>
     );
   }
 }

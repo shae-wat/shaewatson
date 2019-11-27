@@ -1,35 +1,63 @@
 import React from 'react';
+import _ from 'lodash';
 import styled from 'styled-components';
+import { Colors, column, gutter, rhythm } from '../../styles';
 
-enum DropdownOption {
+export enum DropdownOptionKey {
   HIGHEST_RATED,
   NEWEST_FIRST,
   MOST_REACTIONS,
   MOST_DISAGREED,
 }
 
+interface DropdownOption {
+  label: string;
+  value: DropdownOptionKey;
+}
+
+interface DropdownProps {
+  options: DropdownOption[];
+}
+
 interface DropdownState {
   open: boolean;
 }
 
-const StyledDropdown = styled.div`
-  display: block;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+const StyledDropdown = styled.select`
   position: relative;
-  width: 250px;
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  max-width: ${column(3) + gutter(4)}px;
+  padding: ${rhythm(1 / 2)}px ${gutter(1)}px;
+
   border: 2px solid #ddd;
   border-radius: 4px;
-  padding: 12px;
+  color: ${Colors.white};
+
+  /* override default input styles */
+  outline: none;
+  background-color: transparent;
+  -moz-appearance: none;
+  -webkit-appearance: none;
 `;
 
-class Dropdown extends React.Component<{}, DropdownState> {
-  state = { open: false, selectedOption: DropdownOption };
+export class Dropdown extends React.Component<DropdownProps, DropdownState> {
+  state = { open: false, selectedOption: DropdownOptionKey };
 
   render() {
-    return <StyledDropdown>Hello Dropdown!</StyledDropdown>;
+    const { options } = this.props;
+    return (
+      <StyledDropdown>
+        {_.map(options, (option: DropdownOption) => {
+          return (
+            <option key={option.value} value={option.value}>
+              {option.label}
+            </option>
+          );
+        })}
+      </StyledDropdown>
+    );
   }
 }
-
-export default Dropdown;

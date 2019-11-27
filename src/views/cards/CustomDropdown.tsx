@@ -1,7 +1,7 @@
 import React from 'react';
 import { HeaderFont, ParagraphFont, rhythm } from '../../styles';
 import { AlaskaDispatchNewsDropdownImageSrc } from '../../images';
-import { Dropdown } from '../components';
+import { Dropdown, DropdownOptionKey } from '../components';
 import { Card, CardTextContent, CardImageContent } from '.';
 
 class CustomDropdown extends React.Component {
@@ -16,7 +16,18 @@ class CustomDropdown extends React.Component {
             Because of this, it was a nice touch to build a dropdown menu that
             could inherit the colors of the site dynamically.
           </ParagraphFont>
-          <Dropdown />
+          <Dropdown
+            options={[
+              {
+                value: DropdownOptionKey.HIGHEST_RATED,
+                label: 'Highest rated',
+              },
+              {
+                value: DropdownOptionKey.MOST_REACTIONS,
+                label: 'Most reactions',
+              },
+            ]}
+          />
         </CardTextContent>
         <CardImageContent>
           <img

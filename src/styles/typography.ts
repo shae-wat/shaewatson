@@ -1,7 +1,7 @@
-import styled, { css } from 'styled-components';
+import styled from 'styled-components';
 import { mobileMediaQuery } from './breakpoints';
 
-export const FontCSS = css`
+export const FontCSS = `
   letter-spacing: 0.08px;
   word-break: keep-all; /* dont split a word */
   word-spacing: 1px;

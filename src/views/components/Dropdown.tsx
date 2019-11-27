@@ -1,7 +1,7 @@
 import React from 'react';
 import _ from 'lodash';
 import styled from 'styled-components';
-import { Colors, column, gutter, rhythm } from '../../styles';
+import { Colors, column, gutter, rhythm, FontCSS } from '../../styles';
 
 export enum DropdownOptionKey {
   HIGHEST_RATED,
@@ -34,13 +34,26 @@ const StyledDropdown = styled.select`
 
   border: 2px solid #ddd;
   border-radius: 4px;
-  color: ${Colors.white};
+  color: transparent;
+  text-shadow: 0 0 0 ${Colors.white};
+
+  ${FontCSS}
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
 
   /* override default input styles */
-  outline: none;
-  background-color: transparent;
-  -moz-appearance: none;
-  -webkit-appearance: none;
+  &:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 ${Colors.white};
+  }
+  &&& {
+    outline: none !important;
+    background-color: transparent;
+    box-shadow: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+  }
 `;
 
 export class Dropdown extends React.Component<DropdownProps, DropdownState> {

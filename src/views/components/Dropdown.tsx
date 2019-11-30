@@ -50,7 +50,7 @@ const StyledDropdownContainer = styled.div`
   }
 `;
 
-const StyledSelect = styled.select`
+const StyledSelect = styled.div`
   width: 100%;
   padding: ${rhythm(1 / 2)}px ${gutter(1)}px;
 
@@ -63,18 +63,14 @@ const StyledSelect = styled.select`
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
+`;
 
-  /* override default input styles */
-  &:-moz-focusring {
-    color: transparent;
-    text-shadow: 0 0 0 ${Colors.white};
-  }
-  &&& {
-    outline: none !important;
-    background-color: transparent;
-    box-shadow: none;
-    -moz-appearance: none;
-    -webkit-appearance: none;
+const StyledOption = styled.div`
+  width: 100%;
+  padding: ${rhythm(1 / 4)}px ${gutter(1 / 4)}px;
+
+  &:hover {
+    background-color: red;
   }
 `;
 
@@ -88,9 +84,7 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
         <StyledSelect>
           {_.map(options, (option: DropdownOption) => {
             return (
-              <option key={option.value} value={option.value}>
-                {option.label}
-              </option>
+              <StyledOption key={option.value}>{option.label}</StyledOption>
             );
           })}
         </StyledSelect>

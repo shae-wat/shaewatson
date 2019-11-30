@@ -1,5 +1,5 @@
 import React from 'react';
-import { HeaderFont, ParagraphFont } from '../../styles';
+import { HeaderFont, SubheaderFont, ParagraphFont } from '../../styles';
 import { PowerPricerImageSrc } from '../../images';
 import { Card, CardTextContent, CardImageContent } from '.';
 
@@ -21,7 +21,10 @@ const ClaraPowerPricing: React.FC = () => {
         />
       </CardImageContent>
       <CardTextContent>
-        <HeaderFont>Mortgage Pricing - Loan Officer UI</HeaderFont>
+        <span>
+          <HeaderFont>Mortgage Pricing - Loan Officer UI</HeaderFont>
+          <SubheaderFont>Clara Lending 2017</SubheaderFont>
+        </span>
         <ParagraphFont>
           At Clara Lending, loan officers used the Power Pricing Page as an
           admin page to manage mortgage applications.

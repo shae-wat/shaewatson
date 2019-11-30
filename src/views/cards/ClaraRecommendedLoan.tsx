@@ -1,5 +1,5 @@
 import React from 'react';
-import { HeaderFont, ParagraphFont } from '../../styles';
+import { HeaderFont, SubheaderFont, ParagraphFont } from '../../styles';
 import { ClaraRecommendedLoanImageSrc } from '../../images';
 import { Card, CardTextContent, CardImageContent } from '.';
 
@@ -7,18 +7,19 @@ const ClaraRecommendedLoan: React.FC = () => {
   return (
     <Card firstWidth={50} lastWidth={50} lastJustifyContentCenter>
       <CardTextContent>
-        <HeaderFont>Loan Recommendation - Customer UI</HeaderFont>
+        <span>
+          <HeaderFont>Loan Recommendation - Customer UI</HeaderFont>
+          <SubheaderFont>Clara Lending 2017</SubheaderFont>
+        </span>
         <ParagraphFont>
           One step of buying a home is getting pre-approved for a mortgage,
-          which is often required by realtors before showing the house.
+          which is often required by realtors before showing a property.
         </ParagraphFont>
         <ParagraphFont>
           At the end of a step-by-step flow with a clear questions for a
           mortgage pre-qualification application, the user is recommended a loan
-          that they can apply for pre-approval for along with the option to
-          select an alternative. Clearly, Clara Lending had a powerful backend
-          which was interfaced with the user in a clear, well deisgined way. The
-          Clara Lending
+          for which they can apply for preapproval- along with the option to
+          select an alternative.
         </ParagraphFont>
       </CardTextContent>
       <CardImageContent>

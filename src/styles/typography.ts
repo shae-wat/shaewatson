@@ -23,6 +23,15 @@ export const HeaderFont = styled.h1`
   ${mobileMediaQuery(`font-size: 20px; line-height: 28px;`)}
 `;
 
+export const SubheaderFont = styled.h2`
+  ${FontCSS}
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+
+  ${mobileMediaQuery(`font-size: 20px; line-height: 28px;`)}
+`;
+
 export const ParagraphFont = styled.p`
   ${FontCSS}
   font-weight: 500;

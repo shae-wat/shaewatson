@@ -1,5 +1,5 @@
 import React from 'react';
-import { HeaderFont, ParagraphFont } from '../../styles';
+import { HeaderFont, SubheaderFont, ParagraphFont } from '../../styles';
 import { FSDepArrImageSrc } from '../../images';
 import { Card, CardTextContent, CardImageContent } from '.';
 
@@ -21,7 +21,11 @@ const FlightStatsArrivalsDepartures: React.FC = () => {
         />
       </CardImageContent>
       <CardTextContent>
-        <HeaderFont>Airport Departures and Arrivals Page</HeaderFont>
+        <span>
+          <HeaderFont>Airport Departures and Arrivals Page</HeaderFont>
+          <SubheaderFont>FlightStats 2015</SubheaderFont>
+        </span>
+
         <ParagraphFont>
           On the departures and arrivals page of FlightStats, several filters
           could be applied to see a list of relevant departing and arriving

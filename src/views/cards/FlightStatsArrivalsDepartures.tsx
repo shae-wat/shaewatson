@@ -17,12 +17,13 @@ const FlightStatsArrivalsDepartures: React.FC = () => {
             maxHeight: '536px',
             width: '100%',
             height: 'auto',
+            objectFit: 'contain',
           }}
         />
       </CardImageContent>
       <CardTextContent>
         <span>
-          <HeaderFont>Airport Departures and Arrivals Page</HeaderFont>
+          <HeaderFont>Airport Departures & Arrivals Page</HeaderFont>
           <SubheaderFont>FlightStats 2015</SubheaderFont>
         </span>
 

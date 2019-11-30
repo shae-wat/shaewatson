@@ -20,6 +20,7 @@ const UTFunctionalGenomicsLab: React.FC = () => {
             maxHeight: '450px',
             width: '100%',
             height: 'auto',
+            objectFit: 'contain',
           }}
         />
       </CardImageContent>

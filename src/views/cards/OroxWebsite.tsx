@@ -35,6 +35,7 @@ const OroxWebsite: React.FC = () => {
             maxHeight: '581px',
             width: '100%',
             height: 'auto',
+            objectFit: 'contain',
           }}
         />
       </CardImageContent>

@@ -17,12 +17,13 @@ const ClaraPowerPricing: React.FC = () => {
             maxHeight: '810px',
             width: '100%',
             height: 'auto',
+            objectFit: 'contain',
           }}
         />
       </CardImageContent>
       <CardTextContent>
         <span>
-          <HeaderFont>Mortgage Pricing - Loan Officer UI</HeaderFont>
+          <HeaderFont>Mortgage Pricing: Loan Officer UI</HeaderFont>
           <SubheaderFont>Clara Lending 2017</SubheaderFont>
         </span>
         <ParagraphFont>

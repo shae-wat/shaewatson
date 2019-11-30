@@ -20,7 +20,7 @@ export const HeaderFont = styled.h1`
   font-size: 28px;
   line-height: 36px;
 
-  ${mobileMediaQuery(`font-size: 20px; line-height: 28px;`)}
+  ${mobileMediaQuery(`font-size: 18px; line-height: 26px;`)}
 `;
 
 export const SubheaderFont = styled.h2`
@@ -29,7 +29,7 @@ export const SubheaderFont = styled.h2`
   font-size: 20px;
   line-height: 28px;
 
-  ${mobileMediaQuery(`font-size: 20px; line-height: 28px;`)}
+  ${mobileMediaQuery(`font-size: 16px; line-height: 20px;`)}
 `;
 
 export const ParagraphFont = styled.p`

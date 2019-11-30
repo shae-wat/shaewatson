@@ -32,6 +32,7 @@ class CustomDropdown extends React.Component {
               maxHeight: '404px',
               width: '100%',
               height: 'auto',
+              objectFit: 'contain',
             }}
           />
         </CardImageContent>

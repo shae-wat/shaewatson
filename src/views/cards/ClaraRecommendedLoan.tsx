@@ -8,7 +8,7 @@ const ClaraRecommendedLoan: React.FC = () => {
     <Card firstWidth={50} lastWidth={50} lastJustifyContentCenter>
       <CardTextContent>
         <span>
-          <HeaderFont>Loan Recommendation - Customer UI</HeaderFont>
+          <HeaderFont>Loan Recommendation: Borrower UI</HeaderFont>
           <SubheaderFont>Clara Lending 2017</SubheaderFont>
         </span>
         <ParagraphFont>
@@ -33,6 +33,7 @@ const ClaraRecommendedLoan: React.FC = () => {
             maxHeight: '595px',
             width: '100%',
             height: 'auto',
+            objectFit: 'contain',
           }}
         />
       </CardImageContent>

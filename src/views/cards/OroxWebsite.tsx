@@ -1,13 +1,16 @@
 import React from 'react';
 import { OroxWebsiteImageSrc } from '../../images';
-import { HeaderFont, ParagraphFont } from '../../styles';
+import { HeaderFont, SubheaderFont, ParagraphFont } from '../../styles';
 import { Card, CardTextContent, CardImageContent } from '.';
 
 const OroxWebsite: React.FC = () => {
   return (
     <Card firstWidth={40} lastWidth={50} lastJustifyContentCenter>
       <CardTextContent>
-        <HeaderFont>Orox Leather Branded Website</HeaderFont>
+        <span>
+          <HeaderFont>Orox Leather Customized Website</HeaderFont>
+          <SubheaderFont>Orox Leather 2015</SubheaderFont>
+        </span>
         <ParagraphFont>
           {`In my early career, I especially enjoyed styling the `}
           <a
@@ -32,6 +35,7 @@ const OroxWebsite: React.FC = () => {
             maxHeight: '581px',
             width: '100%',
             height: 'auto',
+            objectFit: 'contain',
           }}
         />
       </CardImageContent>

@@ -21,6 +21,7 @@ const ClaraSecondaryFinancing: React.FC = () => {
             maxHeight: '482px',
             width: '100%',
             height: 'auto',
+            objectFit: 'contain',
           }}
         />
       </CardImageContent>

@@ -16,10 +16,10 @@ const ClaraRecommendedLoan: React.FC = () => {
           which is often required by realtors before showing a property.
         </ParagraphFont>
         <ParagraphFont>
-          At the end of a step-by-step flow with a clear questions for a
-          mortgage pre-qualification application, the user is recommended a loan
-          for which they can apply for preapproval- along with the option to
-          select an alternative.
+          At the end of a step-by-step flow with questions for a mortgage
+          pre-qualification application, the user at Clara Lending was
+          recommended a loan for which they could apply for preapproval- along
+          with the option to select an alternative loan option.
         </ParagraphFont>
       </CardTextContent>
       <CardImageContent>

@@ -35,11 +35,11 @@ const StyledDropdownContainer = styled.div`
   &:after {
     position: absolute;
     right: ${gutter(1)}px;
-    top: ${rhythm(1 / 2)}px;
+    top: ${rhythm(1 / 2) + 1}px;
     ${FontCSS}
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 24px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 28px;
     color: ${Colors.white};
 
     content: '<>';
@@ -60,7 +60,7 @@ const StyledSelect = styled.select`
   border-radius: 4px;
 
   ${FontCSS}
-  font-weight: 400;
+  font-weight: 500;
   font-size: 16px;
   line-height: 24px;
 

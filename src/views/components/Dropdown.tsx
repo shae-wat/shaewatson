@@ -15,14 +15,6 @@ interface DropdownOption {
   value: DropdownOptionKey;
 }
 
-interface DropdownProps {
-  options: DropdownOption[];
-}
-
-interface DropdownState {
-  open: boolean;
-}
-
 const StyledDropdownContainer = styled.div`
   position: relative;
   display: flex;
@@ -74,19 +66,45 @@ const StyledOption = styled.div`
   }
 `;
 
+interface DropdownProps {
+  options: DropdownOption[];
+}
+
+interface DropdownState {
+  open: boolean;
+  selectedOption: DropdownOptionKey;
+}
+
 export class Dropdown extends React.Component<DropdownProps, DropdownState> {
-  state = { open: false, selectedOption: DropdownOptionKey };
+  state = { open: false, selectedOption: DropdownOptionKey.HIGHEST_RATED };
+
+  getOptionByKey = (key: DropdownOptionKey) => {
+    const { options } = this.props;
+    console.log('options', options);
+    switch (key) {
+      default:
+        return options[0];
+    }
+  };
 
   render() {
     const { options } = this.props;
+
+    const selected = this.getOptionByKey(this.state.selectedOption);
     return (
       <StyledDropdownContainer>
-        <StyledSelect>
-          {_.map(options, (option: DropdownOption) => {
-            return (
-              <StyledOption key={option.value}>{option.label}</StyledOption>
-            );
-          })}
+        <StyledSelect
+          onMouseEnter={() => this.setState({ open: true })}
+          onMouseLeave={() => this.setState({ open: false })}>
+          {this.state.open ? (
+            _.map(options, (option: DropdownOption) => {
+              return (
+                <StyledOption key={option.value}>{option.label}</StyledOption>
+              );
+            })
+          ) : (
+            <StyledOption key={selected.value}>{selected.label}</StyledOption>
+          )}
         </StyledSelect>
       </StyledDropdownContainer>
     );

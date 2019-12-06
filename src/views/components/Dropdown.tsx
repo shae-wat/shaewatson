@@ -56,9 +56,15 @@ const StyledOption = styled.div`
   flex: 1;
   padding: ${rhythm(1 / 4)}px ${gutter(1 / 4)}px;
 
-  &:hover {
-    background-color: red;
-  }
+  ${({ selected, opened }: { selected?: boolean; opened?: boolean }) => {
+    return opened
+      ? ` &:hover {
+      background-color: red;
+    }`
+      : selected
+      ? 'background-color: red;'
+      : '';
+  }}
 `;
 
 interface DropdownProps {
@@ -75,17 +81,23 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
 
   getOptionByKey(key: DropdownOptionKey) {
     const { options } = this.props;
-    console.log('options', options);
-    switch (key) {
-      default:
-        return options[0];
-    }
+    console.log('options', _.keyBy(options, 'value'));
+    const keyedOptions = _.keyBy(options, 'value');
+    return keyedOptions[key] || options[0];
+  }
+
+  onOptionClick(selectedOption: DropdownOptionKey) {
+    console.log('onClick');
+    this.setState({
+      selectedOption,
+    });
   }
 
   render() {
     const { options } = this.props;
 
     const selected = this.getOptionByKey(this.state.selectedOption);
+    console.log('selected', selected);
     return (
       <StyledSelect
         open={this.state.open}
@@ -94,7 +106,13 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
         {this.state.open ? (
           _.map(options, (option: DropdownOption) => {
             return (
-              <StyledOption key={option.value}>{option.label}</StyledOption>
+              <StyledOption
+                key={option.value}
+                opened
+                onClick={() => this.onOptionClick(option.value)}
+                selected={this.state.selectedOption === option.value}>
+                {option.label}
+              </StyledOption>
             );
           })
         ) : (

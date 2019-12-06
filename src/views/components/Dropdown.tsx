@@ -19,6 +19,7 @@ interface DropdownOption {
 const StyledSelect = styled.div`
   position: relative;
   width: ${column(3) + gutter(4)}px;
+  height: ${rhythm(1)}px;
   cursor: pointer;
 
   color: ${Colors.background};
@@ -49,8 +50,16 @@ const StyledSelect = styled.div`
           -ms-transform: rotate(90deg);
           transform: rotate(90deg);
         }`
-      : ''; // > * { position: absolute; top: 0; left: 0; }
+      : '';
   }}
+`;
+
+const StyledOptionsContainer = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 600px;
 `;
 
 const StyledOption = styled.div`
@@ -96,9 +105,9 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
         open={this.state.open}
         onMouseEnter={() => this.setState({ open: true })}
         onMouseLeave={() => this.setState({ open: false })}>
-        <div>
-          {this.state.open ? (
-            _.map(options, (option: DropdownOption) => {
+        {this.state.open ? (
+          <StyledOptionsContainer>
+            {_.map(options, (option: DropdownOption) => {
               return (
                 <StyledOption
                   key={option.value}
@@ -113,11 +122,11 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
                   {option.label}
                 </StyledOption>
               );
-            })
-          ) : (
-            <StyledOption key={selected.value}>{selected.label}</StyledOption>
-          )}
-        </div>
+            })}
+          </StyledOptionsContainer>
+        ) : (
+          <StyledOption key={selected.value}>{selected.label}</StyledOption>
+        )}
       </StyledSelect>
     );
   }

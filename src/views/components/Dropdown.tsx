@@ -8,6 +8,7 @@ export enum DropdownOptionKey {
   NEWEST_FIRST,
   MOST_REACTIONS,
   MOST_DISAGREED,
+  OLDEST_FIRST,
 }
 
 interface DropdownOption {

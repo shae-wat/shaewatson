@@ -26,8 +26,20 @@ class CustomDropdown extends React.Component {
                 label: 'Highest rated',
               },
               {
+                value: DropdownOptionKey.NEWEST_FIRST,
+                label: 'Newest first',
+              },
+              {
                 value: DropdownOptionKey.MOST_REACTIONS,
                 label: 'Most reactions',
+              },
+              {
+                value: DropdownOptionKey.MOST_DISAGREED,
+                label: 'Most disagreed',
+              },
+              {
+                value: DropdownOptionKey.OLDEST_FIRST,
+                label: 'Oldest first',
               },
             ]}
           />

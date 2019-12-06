@@ -49,13 +49,15 @@ const StyledSelect = styled.div`
           -ms-transform: rotate(90deg);
           transform: rotate(90deg);
         }`
-      : '';
+      : ''; // > * { position: absolute; top: 0; left: 0; }
   }}
 `;
 
 const StyledOption = styled.div`
   flex: 1;
   padding: ${rhythm(1 / 4)}px ${gutter(1 / 4)}px;
+  color: ${Colors.background};
+  background-color: ${Colors.white};
 
   ${({ selected, opened }: { selected?: boolean; opened?: boolean }) => {
     return opened
@@ -81,44 +83,41 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
   state = { open: false, selectedOption: DropdownOptionKey.HIGHEST_RATED };
 
   getOptionByKey(key: DropdownOptionKey) {
-    const { options } = this.props;
-    console.log('options', _.keyBy(options, 'value'));
-    const keyedOptions = _.keyBy(options, 'value');
-    return keyedOptions[key] || options[0];
-  }
-
-  onOptionClick(selectedOption: DropdownOptionKey) {
-    console.log('onClick');
-    this.setState({
-      selectedOption,
-    });
+    const keyedOptions = _.keyBy(this.props.options, 'value');
+    return keyedOptions[key] || this.props.options[0];
   }
 
   render() {
     const { options } = this.props;
 
     const selected = this.getOptionByKey(this.state.selectedOption);
-    console.log('selected', selected);
     return (
       <StyledSelect
         open={this.state.open}
         onMouseEnter={() => this.setState({ open: true })}
         onMouseLeave={() => this.setState({ open: false })}>
-        {this.state.open ? (
-          _.map(options, (option: DropdownOption) => {
-            return (
-              <StyledOption
-                key={option.value}
-                opened
-                onClick={() => this.onOptionClick(option.value)}
-                selected={this.state.selectedOption === option.value}>
-                {option.label}
-              </StyledOption>
-            );
-          })
-        ) : (
-          <StyledOption key={selected.value}>{selected.label}</StyledOption>
-        )}
+        <div>
+          {this.state.open ? (
+            _.map(options, (option: DropdownOption) => {
+              return (
+                <StyledOption
+                  key={option.value}
+                  opened
+                  onClick={() =>
+                    this.setState({
+                      selectedOption: option.value,
+                      open: false,
+                    })
+                  }
+                  selected={this.state.selectedOption === option.value}>
+                  {option.label}
+                </StyledOption>
+              );
+            })
+          ) : (
+            <StyledOption key={selected.value}>{selected.label}</StyledOption>
+          )}
+        </div>
       </StyledSelect>
     );
   }

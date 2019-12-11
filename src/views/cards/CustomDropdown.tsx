@@ -14,7 +14,7 @@ class CustomDropdown extends React.Component {
             <SubheaderFont>Civil Comments 2016</SubheaderFont>
           </span>
           <ParagraphFont>
-            I contibuted to a third party Javascript commenting app that could
+            I contributed to a third party Javascript commenting app that could
             could be customized to match its host webpage- mostly newspapers.
             Because of this, it was a nice touch to build a dropdown menu that
             could inherit the colors of the site dynamically.
@@ -23,26 +23,32 @@ class CustomDropdown extends React.Component {
             options={[
               {
                 value: DropdownOptionKey.HIGHEST_RATED,
-                label: 'Highest rated',
+                label: 'Farm to Table',
               },
               {
                 value: DropdownOptionKey.NEWEST_FIRST,
-                label: 'Newest first',
+                label: 'Cold Pressed',
               },
               {
                 value: DropdownOptionKey.MOST_REACTIONS,
-                label: 'Most reactions',
+                label: 'Local',
               },
               {
                 value: DropdownOptionKey.MOST_DISAGREED,
-                label: 'Most disagreed',
+                label: 'Bicycle',
               },
               {
                 value: DropdownOptionKey.OLDEST_FIRST,
-                label: 'Oldest first',
+                label: 'Organic',
               },
             ]}
           />
+          <ParagraphFont>
+            Dropdown value labels generated using{' '}
+            <a href="https://hipsum.co/" target="_blank">
+              Hipster Ipsum
+            </a>
+          </ParagraphFont>
         </CardTextContent>
         <CardImageContent>
           <img

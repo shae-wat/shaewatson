@@ -103,10 +103,11 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
     return (
       <StyledSelect
         open={this.state.open}
-        onMouseEnter={() => this.setState({ open: true })}
+        onClick={() => this.setState({ open: !this.state.open })}
         onMouseLeave={() => this.setState({ open: false })}>
         {this.state.open ? (
-          <StyledOptionsContainer>
+          <StyledOptionsContainer
+            onMouseLeave={() => this.setState({ open: false })}>
             {_.map(options, (option: DropdownOption) => {
               return (
                 <StyledOption
@@ -115,7 +116,6 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
                   onClick={() =>
                     this.setState({
                       selectedOption: option.value,
-                      open: false,
                     })
                   }
                   selected={this.state.selectedOption === option.value}>

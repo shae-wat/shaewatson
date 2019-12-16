@@ -67,10 +67,3 @@ export const CardTextContent = styled.div`
 `;
 
 export const CardImageContent = styled.div``;
-
-// ${(props: { rightPercentage: number; leftPercentage: number }) => {
-//   return `
-//     right: ${props.rightPercentage};
-//     left: ${props.leftPercentage};
-//   `;
-// }}

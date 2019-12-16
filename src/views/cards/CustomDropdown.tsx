@@ -45,7 +45,10 @@ class CustomDropdown extends React.Component {
           />
           <ParagraphFont>
             Dropdown value labels generated using{' '}
-            <a href="https://hipsum.co/" target="_blank">
+            <a
+              href="https://hipsum.co/"
+              target="_blank"
+              rel="noopener noreferrer">
               Hipster Ipsum
             </a>
           </ParagraphFont>

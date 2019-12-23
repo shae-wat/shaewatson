@@ -18,23 +18,17 @@ interface DropdownOption {
 
 const StyledSelect = styled.div`
   position: relative;
+  height: ${rhythm(3 / 2)}px;
   width: ${column(3) + gutter(4)}px;
-  height: ${rhythm(1)}px;
   cursor: pointer;
-
-  color: ${Colors.background};
-  background-color: ${Colors.white};
-  border: 2px solid #ddd;
-  border-radius: 4px;
-
-  ${FontCSS}
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
 
   ${({ open }: { open: boolean }) => {
     return !open
-      ? `&:after {
+      ? `
+        border: 2px solid #ddd;
+        border-radius: 4px;
+
+        &:after {
           position: absolute;
           right: ${gutter(1)}px;
           top: ${rhythm(1 / 2) + 1}px;
@@ -50,7 +44,7 @@ const StyledSelect = styled.div`
           -ms-transform: rotate(90deg);
           transform: rotate(90deg);
         }`
-      : '';
+      : `height: ${rhythm(3 / 2) + 4}px;`;
   }}
 `;
 
@@ -60,6 +54,8 @@ const StyledOptionsContainer = styled.div`
   left: 0;
   width: 100%;
   height: 600px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
 `;
 
 const StyledOption = styled.div`
@@ -67,6 +63,11 @@ const StyledOption = styled.div`
   padding: ${rhythm(1 / 4)}px ${gutter(1 / 4)}px;
   color: ${Colors.background};
   background-color: ${Colors.white};
+
+  ${FontCSS}
+  font-weight: 500;
+  font-size: 16px;
+  line-height: ${rhythm(1)}px;
 
   ${({ selected, opened }: { selected?: boolean; opened?: boolean }) => {
     return opened

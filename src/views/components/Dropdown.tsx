@@ -31,7 +31,7 @@ const StyledSelect = styled.div`
         &:after {
           position: absolute;
           right: ${gutter(1)}px;
-          top: ${rhythm(1 / 2) + 1}px;
+          top: ${rhythm(1 / 6)}px;
           ${FontCSS}
           font-weight: 500;
           font-size: 14px;
@@ -76,16 +76,14 @@ const StyledOption = styled.div`
   font-size: 16px;
   line-height: ${rhythm(1)}px;
 
-  ${({ selected, opened }: { selected?: boolean; opened?: boolean }) => {
+  ${({ opened }: { opened?: boolean }) => {
     return opened
       ? `
         z-index: 100;
         &:hover {
           background-color: red;
         }`
-      : selected
-      ? 'background-color: red;'
-      : '';
+      : 'border-radius: 2px;';
   }}
 `;
 
@@ -127,8 +125,7 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
                     this.setState({
                       selectedOption: option.value,
                     })
-                  }
-                  selected={this.state.selectedOption === option.value}>
+                  }>
                   {option.label}
                 </StyledOption>
               );

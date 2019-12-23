@@ -40,3 +40,12 @@ export const ParagraphFont = styled.p`
 
   ${mobileMediaQuery(`font-size: 14px; line-height: 18px;`)}
 `;
+
+export const MicroFont = styled.p`
+  ${FontCSS}
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+
+  ${mobileMediaQuery(`font-size: 12px; line-height: 14px;`)}
+`;

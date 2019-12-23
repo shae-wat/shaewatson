@@ -1,8 +1,19 @@
 import React from 'react';
-import { HeaderFont, SubheaderFont, ParagraphFont, rhythm } from '../../styles';
+import styled from 'styled-components';
+import {
+  HeaderFont,
+  SubheaderFont,
+  ParagraphFont,
+  MicroFont,
+  rhythm,
+} from '../../styles';
 import { AlaskaDispatchNewsDropdownImageSrc } from '../../images';
-import { Dropdown, DropdownOptionKey } from '../components';
+import { Dropdown, DropdownOptionKey, ColorSelector } from '../components';
 import { Card, CardTextContent, CardImageContent } from '.';
+
+const DemoArea = styled.div`
+  padding: ${rhythm(1)}px 0;
+`;
 
 class CustomDropdown extends React.Component {
   render() {
@@ -19,31 +30,34 @@ class CustomDropdown extends React.Component {
             Because of this, it was a nice touch to build a dropdown menu that
             could inherit the colors of the site dynamically.
           </ParagraphFont>
-          <Dropdown
-            options={[
-              {
-                value: DropdownOptionKey.HIGHEST_RATED,
-                label: 'Farm to Table',
-              },
-              {
-                value: DropdownOptionKey.NEWEST_FIRST,
-                label: 'Cold Pressed',
-              },
-              {
-                value: DropdownOptionKey.MOST_REACTIONS,
-                label: 'Local',
-              },
-              {
-                value: DropdownOptionKey.MOST_DISAGREED,
-                label: 'Bicycle',
-              },
-              {
-                value: DropdownOptionKey.OLDEST_FIRST,
-                label: 'Organic',
-              },
-            ]}
-          />
-          <ParagraphFont>
+          <DemoArea>
+            <ColorSelector />
+            <Dropdown
+              options={[
+                {
+                  value: DropdownOptionKey.HIGHEST_RATED,
+                  label: 'Farm to Table',
+                },
+                {
+                  value: DropdownOptionKey.NEWEST_FIRST,
+                  label: 'Cold Pressed',
+                },
+                {
+                  value: DropdownOptionKey.MOST_REACTIONS,
+                  label: 'Local',
+                },
+                {
+                  value: DropdownOptionKey.MOST_DISAGREED,
+                  label: 'Bicycle',
+                },
+                {
+                  value: DropdownOptionKey.OLDEST_FIRST,
+                  label: 'Organic',
+                },
+              ]}
+            />
+          </DemoArea>
+          <MicroFont>
             Dropdown value labels generated using{' '}
             <a
               href="https://hipsum.co/"
@@ -51,7 +65,7 @@ class CustomDropdown extends React.Component {
               rel="noopener noreferrer">
               Hipster Ipsum
             </a>
-          </ParagraphFont>
+          </MicroFont>
         </CardTextContent>
         <CardImageContent>
           <img

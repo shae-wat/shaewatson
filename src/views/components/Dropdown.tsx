@@ -53,9 +53,16 @@ const StyledOptionsContainer = styled.div`
   top: 0;
   left: 0;
   width: 100%;
-  height: 600px;
   border: 2px solid #ddd;
   border-radius: 4px;
+  z-index: 100;
+
+  > *:first-child {
+    border-radius: 2px 2px 0 0;
+  }
+  > *:last-child {
+    border-radius: 0 0 2px 2px;
+  }
 `;
 
 const StyledOption = styled.div`
@@ -71,9 +78,11 @@ const StyledOption = styled.div`
 
   ${({ selected, opened }: { selected?: boolean; opened?: boolean }) => {
     return opened
-      ? ` &:hover {
-      background-color: red;
-    }`
+      ? `
+        z-index: 100;
+        &:hover {
+          background-color: red;
+        }`
       : selected
       ? 'background-color: red;'
       : '';

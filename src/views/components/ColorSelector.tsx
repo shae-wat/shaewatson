@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import _ from 'lodash';
-import { gutter, rhythm, MicroFont, Colors } from '../../styles';
+import { gutter, rhythm, MicroFont, Colors, BoldText } from '../../styles';
 
 const ColorPallette = styled.div`
   display: flex;
@@ -30,7 +30,11 @@ const ColorSelector: React.FC<ColorSelectorProps> = (
 ) => (
   <div>
     <MicroFont>
-      Here is the color-customizable dropdown menu in action!
+      Here is the{' '}
+      <BoldText color={props.selectedColor}>
+        color-customizable dropdown menu
+      </BoldText>{' '}
+      in action!
     </MicroFont>
     <ColorPallette>
       {_.map(props.options, (color: typeof Colors.millenialPink) => (

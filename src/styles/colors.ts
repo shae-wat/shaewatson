@@ -2,6 +2,7 @@ export const Colors = {
   white: '#FDFFFC',
   background: '#282C34',
   cardBackground: '#A69CAC',
+  border: '#ddd',
   lightPurple: '#babfff',
   darkBlue: '#1414cc',
   tanPink: '#e5c1bf',

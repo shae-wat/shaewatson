@@ -25,7 +25,7 @@ const StyledSelect = styled.div`
   ${({ open }: { open: boolean }) => {
     return !open
       ? `
-        border: 2px solid #ddd;
+        border: 2px solid ${Colors.border};
         border-radius: 4px;
 
         &:after {
@@ -53,7 +53,7 @@ const StyledOptionsContainer = styled.div`
   top: 0;
   left: 0;
   width: 100%;
-  border: 2px solid #ddd;
+  border: 2px solid ${Colors.border};
   border-radius: 4px;
   z-index: 100;
 

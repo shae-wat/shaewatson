@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { mobileMediaQuery } from './breakpoints';
+import { Colors } from './colors';
 
 export const FontCSS = `
   letter-spacing: 0.08px;
@@ -48,4 +49,23 @@ export const MicroFont = styled.p`
   line-height: 16px;
 
   ${mobileMediaQuery(`font-size: 12px; line-height: 14px;`)}
+`;
+
+// add bold font styling within a sentence to bold a word
+export const BoldText = styled.span`
+  ${FontCSS}
+  color: ${(props: { color?: typeof Colors.millenialPink }) =>
+    props.color || Colors.background};
+  /* TODO:  font-family: BoldFontFamily */
+  font-weight: 700;
+`;
+
+export const LinkText = styled.a`
+  &&& {
+    display: inline;
+    text-decoration: none;
+    color: ${(props: { color?: typeof Colors.millenialPink }) =>
+      props.color || Colors.darkBlue};
+    font-weight: bold;
+  }
 `;

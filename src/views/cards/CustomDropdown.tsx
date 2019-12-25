@@ -6,6 +6,7 @@ import {
   SubheaderFont,
   ParagraphFont,
   MicroFont,
+  LinkText,
   rhythm,
 } from '../../styles';
 import { AlaskaDispatchNewsDropdownImageSrc } from '../../images';
@@ -83,12 +84,12 @@ class CustomDropdown extends React.Component<{}, CustomDropdownState> {
           </DemoArea>
           <MicroFont>
             Dropdown value labels generated using{' '}
-            <a
+            <LinkText
               href="https://hipsum.co/"
               target="_blank"
               rel="noopener noreferrer">
               Hipster Ipsum
-            </a>
+            </LinkText>
           </MicroFont>
         </CardTextContent>
         <CardImageContent>

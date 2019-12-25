@@ -8,6 +8,7 @@ import {
   MicroFont,
   LinkText,
   rhythm,
+  gutter,
 } from '../../styles';
 import { AlaskaDispatchNewsDropdownImageSrc } from '../../images';
 import { Dropdown, DropdownOptionKey, ColorSelector } from '../components';
@@ -23,6 +24,10 @@ const brandColors = [
 
 const DemoArea = styled.div`
   padding: ${rhythm(1)}px 0;
+  background-color: ${Colors.white};
+  border-radius: 4px;
+  color: ${Colors.background};
+  padding: ${rhythm(1)}px ${gutter(1)}px;
 `;
 
 interface CustomDropdownState {

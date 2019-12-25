@@ -63,7 +63,7 @@ export const BoldText = styled.span`
 export const LinkText = styled.a`
   &&& {
     display: inline;
-    text-decoration: none;
+    /* text-decoration: none; */
     color: ${(props: { color?: typeof Colors.millenialPink }) =>
       props.color || Colors.darkBlue};
     font-weight: bold;

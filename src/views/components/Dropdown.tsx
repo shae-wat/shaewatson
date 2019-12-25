@@ -76,12 +76,13 @@ const StyledOption = styled.div`
   font-size: 16px;
   line-height: ${rhythm(1)}px;
 
-  ${({ opened }: { opened?: boolean }) => {
+  ${({ opened, color }: { opened?: boolean; color?: string }) => {
     return opened
       ? `
         z-index: 100;
         &:hover {
-          background-color: red;
+          background-color: ${color};
+          color: ${Colors.white};
         }`
       : 'border-radius: 2px;';
   }}
@@ -89,6 +90,7 @@ const StyledOption = styled.div`
 
 interface DropdownProps {
   options: DropdownOption[];
+  color: string;
 }
 
 interface DropdownState {
@@ -105,7 +107,7 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
   }
 
   render() {
-    const { options } = this.props;
+    const { options, color } = this.props;
 
     const selected = this.getOptionByKey(this.state.selectedOption);
     return (
@@ -121,6 +123,7 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
                 <StyledOption
                   key={option.value}
                   opened
+                  color={color}
                   onClick={() =>
                     this.setState({
                       selectedOption: option.value,

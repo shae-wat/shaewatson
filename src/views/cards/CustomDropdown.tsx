@@ -11,11 +11,21 @@ import { AlaskaDispatchNewsDropdownImageSrc } from '../../images';
 import { Dropdown, DropdownOptionKey, ColorSelector } from '../components';
 import { Card, CardTextContent, CardImageContent } from '.';
 
+const colors = ['#babfff', '#1414cc', '#e5c1bf', '#ffb6c1', '#fa225b'];
+
 const DemoArea = styled.div`
   padding: ${rhythm(1)}px 0;
 `;
 
-class CustomDropdown extends React.Component {
+interface CustomDropdownState {
+  brandColor: typeof colors[0];
+}
+
+class CustomDropdown extends React.Component<{}, CustomDropdownState> {
+  state = {
+    brandColor: colors[0],
+  };
+
   render() {
     return (
       <Card firstWidth={55} lastWidth={45}>
@@ -31,8 +41,12 @@ class CustomDropdown extends React.Component {
             could inherit the colors of the site dynamically.
           </ParagraphFont>
           <DemoArea>
-            <ColorSelector />
+            <ColorSelector
+              onColorClick={() => console.log('onColorClick')}
+              selectedColor={this.state.brandColor}
+            />
             <Dropdown
+              color={this.state.brandColor}
               options={[
                 {
                   value: DropdownOptionKey.HIGHEST_RATED,

@@ -21,19 +21,28 @@ const Square = styled.div`
   cursor: pointer;
 `;
 
-class ColorSelector extends React.Component {
-  render() {
-    return (
-      <div>
-        <MicroFont>Select a color:</MicroFont>
-        <ColorPallette>
-          {_.map(colors, (color: string) => (
-            <Square style={{ backgroundColor: color }} />
-          ))}
-        </ColorPallette>
-      </div>
-    );
-  }
+interface ColorSelectorProps {
+  onColorClick: (color: typeof colors[0]) => void;
+  selectedColor: typeof colors[0];
 }
+
+const ColorSelector: React.FC<ColorSelectorProps> = (
+  props: ColorSelectorProps,
+) => (
+  <div>
+    <MicroFont>
+      Here is the color-customizable dropdown menu in action!
+    </MicroFont>
+    <ColorPallette>
+      {_.map(colors, (color: typeof colors[0]) => (
+        <Square
+          key={color}
+          style={{ backgroundColor: color }}
+          onClick={() => props.onColorClick(color)}
+        />
+      ))}
+    </ColorPallette>
+  </div>
+);
 
 export default ColorSelector;

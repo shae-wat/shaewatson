@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import {
+  Colors,
   HeaderFont,
   SubheaderFont,
   ParagraphFont,
@@ -11,19 +12,25 @@ import { AlaskaDispatchNewsDropdownImageSrc } from '../../images';
 import { Dropdown, DropdownOptionKey, ColorSelector } from '../components';
 import { Card, CardTextContent, CardImageContent } from '.';
 
-const colors = ['#babfff', '#1414cc', '#e5c1bf', '#ffb6c1', '#fa225b'];
+const brandColors = [
+  Colors.lightPurple,
+  Colors.darkBlue,
+  Colors.tanPink,
+  Colors.millenialPink,
+  Colors.red,
+];
 
 const DemoArea = styled.div`
   padding: ${rhythm(1)}px 0;
 `;
 
 interface CustomDropdownState {
-  brandColor: typeof colors[0];
+  brandColor: typeof Colors.millenialPink;
 }
 
 class CustomDropdown extends React.Component<{}, CustomDropdownState> {
   state = {
-    brandColor: colors[0],
+    brandColor: brandColors[0],
   };
 
   render() {
@@ -42,7 +49,10 @@ class CustomDropdown extends React.Component<{}, CustomDropdownState> {
           </ParagraphFont>
           <DemoArea>
             <ColorSelector
-              onColorClick={() => console.log('onColorClick')}
+              options={brandColors}
+              onColorClick={(brandColor: typeof Colors.millenialPink) =>
+                this.setState({ brandColor })
+              }
               selectedColor={this.state.brandColor}
             />
             <Dropdown

@@ -1,9 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import _ from 'lodash';
-import { gutter, rhythm, MicroFont } from '../../styles';
-
-const colors = ['#babfff', '#1414cc', '#e5c1bf', '#ffb6c1', '#fa225b'];
+import { gutter, rhythm, MicroFont, Colors } from '../../styles';
 
 const ColorPallette = styled.div`
   display: flex;
@@ -22,8 +20,9 @@ const Square = styled.div`
 `;
 
 interface ColorSelectorProps {
-  onColorClick: (color: typeof colors[0]) => void;
-  selectedColor: typeof colors[0];
+  onColorClick: (color: typeof Colors.millenialPink) => void;
+  selectedColor: typeof Colors.millenialPink;
+  options: Array<typeof Colors.millenialPink>;
 }
 
 const ColorSelector: React.FC<ColorSelectorProps> = (
@@ -34,7 +33,7 @@ const ColorSelector: React.FC<ColorSelectorProps> = (
       Here is the color-customizable dropdown menu in action!
     </MicroFont>
     <ColorPallette>
-      {_.map(colors, (color: typeof colors[0]) => (
+      {_.map(props.options, (color: typeof Colors.millenialPink) => (
         <Square
           key={color}
           style={{ backgroundColor: color }}

@@ -1,10 +1,44 @@
 import React from 'react';
-import { HeaderFont, SubheaderFont, ParagraphFont, rhythm } from '../../styles';
+import styled from 'styled-components';
+import {
+  Colors,
+  HeaderFont,
+  SubheaderFont,
+  ParagraphFont,
+  MicroFont,
+  LinkText,
+  rhythm,
+  gutter,
+} from '../../styles';
 import { AlaskaDispatchNewsDropdownImageSrc } from '../../images';
-import { Dropdown } from '../components';
+import { Dropdown, DropdownOptionKey, ColorSelector } from '../components';
 import { Card, CardTextContent, CardImageContent } from '.';
 
-class CustomDropdown extends React.Component {
+const brandColors = [
+  Colors.lightPurple,
+  Colors.darkBlue,
+  Colors.tanPink,
+  Colors.millenialPink,
+  Colors.red,
+];
+
+const DemoArea = styled.div`
+  padding: ${rhythm(1)}px 0;
+  background-color: ${Colors.white};
+  border-radius: 4px;
+  color: ${Colors.background};
+  padding: ${rhythm(1)}px ${gutter(1)}px;
+`;
+
+interface CustomDropdownState {
+  brandColor: typeof Colors.millenialPink;
+}
+
+class CustomDropdown extends React.Component<{}, CustomDropdownState> {
+  state = {
+    brandColor: brandColors[0],
+  };
+
   render() {
     return (
       <Card firstWidth={55} lastWidth={45}>
@@ -14,12 +48,54 @@ class CustomDropdown extends React.Component {
             <SubheaderFont>Civil Comments 2016</SubheaderFont>
           </span>
           <ParagraphFont>
-            I contibuted to a third party Javascript commenting app that could
+            I contributed to a third party Javascript commenting app that could
             could be customized to match its host webpage- mostly newspapers.
             Because of this, it was a nice touch to build a dropdown menu that
             could inherit the colors of the site dynamically.
           </ParagraphFont>
-          <Dropdown />
+          <DemoArea>
+            <ColorSelector
+              options={brandColors}
+              onColorClick={(brandColor: typeof Colors.millenialPink) =>
+                this.setState({ brandColor })
+              }
+              selectedColor={this.state.brandColor}
+            />
+            <Dropdown
+              color={this.state.brandColor}
+              options={[
+                {
+                  value: DropdownOptionKey.HIGHEST_RATED,
+                  label: 'Farm to Table',
+                },
+                {
+                  value: DropdownOptionKey.NEWEST_FIRST,
+                  label: 'Cold Pressed',
+                },
+                {
+                  value: DropdownOptionKey.MOST_REACTIONS,
+                  label: 'Local',
+                },
+                {
+                  value: DropdownOptionKey.MOST_DISAGREED,
+                  label: 'Bicycle',
+                },
+                {
+                  value: DropdownOptionKey.OLDEST_FIRST,
+                  label: 'Organic',
+                },
+              ]}
+            />
+          </DemoArea>
+          <MicroFont>
+            Dropdown value labels generated using{' '}
+            <LinkText
+              href="https://hipsum.co/"
+              target="_blank"
+              rel="noopener noreferrer">
+              Hipster Ipsum
+            </LinkText>
+          </MicroFont>
         </CardTextContent>
         <CardImageContent>
           <img

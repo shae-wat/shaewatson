@@ -1,1 +1,2 @@
-export { default as Dropdown } from './Dropdown';
+export * from './Dropdown';
+export { default as ColorSelector } from './ColorSelector';

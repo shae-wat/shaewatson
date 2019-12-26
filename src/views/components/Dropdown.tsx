@@ -1,7 +1,15 @@
 import React from 'react';
 import _ from 'lodash';
 import styled from 'styled-components';
-import { Colors, column, gutter, rhythm, FontCSS } from '../../styles';
+import {
+  Colors,
+  column,
+  gutter,
+  rhythm,
+  FontCSS,
+  mobileMediaQuery,
+  desktopMediaQuery,
+} from '../../styles';
 
 export enum DropdownOptionKey {
   HIGHEST_RATED,
@@ -19,7 +27,7 @@ interface DropdownOption {
 const StyledSelect = styled.div`
   position: relative;
   height: ${rhythm(3 / 2)}px;
-  width: ${column(3) + gutter(4)}px;
+  width: ${column(3) + gutter(2)}px;
   cursor: pointer;
 
   ${({ open }: { open: boolean }) => {
@@ -76,14 +84,31 @@ const StyledOption = styled.div`
   font-size: 16px;
   line-height: ${rhythm(1)}px;
 
-  ${({ opened, color }: { opened?: boolean; color?: string }) => {
+  ${({
+    opened,
+    color,
+    selected,
+  }: {
+    opened?: boolean;
+    color?: string;
+    selected?: boolean;
+  }) => {
     return opened
       ? `
         z-index: 100;
-        &:hover {
+        ${desktopMediaQuery(`&:hover {
           background-color: ${color};
           color: ${Colors.white};
-        }`
+        }`)}
+        ${mobileMediaQuery(
+          selected
+            ? `
+              background-color: ${color};
+              color: ${Colors.white};
+            `
+            : '',
+        )}
+        `
       : 'border-radius: 2px;';
   }}
 `;
@@ -124,6 +149,7 @@ export class Dropdown extends React.Component<DropdownProps, DropdownState> {
                   key={option.value}
                   opened
                   color={color}
+                  selected={this.state.selectedOption === option.value}
                   onClick={() =>
                     this.setState({
                       selectedOption: option.value,

@@ -3,8 +3,6 @@ export const columnSizePx = 80;
 
 export const rhythmSizePx = 24;
 
-export const appMaxWidth = columnSizePx * 15;
-
 export const gutter = (numGutters: number) => {
   return gutterSizePx * numGutters;
 };
@@ -16,3 +14,5 @@ export const column = (numColumns: number) => {
 export const rhythm = (numRhythms: number) => {
   return rhythmSizePx * numRhythms;
 };
+
+export const CONTENT_MAX_WIDTH = column(14) + gutter(13);

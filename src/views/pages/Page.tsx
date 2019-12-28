@@ -2,10 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 import {
   gutter,
-  column,
   rhythm,
   mobileMediaQuery,
   tabletMediaQuery,
+  CONTENT_MAX_WIDTH,
 } from '../../styles';
 
 export const PageTitleLayout = styled.div`
@@ -55,7 +55,7 @@ interface PageProps {
 
 const StyledPage = styled.section`
   position: relative;
-  max-width: ${column(14) + gutter(13)}px;
+  max-width: ${CONTENT_MAX_WIDTH}px;
 
   margin-left: auto;
   margin-right: auto;

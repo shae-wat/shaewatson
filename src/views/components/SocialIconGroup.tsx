@@ -13,6 +13,10 @@ const SocialIconGroupContainer = styled.div`
   }
 `;
 
+const StyledCustomIcon = styled.img`
+  border-radius: 33px;
+`;
+
 const SocialIconGroup: React.FC = () => {
   return (
     <SocialIconGroupContainer>
@@ -32,7 +36,7 @@ const SocialIconGroup: React.FC = () => {
         href="https://medium.com/@shaewat"
         target="_blank"
         rel="noopener noreferrer">
-        <img src={SocialMediumImageSrc} height={33} alt="logo" />
+        <StyledCustomIcon src={SocialMediumImageSrc} height={33} alt="logo" />
       </a>
     </SocialIconGroupContainer>
   );

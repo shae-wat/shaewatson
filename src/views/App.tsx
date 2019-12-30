@@ -147,12 +147,7 @@ const App: React.FC = () => {
           <SubheaderFont>Handmade by Shae Watson</SubheaderFont>
           <SubheaderFont>2020</SubheaderFont>
           <ParagraphFont>
-            Code stylings represent my personal perferences and current
-            understanding of the ideal code and design implementation for a
-            scalable React.js app.
-          </ParagraphFont>
-          <ParagraphFont>
-            This website and representation of my work for companies do not
+            This website and representation of my work for companies does not
             reflect or represent the opinions or plans of those companies.
           </ParagraphFont>
           <ParagraphFont>
@@ -174,6 +169,11 @@ const App: React.FC = () => {
               shae@shaewatson.com
             </LinkText>
             .
+          </ParagraphFont>
+          <ParagraphFont>
+            This website represents my personal perferences and current
+            understanding of the ideal code, architecture, and design for a
+            scalable React.js web app. I picked the colors!
           </ParagraphFont>
         </FooterSection>
       </AppFooter>

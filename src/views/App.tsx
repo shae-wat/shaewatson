@@ -40,7 +40,7 @@ const AppHeader = styled.header`
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   min-height: ${HEADER_HEIGHT}vh;
   background-color: ${Colors.footerBackground};
 
@@ -49,6 +49,12 @@ const AppHeader = styled.header`
   margin-left: auto;
 
   padding: 0 ${gutter(1)}px;
+  border-radius: 0 0 4px 4px;
+`;
+
+const AppTitle = styled.span`
+  display: flex;
+  justify-content: row;
   > * {
     margin-right: ${gutter(1)}px;
   }
@@ -72,9 +78,7 @@ const AppFooter = styled.footer`
   margin-left: auto;
 
   padding: 0 ${gutter(1)}px;
-  > * {
-    margin-right: ${gutter(1)}px;
-  }
+  border-radius: 4px 4px 0 0;
 `;
 
 const App: React.FC = () => {
@@ -82,8 +86,10 @@ const App: React.FC = () => {
     <AppContainer>
       <div>
         <AppHeader>
-          <img src={ReactLogoImageSrc} height={40} alt="logo" />
-          <HeaderFont>Shae Watson</HeaderFont>
+          <AppTitle>
+            <img src={ReactLogoImageSrc} height={40} alt="logo" />
+            <HeaderFont>Shae Watson</HeaderFont>
+          </AppTitle>
           <SocialIconGroup />
         </AppHeader>
         <Main>

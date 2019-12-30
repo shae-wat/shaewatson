@@ -1,6 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
-import { gutter, Colors, HeaderFont, CONTENT_MAX_WIDTH } from '../styles';
+import {
+  gutter,
+  rhythm,
+  Colors,
+  HeaderFont,
+  CONTENT_MAX_WIDTH,
+  ParagraphFont,
+  SubheaderFont,
+  LinkText,
+  tabletMediaQuery,
+} from '../styles';
 import { ReactLogoImageSrc } from '../images';
 import { FeaturedWorkPage } from './pages';
 import SocialIconGroup from './components/SocialIconGroup';
@@ -14,7 +24,7 @@ const AppContainer = styled.section`
   background-color: ${Colors.background};
   color: ${Colors.white}
   min-height: 100vh;
-  width: 100%;
+  min-width: 100%;
 
   margin-right: auto;
   margin-left: auto;
@@ -55,6 +65,7 @@ const AppHeader = styled.header`
 const AppTitle = styled.span`
   display: flex;
   justify-content: row;
+  align-items: center;
   > * {
     margin-right: ${gutter(1)}px;
   }
@@ -72,19 +83,36 @@ const AppFooter = styled.footer`
   min-height: ${HEADER_HEIGHT * 3}vh;
   background-color: ${Colors.footerBackground};
 
-  width: 100%;
+  position: relative;
   max-width: ${CONTENT_MAX_WIDTH}px;
   margin-right: auto;
   margin-left: auto;
 
-  padding: 0 ${gutter(1)}px;
+  padding: ${rhythm(2)}px ${gutter(2)}px;
   border-radius: 4px 4px 0 0;
+  ${tabletMediaQuery(
+    `flex-direction: column; padding: ${rhythm(2)}px ${gutter(1 / 2)}px;`,
+  )}
+  > * {
+    padding-right: ${gutter(1)}px;
+    width: 30%;
+    ${tabletMediaQuery(
+      `padding-right: 0; padding-bottom: ${rhythm(1)}px; width: 85%;`,
+    )}
+  }
+`;
+const FooterSection = styled.div`
+  display: flex;
+  flex-direction: column;
+  > p {
+    margin-top: ${rhythm(1)}px;
+  }
 `;
 
 const App: React.FC = () => {
   return (
     <AppContainer>
-      <div>
+      <div style={{ width: '100%' }}>
         <AppHeader>
           <AppTitle>
             <img src={ReactLogoImageSrc} height={40} alt="logo" />
@@ -98,6 +126,35 @@ const App: React.FC = () => {
       </div>
       <AppFooter>
         <SocialIconGroup />
+        <div>
+          <SubheaderFont>Tech stack used for this site:</SubheaderFont>
+          <ParagraphFont>Create React App</ParagraphFont>
+          <ParagraphFont>Node / Webpack / Babel</ParagraphFont>
+          <ParagraphFont>Typescript</ParagraphFont>
+          <ParagraphFont>React.js</ParagraphFont>
+        </div>
+        <FooterSection>
+          <SubheaderFont>Handmade by Shae Watson</SubheaderFont>
+          <SubheaderFont>2020</SubheaderFont>
+          <ParagraphFont>
+            Code stylings represent my personal perferences and current
+            understanding of the ideal code and design implementation for a
+            scalable React.js app.
+          </ParagraphFont>
+          <ParagraphFont>
+            This website and representation of my work for companies do not
+            reflect or represent the opinions or plans of those companies.
+          </ParagraphFont>
+          <ParagraphFont>
+            The public code for this website can be found{' '}
+            <LinkText
+              href="https://github.com/shae-wat/shaewatson"
+              target="_blank"
+              rel="noopener noreferrer">
+              {' here'}
+            </LinkText>
+          </ParagraphFont>
+        </FooterSection>
       </AppFooter>
     </AppContainer>
   );

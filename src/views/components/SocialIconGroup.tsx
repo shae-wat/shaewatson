@@ -5,11 +5,12 @@ import {
   SocialLinkedInImageSrc,
   SocialMediumImageSrc,
 } from '../../images';
-import { gutter } from '../../styles';
+import { gutter, mobileMediaQuery } from '../../styles';
 
 const SocialIconGroupContainer = styled.div`
   > * {
     margin-right: ${gutter(1)}px;
+    ${mobileMediaQuery(`margin-right: ${gutter(1 / 2)}px;`)}
   }
 `;
 

@@ -9,6 +9,7 @@ import {
   ParagraphFont,
   SubheaderFont,
   LinkText,
+  mobileMediaQuery,
   tabletMediaQuery,
 } from '../styles';
 import { ReactLogoImageSrc } from '../images';
@@ -68,6 +69,7 @@ const AppTitle = styled.span`
   align-items: center;
   > * {
     margin-right: ${gutter(1)}px;
+    ${mobileMediaQuery(`margin-right: ${gutter(1 / 2)}px;`)}
   }
 `;
 
@@ -112,7 +114,7 @@ const FooterSection = styled.div`
 const App: React.FC = () => {
   return (
     <AppContainer>
-      <div style={{ width: '100%' }}>
+      <div>
         <AppHeader>
           <AppTitle>
             <img src={ReactLogoImageSrc} height={40} alt="logo" />
@@ -128,7 +130,15 @@ const App: React.FC = () => {
         <SocialIconGroup />
         <div>
           <SubheaderFont>Tech stack used for this site:</SubheaderFont>
-          <ParagraphFont>Create React App</ParagraphFont>
+          <ParagraphFont>
+            <LinkText
+              color={Colors.lightBlue}
+              href="https://github.com/facebook/create-react-app"
+              target="_blank"
+              rel="noopener noreferrer">
+              Create React App
+            </LinkText>
+          </ParagraphFont>
           <ParagraphFont>Node / Webpack / Babel</ParagraphFont>
           <ParagraphFont>Typescript</ParagraphFont>
           <ParagraphFont>React.js</ParagraphFont>
@@ -148,11 +158,22 @@ const App: React.FC = () => {
           <ParagraphFont>
             The public code for this website can be found{' '}
             <LinkText
+              color={Colors.lightBlue}
               href="https://github.com/shae-wat/shaewatson"
               target="_blank"
               rel="noopener noreferrer">
               {' here'}
             </LinkText>
+            . I am always open to feedback or a heads-up for a better way to do
+            something or a bug I missed, email me at{' '}
+            <LinkText
+              color={Colors.lightBlue}
+              href="mailto:shae@shaewatson.com"
+              target="_blank"
+              rel="noopener noreferrer">
+              shae@shaewatson.com
+            </LinkText>
+            .
           </ParagraphFont>
         </FooterSection>
       </AppFooter>

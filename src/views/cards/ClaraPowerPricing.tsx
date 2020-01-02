@@ -42,13 +42,12 @@ const ClaraPowerPricing: React.FC = () => {
           </LogoSubtitle>
         </span>
         <ParagraphFont>
-          At Clara Lending loan officers used the Power Pricing Page as an admin
-          page to manage mortgage applications.
+          At Clara Lending, loan officers used the Power Pricing Page as an
+          admin page to manage mortgage applications.
         </ParagraphFont>
         <ParagraphFont>
-          Loan officers input mortgage pre-approval information into the page,
-          then choose from the search results of clearly differentiated Clara
-          Lending-priced loan products.
+          Loan officers input desired loan attributes into the page, then choose
+          from the filtered search results of internally priced loan products.
         </ParagraphFont>
       </CardTextContent>
     </Card>

@@ -28,16 +28,24 @@ const OroxWebsite: React.FC = () => {
           </LogoSubtitle>
         </span>
         <ParagraphFont>
-          {`In my early career, I especially enjoyed styling the `}
+          In my early career, I grew in basic but significant ways styling the{' '}
           <a
             href="https://www.oroxleather.com/"
             target="_blank"
             rel="noopener noreferrer">
             Orox Leather
-          </a>
-          {` website. Orox sells unique, fine leather products and needed a website
-          to reflect their unique and special style. I made CSS and JS changes to an
-          existing Shopify theme to match their requested website design, pictured here.`}
+          </a>{' '}
+          website.
+        </ParagraphFont>
+        <ParagraphFont>
+          After a lifetime of mostly academia up to this point, this project
+          from a local family-owned business helped me become a scrappy product
+          owner and manage a website on my own. I experienced the pride that
+          comes from building the "face" of a business for the first time.
+        </ParagraphFont>
+        <ParagraphFont>
+          I made CSS and JS changes to an existing Shopify theme to match their
+          requested website design, pictured here.
         </ParagraphFont>
       </CardTextContent>
       <CardImageContent>

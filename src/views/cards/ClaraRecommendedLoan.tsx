@@ -9,7 +9,7 @@ const ClaraRecommendedLoan: React.FC = () => {
     <Card firstWidth={50} lastWidth={50} lastJustifyContentCenter>
       <CardTextContent>
         <span>
-          <HeaderFont>Loan Recommendation: Borrower UI</HeaderFont>
+          <HeaderFont>Mortgage Pre-approval and Recommendation</HeaderFont>
           <LogoSubtitle>
             <img
               src={ClaraLogo}
@@ -31,10 +31,14 @@ const ClaraRecommendedLoan: React.FC = () => {
           which is often required by realtors before showing a property.
         </ParagraphFont>
         <ParagraphFont>
-          At the end of a step-by-step flow with questions for a mortgage
-          pre-qualification application, the user at Clara Lending was
-          recommended a loan for which they could apply for preapproval- along
-          with the option to select an alternative loan option.
+          At the end of a clearly designed question-by-question flow for a
+          mortgage pre-qualification application, Clara Lending recommended a
+          loan to the user.
+        </ParagraphFont>
+        <ParagraphFont>
+          The user could then continue through the flow to apply for
+          pre-approval for the recommended loan, or could view and apply for
+          alternative loan options based on their pre-qualification application.
         </ParagraphFont>
       </CardTextContent>
       <CardImageContent>

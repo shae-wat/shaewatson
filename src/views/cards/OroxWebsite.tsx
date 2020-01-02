@@ -20,7 +20,7 @@ const OroxWebsite: React.FC = () => {
             Orox Leather
           </a>
           {` website. Orox sells unique, fine leather products and needed a website
-          to reflect their unique and special style. I made CSS and JS changes to the
+          to reflect their unique and special style. I made CSS and JS changes to an
           existing Shopify theme to match their requested website design, pictured here.`}
         </ParagraphFont>
       </CardTextContent>

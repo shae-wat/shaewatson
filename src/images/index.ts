@@ -13,3 +13,6 @@ export { default as SocialMediumImageSrc } from './social_medium.png';
 export { default as ReactLogoImageSrc } from './logo.svg';
 export { default as FlightStatsLogo } from './fslogo.jpg';
 export { default as UTLogo } from './utlogo.png';
+export { default as OroxLogo } from './oroxLogo.png';
+export { default as CivilLogo } from './civilLogo.png';
+export { default as ClaraLogo } from './claraLogo.png';

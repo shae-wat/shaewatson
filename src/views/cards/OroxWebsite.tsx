@@ -2,6 +2,8 @@ import React from 'react';
 import { OroxWebsiteImageSrc } from '../../images';
 import { HeaderFont, SubheaderFont, ParagraphFont } from '../../styles';
 import { Card, CardTextContent, CardImageContent } from '.';
+import { OroxLogo } from '../../images';
+import { LogoSubtitle } from '../components';
 
 const OroxWebsite: React.FC = () => {
   return (
@@ -9,7 +11,21 @@ const OroxWebsite: React.FC = () => {
       <CardTextContent>
         <span>
           <HeaderFont>Orox Leather Customized Website</HeaderFont>
-          <SubheaderFont>Orox Leather 2015</SubheaderFont>
+          <LogoSubtitle>
+            <img
+              src={OroxLogo}
+              alt="Orox Leather logo"
+              style={{
+                display: 'block',
+                maxWidth: '30px',
+                maxHeight: '30px',
+                width: '100%',
+                height: 'auto',
+                objectFit: 'contain',
+              }}
+            />
+            <SubheaderFont>Orox Leather 2015</SubheaderFont>
+          </LogoSubtitle>
         </span>
         <ParagraphFont>
           {`In my early career, I especially enjoyed styling the `}

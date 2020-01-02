@@ -36,8 +36,8 @@ const FlightStatsArrivalsDepartures: React.FC = () => {
               alt="FlightStats logo"
               style={{
                 display: 'block',
-                maxWidth: '40px',
-                maxHeight: '40px',
+                maxWidth: '30px',
+                maxHeight: '30px',
                 width: '100%',
                 height: 'auto',
                 objectFit: 'contain',

@@ -1,7 +1,8 @@
 import React from 'react';
 import { HeaderFont, SubheaderFont, ParagraphFont } from '../../styles';
-import { ClaraRecommendedLoanImageSrc } from '../../images';
+import { ClaraRecommendedLoanImageSrc, ClaraLogo } from '../../images';
 import { Card, CardTextContent, CardImageContent } from '.';
+import { LogoSubtitle } from '../components';
 
 const ClaraRecommendedLoan: React.FC = () => {
   return (
@@ -9,7 +10,21 @@ const ClaraRecommendedLoan: React.FC = () => {
       <CardTextContent>
         <span>
           <HeaderFont>Loan Recommendation: Borrower UI</HeaderFont>
-          <SubheaderFont>Clara Lending 2017</SubheaderFont>
+          <LogoSubtitle>
+            <img
+              src={ClaraLogo}
+              alt="Clara Lending logo"
+              style={{
+                display: 'block',
+                maxWidth: '30px',
+                maxHeight: '30px',
+                width: '100%',
+                height: 'auto',
+                objectFit: 'contain',
+              }}
+            />
+            <SubheaderFont>Clara Lending 2017</SubheaderFont>
+          </LogoSubtitle>
         </span>
         <ParagraphFont>
           One step of buying a home is getting pre-approved for a mortgage,

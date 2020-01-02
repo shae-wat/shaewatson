@@ -10,8 +10,13 @@ import {
   rhythm,
   gutter,
 } from '../../styles';
-import { AlaskaDispatchNewsDropdownImageSrc } from '../../images';
-import { Dropdown, DropdownOptionKey, ColorSelector } from '../components';
+import { AlaskaDispatchNewsDropdownImageSrc, CivilLogo } from '../../images';
+import {
+  Dropdown,
+  DropdownOptionKey,
+  ColorSelector,
+  LogoSubtitle,
+} from '../components';
 import { Card, CardTextContent, CardImageContent } from '.';
 
 const brandColors = [
@@ -45,7 +50,21 @@ class CustomDropdown extends React.Component<{}, CustomDropdownState> {
         <CardTextContent paddingTop={rhythm(1 / 2)}>
           <span>
             <HeaderFont>Customizable Dropdown React Component</HeaderFont>
-            <SubheaderFont>Civil Comments 2016</SubheaderFont>
+            <LogoSubtitle>
+              <img
+                src={CivilLogo}
+                alt="Civil Comments logo"
+                style={{
+                  display: 'block',
+                  maxWidth: '30px',
+                  maxHeight: '30px',
+                  width: '100%',
+                  height: 'auto',
+                  objectFit: 'contain',
+                }}
+              />
+              <SubheaderFont>Civil Comments 2016</SubheaderFont>
+            </LogoSubtitle>
           </span>
           <ParagraphFont>
             I contributed to a third party Javascript commenting app that could

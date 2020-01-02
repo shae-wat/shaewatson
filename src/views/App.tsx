@@ -159,21 +159,12 @@ const App: React.FC = () => {
               rel="noopener noreferrer">
               {' here'}
             </LinkText>
-            . I am always open to feedback or a heads-up for a better way to do
-            something or a bug I missed, email me at{' '}
-            <LinkText
-              color={Colors.lightBlue}
-              href="mailto:shae@shaewatson.com"
-              target="_blank"
-              rel="noopener noreferrer">
-              shae@shaewatson.com
-            </LinkText>
             .
           </ParagraphFont>
           <ParagraphFont>
-            This website represents my personal perferences and current
+            This website represents my personal preferences and current
             understanding of the ideal code, architecture, and design for a
-            scalable React.js web app. I picked the colors!
+            scalable React.js web app. I also picked the colors!
           </ParagraphFont>
         </FooterSection>
       </AppFooter>

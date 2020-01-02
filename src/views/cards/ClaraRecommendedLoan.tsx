@@ -1,25 +1,44 @@
 import React from 'react';
 import { HeaderFont, SubheaderFont, ParagraphFont } from '../../styles';
-import { ClaraRecommendedLoanImageSrc } from '../../images';
+import { ClaraRecommendedLoanImageSrc, ClaraLogo } from '../../images';
 import { Card, CardTextContent, CardImageContent } from '.';
+import { LogoSubtitle } from '../components';
 
 const ClaraRecommendedLoan: React.FC = () => {
   return (
     <Card firstWidth={50} lastWidth={50} lastJustifyContentCenter>
       <CardTextContent>
         <span>
-          <HeaderFont>Loan Recommendation: Borrower UI</HeaderFont>
-          <SubheaderFont>Clara Lending 2017</SubheaderFont>
+          <HeaderFont>Mortgage Pre-Approval and Recommendation</HeaderFont>
+          <LogoSubtitle>
+            <img
+              src={ClaraLogo}
+              alt="Clara Lending logo"
+              style={{
+                display: 'block',
+                maxWidth: '30px',
+                maxHeight: '30px',
+                width: '100%',
+                height: 'auto',
+                objectFit: 'contain',
+              }}
+            />
+            <SubheaderFont>Clara Lending 2017</SubheaderFont>
+          </LogoSubtitle>
         </span>
         <ParagraphFont>
           One step of buying a home is getting pre-approved for a mortgage,
           which is often required by realtors before showing a property.
         </ParagraphFont>
         <ParagraphFont>
-          At the end of a step-by-step flow with questions for a mortgage
-          pre-qualification application, the user at Clara Lending was
-          recommended a loan for which they could apply for preapproval- along
-          with the option to select an alternative loan option.
+          At the end of a clearly designed question-by-question flow for a
+          mortgage pre-qualification application, Clara Lending recommended a
+          loan to the user.
+        </ParagraphFont>
+        <ParagraphFont>
+          The user could then continue through the flow to apply for
+          pre-approval for the recommended loan, or could view and apply for
+          alternative loan options based on their pre-qualification application.
         </ParagraphFont>
       </CardTextContent>
       <CardImageContent>

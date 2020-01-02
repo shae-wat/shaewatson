@@ -39,9 +39,10 @@ const OroxWebsite: React.FC = () => {
         </ParagraphFont>
         <ParagraphFont>
           After a lifetime of mostly academia up to this point, this project
-          from a local family-owned business helped me become a scrappy product
-          owner and manage a website on my own. I experienced the pride that
-          comes from building the "face" of a business for the first time.
+          from a local family-owned business helped me become a scrappy web
+          product owner and manage a website on my own. I experienced the pride
+          that comes from building and maintaining the UI of a business for the
+          first time.
         </ParagraphFont>
         <ParagraphFont>
           I made CSS and JS changes to an existing Shopify theme to match their

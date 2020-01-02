@@ -9,7 +9,7 @@ const ClaraRecommendedLoan: React.FC = () => {
     <Card firstWidth={50} lastWidth={50} lastJustifyContentCenter>
       <CardTextContent>
         <span>
-          <HeaderFont>Mortgage Pre-approval and Recommendation</HeaderFont>
+          <HeaderFont>Mortgage Pre-Approval and Recommendation</HeaderFont>
           <LogoSubtitle>
             <img
               src={ClaraLogo}

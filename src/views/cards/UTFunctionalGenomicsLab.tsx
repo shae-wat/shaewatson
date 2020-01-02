@@ -2,8 +2,15 @@ import React from 'react';
 import {
   UTFunctionalGenomicsLabImageSrc,
   UTFunctionalGenomicsLabLogoSrc,
+  UTLogo,
 } from '../../images';
-import { HeaderFont, SubheaderFont, ParagraphFont, rhythm } from '../../styles';
+import {
+  HeaderFont,
+  SubheaderFont,
+  ParagraphFont,
+  rhythm,
+  gutter,
+} from '../../styles';
 import { Card, CardTextContent, CardImageContent } from '.';
 import { LogoSubtitle } from '../components';
 
@@ -30,8 +37,19 @@ const UTFunctionalGenomicsLab: React.FC = () => {
           <HeaderFont>Visualization of Changes in Gene Expression</HeaderFont>
           <LogoSubtitle>
             <img
+              src={UTLogo}
+              alt="UT Austin logo"
+              style={{
+                display: 'block',
+                maxWidth: '40px',
+                maxHeight: '40px',
+                width: '100%',
+                height: 'auto',
+                objectFit: 'contain',
+              }}
+            />
+            <img
               src={UTFunctionalGenomicsLabLogoSrc}
-              height="auto"
               alt="UT Austin Functional Genomics logo"
               style={{
                 display: 'block',
@@ -40,6 +58,8 @@ const UTFunctionalGenomicsLab: React.FC = () => {
                 width: '100%',
                 height: 'auto',
                 objectFit: 'contain',
+                alignSelf: 'flex-end',
+                marginLeft: `${gutter(1 / 2)}px`,
               }}
             />
             <SubheaderFont>Functional Genomics Research Lab 2011</SubheaderFont>
@@ -57,9 +77,9 @@ const UTFunctionalGenomicsLab: React.FC = () => {
         </ParagraphFont>
         <ParagraphFont>
           After micropipetting for a few months, I switched to writing code and
-          leading a visualization effort for the data of the lab in order to
-          parse meaning from the gigabytes of data produced by next generation
-          sequencing technology.
+          leading a visualization effort for the lab in order to parse meaning
+          from the gigabytes of data produced by next generation sequencing
+          technology.
         </ParagraphFont>
         <ParagraphFont>
           The software I wrote drew presentable images of interesting features

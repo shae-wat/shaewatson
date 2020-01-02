@@ -11,3 +11,5 @@ export { default as SocialGithubImageSrc } from './social_github.png';
 export { default as SocialLinkedInImageSrc } from './social_linkedin.png';
 export { default as SocialMediumImageSrc } from './social_medium.png';
 export { default as ReactLogoImageSrc } from './logo.svg';
+export { default as FlightStatsLogo } from './fslogo.jpg';
+export { default as UTLogo } from './utlogo.png';

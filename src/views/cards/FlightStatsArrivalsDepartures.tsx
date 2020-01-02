@@ -5,8 +5,9 @@ import {
   ParagraphFont,
   LinkText,
 } from '../../styles';
-import { FSDepArrImageSrc } from '../../images';
+import { FSDepArrImageSrc, FlightStatsLogo } from '../../images';
 import { Card, CardTextContent, CardImageContent } from '.';
+import { LogoSubtitle } from '../components';
 
 const FlightStatsArrivalsDepartures: React.FC = () => {
   return (
@@ -29,7 +30,21 @@ const FlightStatsArrivalsDepartures: React.FC = () => {
       <CardTextContent>
         <span>
           <HeaderFont>Airport Status Page</HeaderFont>
-          <SubheaderFont>FlightStats 2015</SubheaderFont>
+          <LogoSubtitle>
+            <img
+              src={FlightStatsLogo}
+              alt="FlightStats logo"
+              style={{
+                display: 'block',
+                maxWidth: '40px',
+                maxHeight: '40px',
+                width: '100%',
+                height: 'auto',
+                objectFit: 'contain',
+              }}
+            />
+            <SubheaderFont>FlightStats 2015</SubheaderFont>
+          </LogoSubtitle>
         </span>
         <ParagraphFont>
           On the{' '}

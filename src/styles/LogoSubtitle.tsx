@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { gutter } from '../../styles';
+import { gutter } from './constants';
 
 const LogoSubtitle = styled.div`
   display: flex;

@@ -1,9 +1,13 @@
 import React from 'react';
 import { OroxWebsiteImageSrc } from '../../images';
-import { HeaderFont, SubheaderFont, ParagraphFont } from '../../styles';
+import {
+  HeaderFont,
+  SubheaderFont,
+  ParagraphFont,
+  LogoSubtitle,
+} from '../../styles';
 import { Card, CardTextContent, CardImageContent } from '.';
 import { OroxLogo } from '../../images';
-import { LogoSubtitle } from '../components';
 
 const OroxWebsite: React.FC = () => {
   return (

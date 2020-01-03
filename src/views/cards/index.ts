@@ -4,7 +4,7 @@ export { default as FlightStatsArrivalsDeparturesCard } from './FlightStatsArriv
 export { default as OroxWebsiteCard } from './OroxWebsite';
 export { default as UTFunctionalGenomicsLabCard } from './UTFunctionalGenomicsLab';
 export { default as ClaraRecommendedLoanCard } from './ClaraRecommendedLoan';
-export { default as ClaraSecondaryFinancingCard } from './ClaraSecondaryFinancing';
 export { default as SauceTestingCard } from './CivilSauceTesting';
+export { default as RelayOfflineFirstCard } from './RelayOfflineFirst';
 
 export * from './Card';

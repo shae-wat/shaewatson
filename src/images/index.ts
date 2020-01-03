@@ -16,3 +16,4 @@ export { default as UTLogo } from './utlogo.png';
 export { default as OroxLogo } from './oroxLogo.png';
 export { default as CivilLogo } from './civilLogo.png';
 export { default as ClaraLogo } from './claraLogo.png';
+export { default as SofiLogo } from './sofiLogo.png';

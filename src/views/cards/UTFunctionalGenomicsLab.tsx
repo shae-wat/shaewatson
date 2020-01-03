@@ -10,9 +10,9 @@ import {
   ParagraphFont,
   rhythm,
   gutter,
+  LogoSubtitle,
 } from '../../styles';
 import { Card, CardTextContent, CardImageContent } from '.';
-import { LogoSubtitle } from '../components';
 
 const UTFunctionalGenomicsLab: React.FC = () => {
   return (

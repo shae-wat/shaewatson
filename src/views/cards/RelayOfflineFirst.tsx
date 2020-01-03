@@ -2,24 +2,24 @@ import React from 'react';
 import {
   HeaderFont,
   SubheaderFont,
-  ParagraphFont,
   LogoSubtitle,
+  ParagraphFont,
 } from '../../styles';
-import { PowerPricerImageSrc, ClaraLogo } from '../../images';
+import { SofiSpendingBurdownSrc, SofiLogo } from '../../images';
 import { Card, CardTextContent, CardImageContent } from '.';
 
-const ClaraPowerPricing: React.FC = () => {
+const RelayOfflineFirst: React.FC = () => {
   return (
     <Card>
       <CardImageContent>
         <img
-          src={PowerPricerImageSrc}
-          alt="Dashboard with inputs and search results for mortgage products at Clara Lending"
+          src={SofiSpendingBurdownSrc}
+          alt="Relay web app"
           role="presentation"
           style={{
             display: 'block',
-            maxWidth: '1431px',
-            maxHeight: '810px',
+            maxWidth: '800px',
+            maxHeight: '357px',
             width: '100%',
             height: 'auto',
             objectFit: 'contain',
@@ -28,11 +28,11 @@ const ClaraPowerPricing: React.FC = () => {
       </CardImageContent>
       <CardTextContent>
         <span>
-          <HeaderFont>Mortgage Pricing: Loan Officer UI</HeaderFont>
+          <HeaderFont>Data Loading for Mobile-First</HeaderFont>
           <LogoSubtitle>
             <img
-              src={ClaraLogo}
-              alt="Clara Lending logo"
+              src={SofiLogo}
+              alt="SoFi logo"
               style={{
                 display: 'block',
                 maxWidth: '30px',
@@ -42,20 +42,17 @@ const ClaraPowerPricing: React.FC = () => {
                 objectFit: 'contain',
               }}
             />
-            <SubheaderFont>Clara Lending 2017</SubheaderFont>
+            <SubheaderFont>SoFi 2018</SubheaderFont>
           </LogoSubtitle>
         </span>
         <ParagraphFont>
-          At Clara Lending, loan officers used the Power Pricing Page as an
-          admin page to manage mortgage applications.
+          Once data is loaded it should not be lost in an app session,
+          especially since it is easy to keep in the redux store.
         </ParagraphFont>
-        <ParagraphFont>
-          Loan officers input desired loan attributes into the page, then choose
-          from the filtered search results of internally priced loan products.
-        </ParagraphFont>
+        <ParagraphFont>Offline first</ParagraphFont>
       </CardTextContent>
     </Card>
   );
 };
 
-export default ClaraPowerPricing;
+export default RelayOfflineFirst;

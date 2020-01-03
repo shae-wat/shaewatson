@@ -4,10 +4,10 @@ import {
   SubheaderFont,
   ParagraphFont,
   LinkText,
+  LogoSubtitle,
 } from '../../styles';
 import { FSDepArrImageSrc, FlightStatsLogo } from '../../images';
 import { Card, CardTextContent, CardImageContent } from '.';
-import { LogoSubtitle } from '../components';
 
 const FlightStatsArrivalsDepartures: React.FC = () => {
   return (

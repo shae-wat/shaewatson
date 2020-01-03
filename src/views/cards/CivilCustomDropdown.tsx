@@ -9,14 +9,10 @@ import {
   LinkText,
   rhythm,
   gutter,
+  LogoSubtitle,
 } from '../../styles';
 import { AlaskaDispatchNewsDropdownImageSrc, CivilLogo } from '../../images';
-import {
-  Dropdown,
-  DropdownOptionKey,
-  ColorSelector,
-  LogoSubtitle,
-} from '../components';
+import { Dropdown, DropdownOptionKey, ColorSelector } from '../components';
 import { Card, CardTextContent, CardImageContent } from '.';
 
 const brandColors = [

@@ -1,8 +1,12 @@
 import React from 'react';
-import { HeaderFont, SubheaderFont, ParagraphFont } from '../../styles';
+import {
+  HeaderFont,
+  SubheaderFont,
+  ParagraphFont,
+  LogoSubtitle,
+} from '../../styles';
 import { ClaraRecommendedLoanImageSrc, ClaraLogo } from '../../images';
 import { Card, CardTextContent, CardImageContent } from '.';
-import { LogoSubtitle } from '../components';
 
 const ClaraRecommendedLoan: React.FC = () => {
   return (

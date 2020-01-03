@@ -15,7 +15,7 @@ const SoFiStyleConstants: React.FC = () => {
       <CardImageContent>
         <img
           src={SofiSharingConstantsSrc}
-          alt="Relay web app image"
+          alt="Drake no to non-descriptive way of writing CSS, Drake yes to descriptive way of writing CSS with design constants"
           role="presentation"
           style={{
             display: 'block',

@@ -14,7 +14,7 @@ const RelayHighUserVolume: React.FC = () => {
       <CardImageContent>
         <img
           src={SofiSpendingBurdownSrc}
-          alt="Relay web app image"
+          alt="Relay web app"
           role="presentation"
           style={{
             display: 'block',

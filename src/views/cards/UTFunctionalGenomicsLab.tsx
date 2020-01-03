@@ -9,7 +9,6 @@ import {
   SubheaderFont,
   ParagraphFont,
   rhythm,
-  gutter,
   LogoSubtitle,
 } from '../../styles';
 import { Card, CardTextContent, CardImageContent } from '.';
@@ -59,7 +58,6 @@ const UTFunctionalGenomicsLab: React.FC = () => {
                 height: 'auto',
                 objectFit: 'contain',
                 alignSelf: 'flex-end',
-                marginLeft: `${gutter(1 / 2)}px`,
               }}
             />
             <SubheaderFont>Functional Genomics Research Lab 2011</SubheaderFont>

@@ -19,8 +19,8 @@ const FeaturedWorkPage: React.FC = () => {
       <PageCardLayout>
         <RelayHighUserVolumeCard />
         <RelayOfflineFirstCard />
-        <SoFiStyleConstants />
         <RelayStrategiesStrategyCard />
+        <SoFiStyleConstants />
         <ClaraRecommendedLoanCard />
         <ClaraPowerPricingCard />
         <CustomDropdownCard />

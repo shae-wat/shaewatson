@@ -8,13 +8,19 @@ import {
   OroxWebsiteCard,
   UTFunctionalGenomicsLabCard,
   RelayOfflineFirstCard,
+  RelayStrategiesStrategyCard,
+  RelayHighUserVolumeCard,
+  SoFiStyleConstants,
 } from '../cards';
 
 const FeaturedWorkPage: React.FC = () => {
   return (
     <Page>
       <PageCardLayout>
+        <RelayHighUserVolumeCard />
         <RelayOfflineFirstCard />
+        <SoFiStyleConstants />
+        <RelayStrategiesStrategyCard />
         <ClaraRecommendedLoanCard />
         <ClaraPowerPricingCard />
         <CustomDropdownCard />

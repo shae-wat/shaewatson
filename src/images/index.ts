@@ -17,3 +17,5 @@ export { default as OroxLogo } from './oroxLogo.png';
 export { default as CivilLogo } from './civilLogo.png';
 export { default as ClaraLogo } from './claraLogo.png';
 export { default as SofiLogo } from './sofiLogo.png';
+export { default as SofiSpendingBurdownSrc } from './spending-burndown.png';
+export { default as SofiSharingConstantsSrc } from './sharing-constants.png';

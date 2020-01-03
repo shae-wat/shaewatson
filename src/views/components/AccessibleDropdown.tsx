@@ -30,7 +30,9 @@ const StyledDropdownContainer = styled.div`
 
   cursor: pointer;
   width: 100%;
+
   max-width: ${column(3) + gutter(4)}px;
+  padding: ${rhythm(2 / 3)}px ${gutter(1)}px;
 
   &:after {
     position: absolute;

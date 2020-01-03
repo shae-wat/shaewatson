@@ -8,7 +8,7 @@ import {
 import { SofiSpendingBurdownSrc, SofiLogo } from '../../images';
 import { Card, CardTextContent, CardImageContent } from '.';
 
-const RelayOfflineFirst: React.FC = () => {
+const RelayStrategiesStrategy: React.FC = () => {
   return (
     <Card>
       <CardImageContent>
@@ -28,7 +28,7 @@ const RelayOfflineFirst: React.FC = () => {
       </CardImageContent>
       <CardTextContent>
         <span>
-          <HeaderFont>Data Loading for Mobile-First</HeaderFont>
+          <HeaderFont>Launch Personal Finance Managment Web App</HeaderFont>
           <LogoSubtitle>
             <img
               src={SofiLogo}
@@ -46,13 +46,16 @@ const RelayOfflineFirst: React.FC = () => {
           </LogoSubtitle>
         </span>
         <ParagraphFont>
-          Once data is loaded it should not be lost in an app session,
-          especially since it is easy to keep in the redux store.
+          Values and Strategies When this project was just starting out, values
+          were established that led to the architectural and code stylings of
+          this project
         </ParagraphFont>
-        <ParagraphFont>Offline first</ParagraphFont>
+        <ParagraphFont>values</ParagraphFont>
+        <ParagraphFont>strategies</ParagraphFont>
+        <ParagraphFont>launch date</ParagraphFont>
       </CardTextContent>
     </Card>
   );
 };
 
-export default RelayOfflineFirst;
+export default RelayStrategiesStrategy;

@@ -8,7 +8,7 @@ import {
 import { SofiSpendingBurdownSrc, SofiLogo } from '../../images';
 import { Card, CardTextContent, CardImageContent } from '.';
 
-const RelayOfflineFirst: React.FC = () => {
+const RelayHighUserVolume: React.FC = () => {
   return (
     <Card>
       <CardImageContent>
@@ -28,7 +28,7 @@ const RelayOfflineFirst: React.FC = () => {
       </CardImageContent>
       <CardTextContent>
         <span>
-          <HeaderFont>Data Loading for Mobile-First</HeaderFont>
+          <HeaderFont>Monitoring a high-volume app</HeaderFont>
           <LogoSubtitle>
             <img
               src={SofiLogo}
@@ -42,17 +42,16 @@ const RelayOfflineFirst: React.FC = () => {
                 objectFit: 'contain',
               }}
             />
-            <SubheaderFont>SoFi 2018</SubheaderFont>
+            <SubheaderFont>SoFi 2019</SubheaderFont>
           </LogoSubtitle>
         </span>
+        <ParagraphFont>number of users</ParagraphFont>
         <ParagraphFont>
-          Once data is loaded it should not be lost in an app session,
-          especially since it is easy to keep in the redux store.
+          error tracking and alerting - Error reporting based on UI/UX strategy
         </ParagraphFont>
-        <ParagraphFont>Offline first</ParagraphFont>
       </CardTextContent>
     </Card>
   );
 };
 
-export default RelayOfflineFirst;
+export default RelayHighUserVolume;

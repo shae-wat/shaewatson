@@ -7,6 +7,7 @@ const LogoSubtitle = styled.div`
 
   > h2 {
     margin-left: ${gutter(1 / 2)}px;
+    align-self: center;
   }
 
   > img {

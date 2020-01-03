@@ -7,9 +7,6 @@ import {
   FlightStatsArrivalsDeparturesCard,
   OroxWebsiteCard,
   UTFunctionalGenomicsLabCard,
-  RelayOfflineFirstCard,
-  RelayStrategiesStrategyCard,
-  RelayHighUserVolumeCard,
   SoFiStyleConstants,
 } from '../cards';
 
@@ -17,9 +14,6 @@ const FeaturedWorkPage: React.FC = () => {
   return (
     <Page>
       <PageCardLayout>
-        <RelayHighUserVolumeCard />
-        <RelayOfflineFirstCard />
-        <RelayStrategiesStrategyCard />
         <SoFiStyleConstants />
         <ClaraRecommendedLoanCard />
         <ClaraPowerPricingCard />

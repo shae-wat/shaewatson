@@ -11,7 +11,22 @@ import { Card, CardTextContent, CardImageContent } from '.';
 
 const SoFiStyleConstants: React.FC = () => {
   return (
-    <Card firstWidth={50} lastWidth={50} lastJustifyContentCenter>
+    <Card firstWidth={50} lastWidth={50} firstJustifyContentCenter>
+      <CardImageContent>
+        <img
+          src={SofiSharingConstantsSrc}
+          alt="Relay web app image"
+          role="presentation"
+          style={{
+            display: 'block',
+            maxWidth: '1066px',
+            maxHeight: '824px',
+            width: '100%',
+            height: 'auto',
+            objectFit: 'contain',
+          }}
+        />
+      </CardImageContent>
       <CardTextContent>
         <span>
           <HeaderFont>Sharing Constants with Design</HeaderFont>
@@ -55,33 +70,15 @@ const SoFiStyleConstants: React.FC = () => {
         <ParagraphFont>
           After initializing the SoFi Relay product with the design constant
           strategy, I talked about the improved consistency and expressive CSS
-          with other teams at SoFi. Soon the practice of design constants was
-          adopted by the team maintaining the shared UI component library at
-          SoFi. Now the team is more aligned with design because of a strategy
-          that drives conscious decisions and clear syntax.
+          with other teams at SoFi.
         </ParagraphFont>
         <ParagraphFont>
-          Vertical margins and padding are based on an established vertical
-          rhythm pattern, where everything is based on a <code>rhythm</code>{' '}
-          constant. Horizontal margins and padding are based on gutter and
-          column constants.
+          Soon the practice of design constants was adopted by the team
+          maintaining the shared UI component library at SoFi. Now the team is
+          more aligned with design because of a strategy that drives conscious
+          decisions and clear syntax.
         </ParagraphFont>
       </CardTextContent>
-      <CardImageContent>
-        <img
-          src={SofiSharingConstantsSrc}
-          alt="Relay web app image"
-          role="presentation"
-          style={{
-            display: 'block',
-            maxWidth: '1066px',
-            maxHeight: '824px',
-            width: '100%',
-            height: 'auto',
-            objectFit: 'contain',
-          }}
-        />
-      </CardImageContent>
     </Card>
   );
 };

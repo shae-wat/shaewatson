@@ -9,6 +9,7 @@ import {
   Card,
   CardTextContent,
   CardImageContent,
+  Colors,
 } from '../../styles';
 
 const OroxWebsite: React.FC = () => {
@@ -28,6 +29,7 @@ const OroxWebsite: React.FC = () => {
                 width: '100%',
                 height: 'auto',
                 objectFit: 'contain',
+                background: `${Colors.white}`,
               }}
             />
             <SubheaderFont>Orox Leather 2015</SubheaderFont>

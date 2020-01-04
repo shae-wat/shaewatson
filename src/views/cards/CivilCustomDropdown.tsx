@@ -18,8 +18,8 @@ import { AlaskaDispatchNewsDropdownImageSrc, CivilLogo } from '../../images';
 import { Dropdown, DropdownOptionKey, ColorSelector } from '../components';
 
 const brandColors = [
-  Colors.darkPurple,
   Colors.darkBlue,
+  Colors.lightPurple,
   Colors.tanPink,
   Colors.millenialPink,
   Colors.red,

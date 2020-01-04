@@ -11,32 +11,32 @@ export const breakpoints = {
 export const mediaQuery = ({
   min,
   max,
-  cssForQueryToApply,
+  css,
 }: {
-  cssForQueryToApply: string;
+  css: string;
   min?: number;
   max?: number;
 }) => {
   return _.isNil(min) && _.isNil(max)
-    ? cssForQueryToApply
+    ? css
     : `@media screen ${!_.isNil(min) ? `and (min-width: ${min}px)` : ``} ${
         !_.isNil(max) ? `and (max-width: ${max}px)` : ``
       }{
-    ${cssForQueryToApply};
+    ${css};
   }`;
 };
 
-export const finalSqueezeQuery = (cssForQueryToApply: string) =>
-  mediaQuery({ max: breakpoints.tiny, cssForQueryToApply });
+export const finalSqueezeQuery = (css: string) =>
+  mediaQuery({ max: breakpoints.tiny, css });
 
-export const mobileMediaQuery = (cssForQueryToApply: string) =>
-  mediaQuery({ max: breakpoints.mobile, cssForQueryToApply });
+export const mobileMediaQuery = (css: string) =>
+  mediaQuery({ max: breakpoints.mobile, css });
 
-export const tabletMediaQuery = (cssForQueryToApply: string) =>
+export const tabletMediaQuery = (css: string) =>
   mediaQuery({
     max: breakpoints.tablet,
-    cssForQueryToApply,
+    css,
   });
 
-export const desktopMediaQuery = (cssForQueryToApply: string) =>
-  mediaQuery({ min: breakpoints.mobile + 1, cssForQueryToApply });
+export const desktopMediaQuery = (css: string) =>
+  mediaQuery({ min: breakpoints.mobile + 1, css });

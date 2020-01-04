@@ -5,6 +5,7 @@ export const breakpoints = {
   desktop: 1024,
   tablet: 768,
   mobile: 480,
+  tiny: 340,
 };
 
 export const mediaQuery = ({
@@ -24,6 +25,9 @@ export const mediaQuery = ({
     ${cssForQueryToApply};
   }`;
 };
+
+export const finalSqueezeQuery = (cssForQueryToApply: string) =>
+  mediaQuery({ max: breakpoints.tiny, cssForQueryToApply });
 
 export const mobileMediaQuery = (cssForQueryToApply: string) =>
   mediaQuery({ max: breakpoints.mobile, cssForQueryToApply });

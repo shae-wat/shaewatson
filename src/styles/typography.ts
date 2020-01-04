@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import { mobileMediaQuery, finalSqueezeQuery } from './breakpoints';
 import { Colors } from './colors';
-import { rhythm } from './constants';
 
 export const FontCSS = `
   letter-spacing: 0.08px;
@@ -21,7 +20,6 @@ export const HeaderFont = styled.h1`
   font-weight: 700;
   font-size: 28px;
   line-height: 36px;
-  margin-bottom: ${rhythm(1 / 3)}px;
 
   ${mobileMediaQuery(`font-size: 18px; line-height: 26px;`)}
 `;
@@ -64,11 +62,12 @@ export const BoldText = styled.span`
 `;
 
 export const LinkText = styled.a`
-  &&& {
+  &,
+  &:visited {
     display: inline;
     /* text-decoration: none; */
     color: ${(props: { color?: typeof Colors.millenialPink }) =>
-      props.color || Colors.darkBlue};
+      props.color || Colors.cardLink};
     font-weight: bold;
   }
 `;

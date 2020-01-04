@@ -5,9 +5,11 @@ import {
   LogoSubtitle,
   SubheaderFont,
   gutter,
+  Card,
+  CardTextContent,
+  CardImageContent,
 } from '../../styles';
 import { SofiSharingConstantsSrc, SofiLogo, ClaraLogo } from '../../images';
-import { Card, CardTextContent, CardImageContent } from '.';
 
 const SoFiStyleConstants: React.FC = () => {
   return (
@@ -16,7 +18,6 @@ const SoFiStyleConstants: React.FC = () => {
         <img
           src={SofiSharingConstantsSrc}
           alt="Drake no to non-descriptive way of writing CSS, Drake yes to descriptive way of writing CSS with design constants"
-          role="presentation"
           style={{
             display: 'block',
             maxWidth: '1066px',

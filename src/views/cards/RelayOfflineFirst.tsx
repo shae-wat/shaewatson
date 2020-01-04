@@ -4,9 +4,11 @@ import {
   SubheaderFont,
   LogoSubtitle,
   ParagraphFont,
+  Card,
+  CardTextContent,
+  CardImageContent,
 } from '../../styles';
 import { SofiSpendingBurdownSrc, SofiLogo } from '../../images';
-import { Card, CardTextContent, CardImageContent } from '.';
 
 const RelayOfflineFirst: React.FC = () => {
   return (
@@ -15,7 +17,6 @@ const RelayOfflineFirst: React.FC = () => {
         <img
           src={SofiSpendingBurdownSrc}
           alt="Relay web app"
-          role="presentation"
           style={{
             display: 'block',
             maxWidth: '800px',

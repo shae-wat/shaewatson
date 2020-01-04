@@ -9,5 +9,3 @@ export { default as RelayOfflineFirstCard } from './RelayOfflineFirst';
 export { default as RelayStrategiesStrategyCard } from './RelayStrategiesStrategy';
 export { default as RelayHighUserVolumeCard } from './RelayHighUserVolume';
 export { default as SoFiStyleConstants } from './SoFiStyleConstants';
-
-export * from './Card';

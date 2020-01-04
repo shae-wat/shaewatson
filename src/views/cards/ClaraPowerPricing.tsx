@@ -4,9 +4,11 @@ import {
   SubheaderFont,
   ParagraphFont,
   LogoSubtitle,
+  Card,
+  CardTextContent,
+  CardImageContent,
 } from '../../styles';
 import { PowerPricerImageSrc, ClaraLogo } from '../../images';
-import { Card, CardTextContent, CardImageContent } from '.';
 
 const ClaraPowerPricing: React.FC = () => {
   return (
@@ -15,7 +17,6 @@ const ClaraPowerPricing: React.FC = () => {
         <img
           src={PowerPricerImageSrc}
           alt="Dashboard with inputs and search results for mortgage products at Clara Lending"
-          role="presentation"
           style={{
             display: 'block',
             maxWidth: '1431px',

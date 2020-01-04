@@ -1,13 +1,16 @@
 import React from 'react';
-import { OroxWebsiteImageSrc } from '../../images';
+import { OroxWebsiteImageSrc, OroxLogo } from '../../images';
 import {
   HeaderFont,
   SubheaderFont,
   ParagraphFont,
   LogoSubtitle,
+  LinkText,
+  Card,
+  CardTextContent,
+  CardImageContent,
+  Colors,
 } from '../../styles';
-import { Card, CardTextContent, CardImageContent } from '.';
-import { OroxLogo } from '../../images';
 
 const OroxWebsite: React.FC = () => {
   return (
@@ -26,6 +29,7 @@ const OroxWebsite: React.FC = () => {
                 width: '100%',
                 height: 'auto',
                 objectFit: 'contain',
+                background: `${Colors.white}`,
               }}
             />
             <SubheaderFont>Orox Leather 2015</SubheaderFont>
@@ -33,12 +37,12 @@ const OroxWebsite: React.FC = () => {
         </span>
         <ParagraphFont>
           In my early career, I grew in basic but significant ways styling the{' '}
-          <a
+          <LinkText
             href="https://www.oroxleather.com/"
             target="_blank"
             rel="noopener noreferrer">
             Orox Leather
-          </a>{' '}
+          </LinkText>{' '}
           website.
         </ParagraphFont>
         <ParagraphFont>
@@ -57,7 +61,6 @@ const OroxWebsite: React.FC = () => {
         <img
           src={OroxWebsiteImageSrc}
           alt="Dashboard with inputs and search results for mortgage products at Clara Lending"
-          role="presentation"
           style={{
             display: 'block',
             maxWidth: '500px',

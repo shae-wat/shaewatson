@@ -4,9 +4,11 @@ import {
   SubheaderFont,
   ParagraphFont,
   LogoSubtitle,
+  Card,
+  CardTextContent,
+  CardImageContent,
 } from '../../styles';
 import { ClaraRecommendedLoanImageSrc, ClaraLogo } from '../../images';
-import { Card, CardTextContent, CardImageContent } from '.';
 
 const ClaraRecommendedLoan: React.FC = () => {
   return (
@@ -49,7 +51,6 @@ const ClaraRecommendedLoan: React.FC = () => {
         <img
           src={ClaraRecommendedLoanImageSrc}
           alt="Dashboard with inputs and search results for mortgage products at Clara Lending"
-          role="presentation"
           style={{
             display: 'block',
             maxWidth: '438px',

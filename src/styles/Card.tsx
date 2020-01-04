@@ -1,6 +1,6 @@
 import _ from 'lodash';
 import styled from 'styled-components';
-import { rhythm, gutter, Colors, tabletMediaQuery } from '../../styles';
+import { rhythm, gutter, Colors, tabletMediaQuery } from '.';
 
 export const Card = styled.section`
   position: relative;

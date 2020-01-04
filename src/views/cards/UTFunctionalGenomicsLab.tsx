@@ -59,7 +59,6 @@ const UTFunctionalGenomicsLab: React.FC = () => {
                 width: '100%',
                 height: 'auto',
                 objectFit: 'contain',
-                alignSelf: 'flex-end',
               }}
             />
             <SubheaderFont>Functional Genomics Research Lab 2011</SubheaderFont>

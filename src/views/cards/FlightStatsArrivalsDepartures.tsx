@@ -5,9 +5,11 @@ import {
   ParagraphFont,
   LinkText,
   LogoSubtitle,
+  Card,
+  CardTextContent,
+  CardImageContent,
 } from '../../styles';
 import { FSDepArrImageSrc, FlightStatsLogo } from '../../images';
-import { Card, CardTextContent, CardImageContent } from '.';
 
 const FlightStatsArrivalsDepartures: React.FC = () => {
   return (
@@ -16,7 +18,6 @@ const FlightStatsArrivalsDepartures: React.FC = () => {
         <img
           src={FSDepArrImageSrc}
           alt="Dashboard with inputs and search results for flight arrivals and departures"
-          role="presentation"
           style={{
             display: 'block',
             maxWidth: '653px',

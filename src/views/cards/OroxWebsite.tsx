@@ -1,14 +1,15 @@
 import React from 'react';
-import { OroxWebsiteImageSrc } from '../../images';
+import { OroxWebsiteImageSrc, OroxLogo } from '../../images';
 import {
   HeaderFont,
   SubheaderFont,
   ParagraphFont,
   LogoSubtitle,
   LinkText,
+  Card,
+  CardTextContent,
+  CardImageContent,
 } from '../../styles';
-import { Card, CardTextContent, CardImageContent } from '.';
-import { OroxLogo } from '../../images';
 
 const OroxWebsite: React.FC = () => {
   return (
@@ -58,7 +59,6 @@ const OroxWebsite: React.FC = () => {
         <img
           src={OroxWebsiteImageSrc}
           alt="Dashboard with inputs and search results for mortgage products at Clara Lending"
-          role="presentation"
           style={{
             display: 'block',
             maxWidth: '500px',

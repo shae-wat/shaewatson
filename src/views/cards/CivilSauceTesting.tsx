@@ -1,7 +1,12 @@
 import React from 'react';
-import { HeaderFont, ParagraphFont } from '../../styles';
+import {
+  HeaderFont,
+  ParagraphFont,
+  Card,
+  CardTextContent,
+  CardImageContent,
+} from '../../styles';
 import { SauceLabsDashboardImageSrc } from '../../images';
-import { Card, CardTextContent, CardImageContent } from '.';
 
 const SauceTesting: React.FC = () => {
   return (
@@ -10,7 +15,6 @@ const SauceTesting: React.FC = () => {
         <img
           src={SauceLabsDashboardImageSrc}
           alt="Dashboard with inputs and search results for mortgage products at Clara Lending"
-          role="presentation"
           style={{
             display: 'block',
             maxWidth: '800px',

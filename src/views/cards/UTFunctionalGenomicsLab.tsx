@@ -11,8 +11,10 @@ import {
   rhythm,
   LogoSubtitle,
   LinkText,
+  Card,
+  CardTextContent,
+  CardImageContent,
 } from '../../styles';
-import { Card, CardTextContent, CardImageContent } from '.';
 
 const UTFunctionalGenomicsLab: React.FC = () => {
   return (
@@ -21,7 +23,6 @@ const UTFunctionalGenomicsLab: React.FC = () => {
         <img
           src={UTFunctionalGenomicsLabImageSrc}
           alt="Dashboard with inputs and search results for flight arrivals and departures"
-          role="presentation"
           style={{
             display: 'block',
             maxWidth: '809px',

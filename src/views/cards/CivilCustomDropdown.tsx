@@ -10,13 +10,15 @@ import {
   rhythm,
   gutter,
   LogoSubtitle,
+  Card,
+  CardTextContent,
+  CardImageContent,
 } from '../../styles';
 import { AlaskaDispatchNewsDropdownImageSrc, CivilLogo } from '../../images';
 import { Dropdown, DropdownOptionKey, ColorSelector } from '../components';
-import { Card, CardTextContent, CardImageContent } from '.';
 
 const brandColors = [
-  Colors.lightPurple,
+  Colors.darkPurple,
   Colors.darkBlue,
   Colors.tanPink,
   Colors.millenialPink,
@@ -116,7 +118,6 @@ class CustomDropdown extends React.Component<{}, CustomDropdownState> {
           <img
             src={AlaskaDispatchNewsDropdownImageSrc}
             alt="View of comment app with dropdown matching the page color scheme"
-            role="presentation"
             style={{
               display: 'block',
               maxWidth: '810px',

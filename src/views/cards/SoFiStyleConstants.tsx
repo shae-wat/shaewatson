@@ -43,7 +43,10 @@ const SoFiStyleConstants: React.FC = () => {
                 objectFit: 'contain',
               }}
             />
-            <SubheaderFont>Clara Lending - </SubheaderFont>
+            <SubheaderFont>Clara Lending </SubheaderFont>
+            <SubheaderFont style={{ marginLeft: `${gutter(1 / 2)}px` }}>
+              {' - '}
+            </SubheaderFont>
             <img
               src={SofiLogo}
               alt="SoFi logo"
@@ -62,10 +65,9 @@ const SoFiStyleConstants: React.FC = () => {
         </span>
         <ParagraphFont>
           Sharing design constants and therefore understanding with designers
-          drastically improves developer experience and speed on the front-end.
-          Though I was skeptical when first using this practice at Clara
-          Lending, I soon found myself breezing through implementing new
-          designs.
+          drastically improves front-end developer experience and speed. Though
+          I was skeptical when first using this practice at Clara Lending, I
+          soon found myself breezing through the implementation of new designs.
         </ParagraphFont>
         <ParagraphFont>
           After initializing the SoFi Relay product with the design constant
@@ -75,8 +77,8 @@ const SoFiStyleConstants: React.FC = () => {
         <ParagraphFont>
           Soon the practice of design constants was adopted by the team
           maintaining the shared UI component library at SoFi. Now the team is
-          more aligned with design because of a strategy that drives conscious
-          decisions and clear syntax.
+          more aligned with design with constants driving conscious decisions
+          and clear syntax.
         </ParagraphFont>
       </CardTextContent>
     </Card>

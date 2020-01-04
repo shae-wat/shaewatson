@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { mobileMediaQuery } from './breakpoints';
+import { mobileMediaQuery, finalSqueezeQuery } from './breakpoints';
 import { Colors } from './colors';
 import { rhythm } from './constants';
 
@@ -33,6 +33,7 @@ export const SubheaderFont = styled.h2`
   line-height: 28px;
 
   ${mobileMediaQuery(`font-size: 16px; line-height: 20px;`)}
+  ${finalSqueezeQuery(`font-size: 14px; line-height: 18px;`)}
 `;
 
 export const ParagraphFont = styled.p`

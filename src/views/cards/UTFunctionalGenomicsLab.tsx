@@ -10,6 +10,7 @@ import {
   ParagraphFont,
   rhythm,
   LogoSubtitle,
+  LinkText,
 } from '../../styles';
 import { Card, CardTextContent, CardImageContent } from '.';
 
@@ -66,12 +67,12 @@ const UTFunctionalGenomicsLab: React.FC = () => {
         <ParagraphFont>
           {`I was drawn to the intersection of design, product management, and engineering during college while working in
           the `}
-          <a
+          <LinkText
             href="http://fg.cns.utexas.edu/fg/home.html"
             target="_blank"
             rel="noopener noreferrer">
             University of Texas at Austin’s Functional Genomics Research Stream.
-          </a>
+          </LinkText>
         </ParagraphFont>
         <ParagraphFont>
           After micropipetting for a few months, I switched to writing code and

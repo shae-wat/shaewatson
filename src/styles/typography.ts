@@ -64,11 +64,12 @@ export const BoldText = styled.span`
 `;
 
 export const LinkText = styled.a`
-  &&& {
+  &,
+  &:visited {
     display: inline;
     /* text-decoration: none; */
     color: ${(props: { color?: typeof Colors.millenialPink }) =>
-      props.color || Colors.darkBlue};
+      props.color || Colors.cardLink};
     font-weight: bold;
   }
 `;

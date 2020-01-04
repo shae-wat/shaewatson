@@ -5,6 +5,7 @@ import {
   SubheaderFont,
   ParagraphFont,
   LogoSubtitle,
+  LinkText,
 } from '../../styles';
 import { Card, CardTextContent, CardImageContent } from '.';
 import { OroxLogo } from '../../images';
@@ -33,12 +34,12 @@ const OroxWebsite: React.FC = () => {
         </span>
         <ParagraphFont>
           In my early career, I grew in basic but significant ways styling the{' '}
-          <a
+          <LinkText
             href="https://www.oroxleather.com/"
             target="_blank"
             rel="noopener noreferrer">
             Orox Leather
-          </a>{' '}
+          </LinkText>{' '}
           website.
         </ParagraphFont>
         <ParagraphFont>

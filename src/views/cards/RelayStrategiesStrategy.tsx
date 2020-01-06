@@ -29,7 +29,9 @@ const RelayStrategiesStrategy: React.FC = () => {
       </CardImageContent>
       <CardTextContent>
         <span>
-          <HeaderFont>Launch Personal Finance Managment Web App</HeaderFont>
+          <HeaderFont>
+            Launch Personal Finance Managment Web App with Values and Strategies
+          </HeaderFont>
           <LogoSubtitle>
             <img
               src={SofiLogo}

@@ -65,7 +65,7 @@ class CustomDropdown extends React.Component<{}, CustomDropdownState> {
             </LogoSubtitle>
           </span>
           <ParagraphFont>
-            I contributed to a third-party Javascript commenting app that could
+            I contributed to a third-party JavaScript commenting app that could
             be customized to match the brand colors of its host webpage (mostly
             newspapers).
           </ParagraphFont>

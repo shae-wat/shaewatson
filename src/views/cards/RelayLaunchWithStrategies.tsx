@@ -12,21 +12,7 @@ import { SofiSpendingBurdownSrc, SofiLogo } from '../../images';
 
 const RelayStrategiesStrategy: React.FC = () => {
   return (
-    <Card>
-      <CardImageContent>
-        <img
-          src={SofiSpendingBurdownSrc}
-          alt="Relay web app"
-          style={{
-            display: 'block',
-            maxWidth: '800px',
-            maxHeight: '357px',
-            width: '100%',
-            height: 'auto',
-            objectFit: 'contain',
-          }}
-        />
-      </CardImageContent>
+    <Card firstWidth={50} lastWidth={50} lastJustifyContentCenter>
       <CardTextContent>
         <span>
           <HeaderFont>
@@ -57,6 +43,20 @@ const RelayStrategiesStrategy: React.FC = () => {
         <ParagraphFont>strategies</ParagraphFont>
         <ParagraphFont>launch date</ParagraphFont>
       </CardTextContent>
+      <CardImageContent>
+        <img
+          src={SofiSpendingBurdownSrc}
+          alt="Relay web app"
+          style={{
+            display: 'block',
+            maxWidth: '436px',
+            maxHeight: '576px',
+            width: '100%',
+            height: 'auto',
+            objectFit: 'contain',
+          }}
+        />
+      </CardImageContent>
     </Card>
   );
 };

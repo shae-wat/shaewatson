@@ -8,14 +8,14 @@ import {
   CardTextContent,
   CardImageContent,
 } from '../../styles';
-import { SofiSpendingBurdownSrc, SofiLogo } from '../../images';
+import { RelayOverviewPageSrc, SofiLogo } from '../../images';
 
 const RelayOfflineFirst: React.FC = () => {
   return (
     <Card>
       <CardImageContent>
         <img
-          src={SofiSpendingBurdownSrc}
+          src={RelayOverviewPageSrc}
           alt="Relay web app"
           style={{
             display: 'block',

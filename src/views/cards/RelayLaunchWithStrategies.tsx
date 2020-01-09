@@ -3,7 +3,6 @@ import {
   HeaderFont,
   SubheaderFont,
   LogoSubtitle,
-  ParagraphFont,
   Card,
   CardTextContent,
   CardImageContent,
@@ -34,14 +33,6 @@ const RelayStrategiesStrategy: React.FC = () => {
             <SubheaderFont>SoFi 2018</SubheaderFont>
           </LogoSubtitle>
         </span>
-        <ParagraphFont>
-          Values and Strategies When this project was just starting out, values
-          were established that led to the architectural and code stylings of
-          this project
-        </ParagraphFont>
-        <ParagraphFont>values</ParagraphFont>
-        <ParagraphFont>strategies</ParagraphFont>
-        <ParagraphFont>launch date</ParagraphFont>
       </CardTextContent>
       <CardImageContent>
         <img

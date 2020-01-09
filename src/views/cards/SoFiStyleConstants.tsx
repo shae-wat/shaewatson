@@ -79,7 +79,7 @@ const SoFiStyleConstants: React.FC = () => {
           Soon the practice of design constants was adopted by the team
           maintaining the shared UI component library at SoFi. Now the team is
           more aligned with design with constants driving conscious decisions
-          and clear syntax.
+          and clear CSS syntax.
         </ParagraphFont>
       </CardTextContent>
     </Card>

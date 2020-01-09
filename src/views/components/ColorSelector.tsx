@@ -1,14 +1,25 @@
 import React from 'react';
 import styled from 'styled-components';
 import _ from 'lodash';
-import { gutter, rhythm, ParagraphFont, Colors, BoldText } from '../../styles';
+import {
+  gutter,
+  rhythm,
+  ParagraphFont,
+  Colors,
+  BoldText,
+  mobileMediaQuery,
+  finalSqueezeQuery,
+} from '../../styles';
 
 const ColorPallette = styled.div`
   display: flex;
   flex-direction: row;
   padding: ${rhythm(1 / 2)}px 0;
+  ${mobileMediaQuery(`padding: ${rhythm(1)}px 0;`)}
+
   > *:not(:last-child) {
-    margin-right: ${gutter(1)}px;
+    margin-right: ${gutter(3 / 2)}px;
+    ${finalSqueezeQuery(`margin-right: ${gutter(1)}px;`)}
   }
 `;
 

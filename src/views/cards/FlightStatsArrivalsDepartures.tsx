@@ -63,19 +63,12 @@ const FlightStatsArrivalsDepartures: React.FC = () => {
         <ParagraphFont>
           The FlightStats APIs "contain over 300 data elements per flight
           record, making them the most comprehensive & detailed source of
-          real-time information available".{' '}
-          <LinkText
-            href="https://www.flightstats.com/company/products/flight-data-services/"
-            target="_blank"
-            rel="noopener noreferrer">
-            {'[FlightStats Flight Data Services]'}
-          </LinkText>
-          .
+          real-time information available".
         </ParagraphFont>
         <ParagraphFont>
-          The Delay Index API for the airport and FIDS API (used to power FIDS
-          boards in airports) combine for a powerful and deeply insightful UX
-          around an airport's functioning at a given moment.
+          The Delay Index API for the airport and FIDS API (like the FIDS boards
+          in airports) combine for a powerful and deeply insightful UX around an
+          airport's functioning at a given moment.
         </ParagraphFont>
       </CardTextContent>
     </Card>

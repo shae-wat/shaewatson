@@ -65,10 +65,13 @@ class CustomDropdown extends React.Component<{}, CustomDropdownState> {
             </LogoSubtitle>
           </span>
           <ParagraphFont>
-            I contributed to a third party Javascript commenting app that could
-            could be customized to match its host webpage- mostly newspapers.
+            I contributed to a third-party JavaScript commenting app that could
+            be customized to match the brand colors of its host webpage (mostly
+            newspapers).
+          </ParagraphFont>
+          <ParagraphFont>
             Because of this, it was a nice touch to build a dropdown menu that
-            could inherit the colors of the site dynamically.
+            could inherit the colors of the host site dynamically.
           </ParagraphFont>
           <DemoArea>
             <ColorSelector

@@ -53,8 +53,8 @@ const OroxWebsite: React.FC = () => {
           first time.
         </ParagraphFont>
         <ParagraphFont>
-          I made CSS and JS changes to an existing Shopify theme to match their
-          requested website design, pictured here.
+          I made CSS and JS changes to an existing Shopify theme to match the
+          requested website design.
         </ParagraphFont>
       </CardTextContent>
       <CardImageContent>

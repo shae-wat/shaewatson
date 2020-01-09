@@ -9,6 +9,7 @@ import {
   FontCSS,
   mobileMediaQuery,
   desktopMediaQuery,
+  finalSqueezeQuery,
 } from '../../styles';
 
 export enum DropdownOptionKey {
@@ -28,6 +29,7 @@ const StyledSelect = styled.div`
   position: relative;
   height: ${rhythm(3 / 2)}px;
   width: ${column(3) + gutter(2)}px;
+  ${finalSqueezeQuery(`width: ${column(3)}px;`)}
   cursor: pointer;
 
   ${({ open }: { open: boolean }) => {

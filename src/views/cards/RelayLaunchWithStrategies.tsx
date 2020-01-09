@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components';
 import {
   HeaderFont,
   SubheaderFont,
@@ -6,16 +7,23 @@ import {
   Card,
   CardTextContent,
   CardImageContent,
+  desktopMediaQuery,
+  rhythm,
 } from '../../styles';
 import { SofiSpendingBurdownSrc, SofiLogo } from '../../images';
+
+const TempHeaderWhileWriteContent = styled.span`
+  ${desktopMediaQuery(`margin-top: ${rhythm(2)}px;`)}
+`;
 
 const RelayStrategiesStrategy: React.FC = () => {
   return (
     <Card firstWidth={50} lastWidth={50} lastJustifyContentCenter>
       <CardTextContent>
-        <span>
+        <TempHeaderWhileWriteContent>
           <HeaderFont>
-            Launch Personal Finance Managment Web App with Values and Strategies
+            Launch Personal Finance Management Web App with Values and
+            Strategies: SoFi Relay 🚀
           </HeaderFont>
           <LogoSubtitle>
             <img
@@ -32,7 +40,7 @@ const RelayStrategiesStrategy: React.FC = () => {
             />
             <SubheaderFont>SoFi 2018</SubheaderFont>
           </LogoSubtitle>
-        </span>
+        </TempHeaderWhileWriteContent>
       </CardTextContent>
       <CardImageContent>
         <img

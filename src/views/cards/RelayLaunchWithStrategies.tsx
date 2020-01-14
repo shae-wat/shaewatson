@@ -23,7 +23,10 @@ const RelayStrategiesStrategy: React.FC = () => {
         <TempHeaderWhileWriteContent>
           <HeaderFont>
             Launch Personal Finance Management Web App with Values and
-            Strategies: SoFi Relay 🚀
+            Strategies: SoFi Relay{' '}
+            <span role="img" aria-label="launch rocket">
+              🚀
+            </span>
           </HeaderFont>
           <LogoSubtitle>
             <img

@@ -5,12 +5,13 @@ import {
   Card,
   CardTextContent,
   CardImageContent,
+  LinkText,
 } from '../../styles';
 import { SauceLabsDashboardImageSrc } from '../../images';
 
 const SauceTesting: React.FC = () => {
   return (
-    <Card>
+    <Card firstJustifyContentCenter>
       <CardImageContent>
         <img
           src={SauceLabsDashboardImageSrc}
@@ -27,7 +28,17 @@ const SauceTesting: React.FC = () => {
       </CardImageContent>
       <CardTextContent>
         <HeaderFont>Sauce Labs Testing</HeaderFont>
-        <ParagraphFont>Sauce Labs Testing</ParagraphFont>
+        <ParagraphFont>
+          Sauce Labs Testing
+          <LinkText
+            href="https://medium.com/@shaewat/multi-platform-user-interface-testing-with-selenium-and-node-js-567b8fb624e8"
+            target="_blank"
+            rel="noopener noreferrer">
+            {
+              'Multi-Platform User Interface Testing with Selenium and Sauce Labs'
+            }
+          </LinkText>
+        </ParagraphFont>
       </CardTextContent>
     </Card>
   );

@@ -29,6 +29,7 @@ export const Card = styled.section`
     lastJustifyContentCenter?: boolean;
   }) => `> *:first-child {
     display: flex;
+    justify-content: ${firstJustifyContentCenter ? 'center' : 'flex-start'};
     align-items: ${firstJustifyContentCenter ? 'center' : 'flex-start'};
     position: relative;
     width: ${firstWidth || 60}%;
@@ -37,6 +38,7 @@ export const Card = styled.section`
   > *:last-child {
     display: flex;
     justify-content: ${lastJustifyContentCenter ? 'center' : 'flex-start'};
+    align-items: ${lastJustifyContentCenter ? 'center' : 'flex-start'};
     position: relative;
     width: ${lastWidth || 40}%;
     ${tabletMediaQuery(`width: auto;`)}

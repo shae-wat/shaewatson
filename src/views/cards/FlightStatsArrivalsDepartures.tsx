@@ -13,21 +13,7 @@ import { FSDepArrImageSrc, FlightStatsLogo } from '../../images';
 
 const FlightStatsArrivalsDepartures: React.FC = () => {
   return (
-    <Card>
-      <CardImageContent>
-        <img
-          src={FSDepArrImageSrc}
-          alt="Dashboard with inputs and search results for flight arrivals and departures"
-          style={{
-            display: 'block',
-            maxWidth: '653px',
-            maxHeight: '536px',
-            width: '100%',
-            height: 'auto',
-            objectFit: 'contain',
-          }}
-        />
-      </CardImageContent>
+    <Card firstWidth={45} lastWidth={50} lastJustifyContentCenter>
       <CardTextContent>
         <span>
           <HeaderFont>Airport Status Page</HeaderFont>
@@ -71,6 +57,20 @@ const FlightStatsArrivalsDepartures: React.FC = () => {
           airport's functioning at a given moment.
         </ParagraphFont>
       </CardTextContent>
+      <CardImageContent>
+        <img
+          src={FSDepArrImageSrc}
+          alt="Dashboard with inputs and search results for flight arrivals and departures"
+          style={{
+            display: 'block',
+            maxWidth: '653px',
+            maxHeight: '536px',
+            width: '100%',
+            height: 'auto',
+            objectFit: 'contain',
+          }}
+        />
+      </CardImageContent>
     </Card>
   );
 };

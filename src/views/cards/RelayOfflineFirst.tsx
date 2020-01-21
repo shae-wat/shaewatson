@@ -13,20 +13,6 @@ import { RelayOverviewPageSrc, SofiLogo } from '../../images';
 const RelayOfflineFirst: React.FC = () => {
   return (
     <Card>
-      <CardImageContent>
-        <img
-          src={RelayOverviewPageSrc}
-          alt="Relay web app"
-          style={{
-            display: 'block',
-            maxWidth: '800px',
-            maxHeight: '357px',
-            width: '100%',
-            height: 'auto',
-            objectFit: 'contain',
-          }}
-        />
-      </CardImageContent>
       <CardTextContent>
         <span>
           <HeaderFont>Data Loading for Mobile-First</HeaderFont>
@@ -52,6 +38,20 @@ const RelayOfflineFirst: React.FC = () => {
         </ParagraphFont>
         <ParagraphFont>Offline first</ParagraphFont>
       </CardTextContent>
+      <CardImageContent>
+        <img
+          src={RelayOverviewPageSrc}
+          alt="Relay web app"
+          style={{
+            display: 'block',
+            maxWidth: '800px',
+            maxHeight: '357px',
+            width: '100%',
+            height: 'auto',
+            objectFit: 'contain',
+          }}
+        />
+      </CardImageContent>
     </Card>
   );
 };

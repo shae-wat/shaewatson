@@ -20,3 +20,4 @@ export { default as SofiLogo } from './sofiLogo.png';
 export { default as SofiSpendingBurdownSrc } from './relay_spending_burndown.png';
 export { default as SofiSharingConstantsSrc } from './sharing-constants.png';
 export { default as RelayOverviewPageSrc } from './relay_overview_page.png';
+export { default as RelaySuccessConnectedSrc } from './relay_success_account_connected.png';

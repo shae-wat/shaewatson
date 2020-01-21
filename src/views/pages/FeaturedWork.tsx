@@ -9,12 +9,14 @@ import {
   UTFunctionalGenomicsLabCard,
   SoFiStyleConstants,
   RelayStrategiesStrategyCard,
+  RelayHighUserVolumeCard,
 } from '../cards';
 
 const FeaturedWorkPage: React.FC = () => {
   return (
     <Page>
       <PageCardLayout>
+        <RelayHighUserVolumeCard />
         <RelayStrategiesStrategyCard />
         <SoFiStyleConstants />
         <ClaraRecommendedLoanCard />

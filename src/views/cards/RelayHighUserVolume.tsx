@@ -8,19 +8,19 @@ import {
   CardTextContent,
   CardImageContent,
 } from '../../styles';
-import { SofiSpendingBurdownSrc, SofiLogo } from '../../images';
+import { RelaySuccessConnectedSrc, SofiLogo } from '../../images';
 
 const RelayHighUserVolume: React.FC = () => {
   return (
-    <Card>
+    <Card firstJustifyContentCenter>
       <CardImageContent>
         <img
-          src={SofiSpendingBurdownSrc}
+          src={RelaySuccessConnectedSrc}
           alt="Relay web app"
           style={{
             display: 'block',
-            maxWidth: '800px',
-            maxHeight: '357px',
+            maxWidth: '766px',
+            maxHeight: '394px',
             width: '100%',
             height: 'auto',
             objectFit: 'contain',
@@ -29,7 +29,9 @@ const RelayHighUserVolume: React.FC = () => {
       </CardImageContent>
       <CardTextContent>
         <span>
-          <HeaderFont>Monitoring a high-volume app</HeaderFont>
+          <HeaderFont>
+            Error Monitoring for an App with Thousands of Daily Users
+          </HeaderFont>
           <LogoSubtitle>
             <img
               src={SofiLogo}
@@ -46,9 +48,22 @@ const RelayHighUserVolume: React.FC = () => {
             <SubheaderFont>SoFi 2019</SubheaderFont>
           </LogoSubtitle>
         </span>
-        <ParagraphFont>number of users</ParagraphFont>
         <ParagraphFont>
-          error tracking and alerting - Error reporting based on UI/UX strategy
+          SoFi Relay drives daily user engagement for SoFi's (almost) 1 million
+          members. If a user has a bad experience- and especially if they see a
+          full page error- it defeats the purpose of the app.
+        </ParagraphFont>
+        <ParagraphFont>
+          That is why when I set up New Relic to track errors in the project, an
+          alert was set to trigger in our Slack channel for each full page error
+          shown to a user. I am proud of this system because it demonstrates the
+          robustness of the app’s front-end architecture and how the team runs
+          after problems.
+        </ParagraphFont>
+        <ParagraphFont>
+          Alerting in a Slack channel drives accountability because it is
+          visible and has a process where a discussion of the issue determines
+          the work to prevent the issue in the future.
         </ParagraphFont>
       </CardTextContent>
     </Card>

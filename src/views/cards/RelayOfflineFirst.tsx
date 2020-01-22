@@ -32,7 +32,7 @@ const RelayOfflineFirst: React.FC = () => {
                 objectFit: 'contain',
               }}
             />
-            <SubheaderFont>SoFi 2018</SubheaderFont>
+            <SubheaderFont>SoFi 2019</SubheaderFont>
           </LogoSubtitle>
         </span>
         <ParagraphFont>
@@ -40,16 +40,17 @@ const RelayOfflineFirst: React.FC = () => {
           work if internet is disconnected during a user session.
         </ParagraphFont>
         <ParagraphFont>
-          If we have any data to display, it is shown even if there is an error
-          on the backend. If no displayable data from the backend has been
-          received and there is an error, only after a few retries, show the
-          full page error.
+          If there is any data from a previous request to display from the Redux
+          store, it is shown even if there is an error a later request to the
+          API. If no displayable data from the backend has been received and
+          there is an error, only after a few retries, show the full page error.
         </ParagraphFont>
         <ParagraphFont>
           Strategies are democratic team decisions that are forever open to
           re-examination and iteration. A strategy update is agreed upon by the
-          team democratically and will manifest as an update to the
-          `README_STRATEGIES.md` file.
+          team democratically and will manifest as an update to the source
+          controlled strategies doc file. A strategy ultimately is a code
+          pattern that results in the best user experience possible.
         </ParagraphFont>
       </CardTextContent>
       <CardImageContent>

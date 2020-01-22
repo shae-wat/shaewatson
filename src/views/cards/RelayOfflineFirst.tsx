@@ -46,11 +46,12 @@ const RelayOfflineFirst: React.FC = () => {
           there is an error, only after a few retries, show the full page error.
         </ParagraphFont>
         <ParagraphFont>
-          Strategies are democratic team decisions that are forever open to
-          re-examination and iteration. A strategy update is agreed upon by the
-          team democratically and will manifest as an update to the source
-          controlled strategies doc file. A strategy ultimately is a code
-          pattern that results in the best user experience possible.
+          This offline experience is formalized as a strategy in the SoFi Relay
+          front-end project. A strategy is a code pattern that results in the
+          best user experience possible, and are democratic team decisions that
+          are forever open to re-examination and iteration. A strategy update is
+          agreed upon by the team democratically and manifests as an update to
+          the source controlled strategies doc file.
         </ParagraphFont>
       </CardTextContent>
       <CardImageContent>

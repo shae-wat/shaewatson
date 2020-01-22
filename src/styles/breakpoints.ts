@@ -38,5 +38,11 @@ export const tabletMediaQuery = (css: string) =>
     css,
   });
 
+export const desktopOnlyMediaQuery = (css: string) =>
+  mediaQuery({
+    min: breakpoints.tablet,
+    css,
+  });
+
 export const desktopMediaQuery = (css: string) =>
   mediaQuery({ min: breakpoints.mobile + 1, css });

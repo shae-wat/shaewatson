@@ -1,6 +1,12 @@
 import _ from 'lodash';
 import styled from 'styled-components';
-import { rhythm, gutter, Colors, tabletMediaQuery, desktopMediaQuery } from '.';
+import {
+  rhythm,
+  gutter,
+  Colors,
+  tabletMediaQuery,
+  desktopOnlyMediaQuery,
+} from '.';
 
 export const Card = styled.section`
   position: relative;
@@ -53,7 +59,7 @@ export const CardTextContent = styled.div`
   padding: ${rhythm(2)}px ${gutter(1)}px ${rhythm(2 / 3)}px ${gutter(2)}px;
   ${({ paddingTop }: { paddingTop?: number }) =>
     !_.isNil(paddingTop)
-      ? `${desktopMediaQuery(`&&&{ padding-top: ${paddingTop}px; }`)}`
+      ? `${desktopOnlyMediaQuery(`&&&{ padding-top: ${paddingTop}px; }`)}`
       : ''}
 
   ${tabletMediaQuery(

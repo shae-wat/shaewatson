@@ -49,8 +49,9 @@ const SauceTesting: React.FC = () => {
         </span>
         <ParagraphFont>
           {`At Civil, I wrote Selenium tests that allow a series of interactions
-          to run over a user interface on a web browser (and wrote a how-to with
-          hundreds of reads `}
+          to run over a user interface on a web browser. Because a lot of the
+          process was not obvious online, I wrote a how-to that would collect hundreds of
+          reads `}
           <LinkText
             href="https://medium.com/@shaewat/multi-platform-user-interface-testing-with-selenium-and-node-js-567b8fb624e8"
             target="_blank"
@@ -59,20 +60,21 @@ const SauceTesting: React.FC = () => {
               'Multi-Platform User Interface Testing with Selenium and Sauce Labs'
             }
           </LinkText>
-          ). The tests can check for the presence of text, click buttons, and
-          input data into forms- mimicking how a user would interact with a
+          . Selenium tests can check for the presence of text, click buttons,
+          and input data into forms- mimicking how a user would interact with a
           website.
         </ParagraphFont>
         <ParagraphFont>
           Using the Sauce Labs service, I got the tests to run across a suite of
-          PC, Mac, iOS, and Android platforms. The testing suite was extensive
-          and thorough, but I quickly learned its limitations. It took 2.5 hours
-          to run, and thus was quickly rejected as a step for the build.
+          PC, Mac, iOS, and Android platforms. The testing suite was so
+          extensive and thorough that it took 2.5 hours to run, and thus was
+          quickly rejected as a step for the build.
         </ParagraphFont>
         <ParagraphFont>
-          In the future, I would advocate for selenium happy-path testing as an
-          async process that triggers errors that the team are respondent and
-          accountable.
+          An extensive test suite like this is useful for happy-path testing as
+          a process async from the build. It could be run once a day during the
+          workday and could trigger errors that the team is accountable for and
+          responds to.
         </ParagraphFont>
       </CardTextContent>
     </Card>

@@ -14,9 +14,11 @@
     "typescript": "3.6.4"
   },
   "scripts": {
+    "make-prettier": "prettier --config .prettierrc '**/*.{ts,tsx}' --write",
+    "check-prettier": "prettier --config .prettierrc '**/*.{ts,tsx}' --list-different ",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "yarn run check-prettier && react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {

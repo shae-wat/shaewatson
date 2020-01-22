@@ -44,7 +44,7 @@ class CustomDropdown extends React.Component<{}, CustomDropdownState> {
 
   render() {
     return (
-      <Card firstWidth={55} lastWidth={45}>
+      <Card firstWidth={55} lastWidth={45} lastJustifyContentCenter>
         <CardTextContent paddingTop={rhythm(1 / 2)}>
           <span>
             <HeaderFont>Customizable Dropdown React Component</HeaderFont>

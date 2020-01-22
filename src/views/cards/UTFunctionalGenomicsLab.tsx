@@ -18,21 +18,7 @@ import {
 
 const UTFunctionalGenomicsLab: React.FC = () => {
   return (
-    <Card>
-      <CardImageContent>
-        <img
-          src={UTFunctionalGenomicsLabImageSrc}
-          alt="Dashboard with inputs and search results for flight arrivals and departures"
-          style={{
-            display: 'block',
-            maxWidth: '809px',
-            maxHeight: '450px',
-            width: '100%',
-            height: 'auto',
-            objectFit: 'contain',
-          }}
-        />
-      </CardImageContent>
+    <Card firstWidth={50} lastWidth={50} lastJustifyContentCenter>
       <CardTextContent paddingTop={rhythm(1)}>
         <span>
           <HeaderFont>Visualization of Changes in Gene Expression</HeaderFont>
@@ -87,6 +73,20 @@ const UTFunctionalGenomicsLab: React.FC = () => {
           patterns could be generally recognized.
         </ParagraphFont>
       </CardTextContent>
+      <CardImageContent>
+        <img
+          src={UTFunctionalGenomicsLabImageSrc}
+          alt="Dashboard with inputs and search results for flight arrivals and departures"
+          style={{
+            display: 'block',
+            maxWidth: '809px',
+            maxHeight: '450px',
+            width: '100%',
+            height: 'auto',
+            objectFit: 'contain',
+          }}
+        />
+      </CardImageContent>
     </Card>
   );
 };

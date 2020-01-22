@@ -14,7 +14,21 @@ import {
 
 const OroxWebsite: React.FC = () => {
   return (
-    <Card firstWidth={40} lastWidth={50} lastJustifyContentCenter>
+    <Card firstWidth={50} lastWidth={50} firstJustifyContentCenter>
+      <CardImageContent>
+        <img
+          src={OroxWebsiteImageSrc}
+          alt="Dashboard with inputs and search results for mortgage products at Clara Lending"
+          style={{
+            display: 'block',
+            maxWidth: '500px',
+            maxHeight: '581px',
+            width: '100%',
+            height: 'auto',
+            objectFit: 'contain',
+          }}
+        />
+      </CardImageContent>
       <CardTextContent>
         <span>
           <HeaderFont>Orox Leather Customized Website</HeaderFont>
@@ -57,20 +71,6 @@ const OroxWebsite: React.FC = () => {
           requested website design.
         </ParagraphFont>
       </CardTextContent>
-      <CardImageContent>
-        <img
-          src={OroxWebsiteImageSrc}
-          alt="Dashboard with inputs and search results for mortgage products at Clara Lending"
-          style={{
-            display: 'block',
-            maxWidth: '500px',
-            maxHeight: '581px',
-            width: '100%',
-            height: 'auto',
-            objectFit: 'contain',
-          }}
-        />
-      </CardImageContent>
     </Card>
   );
 };

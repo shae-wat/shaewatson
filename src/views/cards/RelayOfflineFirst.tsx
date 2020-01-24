@@ -9,16 +9,28 @@ import {
   CardImageContent,
   rhythm,
 } from '../../styles';
-import { RelayOverviewPageSrc, SofiLogo } from '../../images';
+import { RelayOfflineMobileDashboardSrc, SofiLogo } from '../../images';
 
 const RelayOfflineFirst: React.FC = () => {
   return (
-    <Card firstWidth={50} lastWidth={50} lastJustifyContentCenter>
+    <Card firstWidth={50} lastWidth={50} firstJustifyContentCenter>
+      <CardImageContent>
+        <img
+          src={RelayOfflineMobileDashboardSrc}
+          alt="Relay web app"
+          style={{
+            display: 'block',
+            maxWidth: '404px',
+            maxHeight: '835px',
+            width: '100%',
+            height: 'auto',
+            objectFit: 'contain',
+          }}
+        />
+      </CardImageContent>
       <CardTextContent paddingTop={rhythm(3)}>
         <span>
-          <HeaderFont>
-            A Data Loading Strategy for a Mobile-First App
-          </HeaderFont>
+          <HeaderFont>Data Loading Strategy for Mobile-First</HeaderFont>
           <LogoSubtitle>
             <img
               src={SofiLogo}
@@ -54,20 +66,6 @@ const RelayOfflineFirst: React.FC = () => {
           the source controlled strategies doc file.
         </ParagraphFont>
       </CardTextContent>
-      <CardImageContent>
-        <img
-          src={RelayOverviewPageSrc}
-          alt="Relay web app"
-          style={{
-            display: 'block',
-            maxWidth: '812px',
-            maxHeight: '1040px',
-            width: '100%',
-            height: 'auto',
-            objectFit: 'contain',
-          }}
-        />
-      </CardImageContent>
     </Card>
   );
 };

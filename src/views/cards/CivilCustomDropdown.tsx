@@ -123,8 +123,8 @@ class CustomDropdown extends React.Component<{}, CustomDropdownState> {
             alt="View of comment app with dropdown matching the page color scheme"
             style={{
               display: 'block',
-              maxWidth: '810px',
-              maxHeight: '404px',
+              maxWidth: '821px',
+              maxHeight: '476px',
               width: '100%',
               height: 'auto',
               objectFit: 'contain',

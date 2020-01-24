@@ -8,10 +8,11 @@ import {
   FlightStatsArrivalsDeparturesCard,
   OroxWebsiteCard,
   UTFunctionalGenomicsLabCard,
-  SoFiStyleConstants,
+  SoFiStyleConstantsCard,
   RelayStrategiesStrategyCard,
   RelayHighUserVolumeCard,
   RelayOfflineFirstCard,
+  RelayChunkingCard,
 } from '../cards';
 
 const FeaturedWorkPage: React.FC = () => {
@@ -19,9 +20,10 @@ const FeaturedWorkPage: React.FC = () => {
     <Page>
       <PageCardLayout>
         <RelayOfflineFirstCard />
+        <RelayChunkingCard />
         <RelayHighUserVolumeCard />
         <RelayStrategiesStrategyCard />
-        <SoFiStyleConstants />
+        <SoFiStyleConstantsCard />
         <ClaraRecommendedLoanCard />
         <ClaraPowerPricingCard />
         <CustomDropdownCard />

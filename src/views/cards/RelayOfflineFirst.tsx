@@ -53,9 +53,15 @@ const RelayOfflineFirst: React.FC = () => {
         </ParagraphFont>
         <ParagraphFont>
           If there is any data from a previous request to display from the Redux
-          store, it is shown even if there is an error a later request to the
-          API. If no displayable data from the backend has been received and
+          store, it is shown even if there is an error with a later request to
+          the API. If no displayable data from the backend has been received and
           there is an error, only after a few retries, show the full page error.
+        </ParagraphFont>
+        <ParagraphFont>
+          Major feature data is eagerly requested and put into the Redux store.
+          If the app successfully requests all the pre-load data after the
+          initial page draw, the user will not see any errors viewing feature
+          pages.
         </ParagraphFont>
         <ParagraphFont>
           This offline experience is formalized as a strategy in the SoFi Relay

@@ -14,7 +14,7 @@ import { RelayOverviewPageSrc, SofiLogo } from '../../images';
 const RelayChunking: React.FC = () => {
   return (
     <Card firstWidth={50} lastWidth={50} lastJustifyContentCenter>
-      <CardTextContent paddingTop={rhythm(3)}>
+      <CardTextContent paddingTop={rhythm(2)}>
         <span>
           <HeaderFont>Reducing Time to First Paint with JS Chunks</HeaderFont>
           <LogoSubtitle>

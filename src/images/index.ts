@@ -5,7 +5,6 @@ export { default as UTFunctionalGenomicsLabImageSrc } from './cerevisiae_heatsho
 export { default as UTFunctionalGenomicsLabLogoSrc } from './FG-icon.jpg';
 export { default as AlaskaDispatchNewsDropdownImageSrc } from './adn_dropdown_open.png';
 export { default as ClaraRecommendedLoanImageSrc } from './expanded_recommended_loan.png';
-export { default as ClaraSecondaryFinancingGifSrc } from './second-financing-inputs.gif';
 export { default as SauceLabsDashboardImageSrc } from './sauce_dashboard.png';
 export { default as SocialGithubImageSrc } from './social_github.png';
 export { default as SocialLinkedInImageSrc } from './social_linkedin.png';
@@ -19,5 +18,6 @@ export { default as ClaraLogo } from './claraLogo.png';
 export { default as SofiLogo } from './sofiLogo.png';
 export { default as SofiSpendingBurdownSrc } from './relay_spending_burndown.png';
 export { default as SofiSharingConstantsSrc } from './sharing-constants.png';
-export { default as RelayOverviewPageSrc } from './relay_overview_page.png';
+export { default as RelayOverviewPageSrc } from './relay-initial-load.gif';
 export { default as RelaySuccessConnectedSrc } from './relay_success_account_connected.png';
+export { default as RelayOfflineMobileDashboardSrc } from './relay-mobile-dashboard.png';

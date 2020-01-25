@@ -8,4 +8,5 @@ export { default as CivilSauceTestingCard } from './CivilSauceTesting';
 export { default as RelayOfflineFirstCard } from './RelayOfflineFirst';
 export { default as RelayStrategiesStrategyCard } from './RelayLaunchWithStrategies';
 export { default as RelayHighUserVolumeCard } from './RelayHighUserVolume';
-export { default as SoFiStyleConstants } from './SoFiStyleConstants';
+export { default as SoFiStyleConstantsCard } from './SoFiStyleConstants';
+export { default as RelayChunkingCard } from './RelayChunking';

@@ -29,9 +29,7 @@ const RelayHighUserVolume: React.FC = () => {
       </CardImageContent>
       <CardTextContent>
         <span>
-          <HeaderFont>
-            Error Monitoring for an App with Thousands of Daily Users
-          </HeaderFont>
+          <HeaderFont>Error Monitoring for Thousands of Daily Users</HeaderFont>
           <LogoSubtitle>
             <img
               src={SofiLogo}

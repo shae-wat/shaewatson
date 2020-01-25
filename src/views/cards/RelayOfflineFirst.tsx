@@ -9,16 +9,28 @@ import {
   CardImageContent,
   rhythm,
 } from '../../styles';
-import { RelayOverviewPageSrc, SofiLogo } from '../../images';
+import { RelayOfflineMobileDashboardSrc, SofiLogo } from '../../images';
 
 const RelayOfflineFirst: React.FC = () => {
   return (
-    <Card firstWidth={50} lastWidth={50} lastJustifyContentCenter>
+    <Card firstWidth={50} lastWidth={50} firstJustifyContentCenter>
+      <CardImageContent>
+        <img
+          src={RelayOfflineMobileDashboardSrc}
+          alt="Relay web app"
+          style={{
+            display: 'block',
+            maxWidth: '404px',
+            maxHeight: '835px',
+            width: '100%',
+            height: 'auto',
+            objectFit: 'contain',
+          }}
+        />
+      </CardImageContent>
       <CardTextContent paddingTop={rhythm(3)}>
         <span>
-          <HeaderFont>
-            A Data Loading Strategy for a Mobile-First App
-          </HeaderFont>
+          <HeaderFont>Data Loading Strategy for Mobile-First</HeaderFont>
           <LogoSubtitle>
             <img
               src={SofiLogo}
@@ -41,9 +53,15 @@ const RelayOfflineFirst: React.FC = () => {
         </ParagraphFont>
         <ParagraphFont>
           If there is any data from a previous request to display from the Redux
-          store, it is shown even if there is an error a later request to the
-          API. If no displayable data from the backend has been received and
+          store, it is shown even if there is an error with a later request to
+          the API. If no displayable data from the backend has been received and
           there is an error, only after a few retries, show the full page error.
+        </ParagraphFont>
+        <ParagraphFont>
+          Major feature data is eagerly requested and put into the Redux store.
+          If the app successfully requests all the pre-load data after the
+          initial page draw, the user will not see any errors viewing feature
+          pages.
         </ParagraphFont>
         <ParagraphFont>
           This offline experience is formalized as a strategy in the SoFi Relay
@@ -54,20 +72,6 @@ const RelayOfflineFirst: React.FC = () => {
           the source controlled strategies doc file.
         </ParagraphFont>
       </CardTextContent>
-      <CardImageContent>
-        <img
-          src={RelayOverviewPageSrc}
-          alt="Relay web app"
-          style={{
-            display: 'block',
-            maxWidth: '812px',
-            maxHeight: '1040px',
-            width: '100%',
-            height: 'auto',
-            objectFit: 'contain',
-          }}
-        />
-      </CardImageContent>
     </Card>
   );
 };

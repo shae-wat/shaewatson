@@ -16,9 +16,7 @@ const RelayChunking: React.FC = () => {
     <Card firstWidth={50} lastWidth={50} lastJustifyContentCenter>
       <CardTextContent paddingTop={rhythm(3)}>
         <span>
-          <HeaderFont>
-            Reducing Time to First Paint with JavaScript Chunks
-          </HeaderFont>
+          <HeaderFont>Reducing Time to First Paint with JS Chunks</HeaderFont>
           <LogoSubtitle>
             <img
               src={SofiLogo}
@@ -43,10 +41,13 @@ const RelayChunking: React.FC = () => {
           served in the Relay tab of the native iOS and Android apps.
         </ParagraphFont>
         <ParagraphFont>
-          The app is bundled by Webpack and uses code-splitting by route. With
-          this pattern, each page of the app is its own JavaScript file. This
-          improves load time over networks because the one large JavaScript file
-          is replaced by many smaller JavaScript files.
+          The app is bundled by Webpack with code-splitting by route. Using this
+          pattern, each page of the app is its own JavaScript file. This
+          improves load time over networks as the user does not have to wait for
+          the one large JavaScript file to download before seeing the content of
+          the page they are viewing. Instead the browser just has to load
+          multiple smaller JavaScript files based on which pages the user
+          visits.
         </ParagraphFont>
       </CardTextContent>
       <CardImageContent>

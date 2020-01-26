@@ -13,6 +13,7 @@ import {
   RelayHighUserVolumeCard,
   RelayOfflineFirstCard,
   RelayChunkingCard,
+  ClaraJSPluginCard,
 } from '../cards';
 
 const FeaturedWorkPage: React.FC = () => {
@@ -26,6 +27,7 @@ const FeaturedWorkPage: React.FC = () => {
         <SoFiStyleConstantsCard />
         <ClaraRecommendedLoanCard />
         <ClaraPowerPricingCard />
+        <ClaraJSPluginCard />
         <CustomDropdownCard />
         <CivilSauceTestingCard />
         <FlightStatsArrivalsDeparturesCard />

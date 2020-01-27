@@ -14,6 +14,7 @@ import {
   RelayOfflineFirstCard,
   RelayChunkingCard,
   ClaraJSPluginCard,
+  WWCPortlandWorkshopLeaderCard,
 } from '../cards';
 
 const FeaturedWorkPage: React.FC = () => {
@@ -28,6 +29,7 @@ const FeaturedWorkPage: React.FC = () => {
         <ClaraRecommendedLoanCard />
         <ClaraPowerPricingCard />
         <ClaraJSPluginCard />
+        <WWCPortlandWorkshopLeaderCard />
         <CustomDropdownCard />
         <CivilSauceTestingCard />
         <FlightStatsArrivalsDeparturesCard />

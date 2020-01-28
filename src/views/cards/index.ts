@@ -10,3 +10,5 @@ export { default as RelayStrategiesStrategyCard } from './RelayLaunchWithStrateg
 export { default as RelayHighUserVolumeCard } from './RelayHighUserVolume';
 export { default as SoFiStyleConstantsCard } from './SoFiStyleConstants';
 export { default as RelayChunkingCard } from './RelayChunking';
+export { default as ClaraJSPluginCard } from './ClaraJSPlugin';
+export { default as WWCPortlandWorkshopLeaderCard } from './WWCPortlandWorkshopLeader';

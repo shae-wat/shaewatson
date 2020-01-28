@@ -21,3 +21,6 @@ export { default as SofiSharingConstantsSrc } from './sharing-constants.png';
 export { default as RelayOverviewPageSrc } from './relay-initial-load.gif';
 export { default as RelaySuccessConnectedSrc } from './relay_success_account_connected.png';
 export { default as RelayOfflineMobileDashboardSrc } from './relay-mobile-dashboard.png';
+export { default as ClaraCalculatorPluginSrc } from './clara-calculator-plugin.png';
+export { default as WWCReactWorkshopLeaderSrc } from './wwc-react-workshop-leader.png';
+export { default as WWCLogo } from './wwc-logo.jpg';

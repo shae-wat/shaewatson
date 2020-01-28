@@ -54,7 +54,7 @@ const ClaraJSPlugin: React.FC = () => {
       <CardImageContent>
         <img
           src={ClaraCalculatorPluginSrc}
-          alt="Dashboard with inputs and search results for flight arrivals and departures"
+          alt=""
           style={{
             display: 'block',
             maxWidth: '1018px',

@@ -16,7 +16,7 @@ const ClaraJSPlugin: React.FC = () => {
     <Card firstWidth={50} lastWidth={50} lastJustifyContentCenter>
       <CardTextContent paddingTop={rhythm(1)}>
         <span>
-          <HeaderFont>Plug it in plug it in</HeaderFont>
+          <HeaderFont>Plugins For Marketing WordPress Sites</HeaderFont>
           <LogoSubtitle>
             <img
               src={ClaraLogo}

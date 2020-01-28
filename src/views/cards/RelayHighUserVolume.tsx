@@ -47,9 +47,9 @@ const RelayHighUserVolume: React.FC = () => {
           </LogoSubtitle>
         </span>
         <ParagraphFont>
-          SoFi Relay drives daily user engagement for SoFi's (almost) 1 million
-          members. If a user has a bad experience- and especially if they see a
-          full page error- it defeats the purpose of the app.
+          SoFi Relay drives daily user engagement for SoFi's 1 million members.
+          If a user has a bad experience- and especially if they see a full page
+          error- it defeats the purpose of the app.
         </ParagraphFont>
         <ParagraphFont>
           That is why when I set up New Relic to track errors in the project, an

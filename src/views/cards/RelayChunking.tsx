@@ -37,8 +37,9 @@ const RelayChunking: React.FC = () => {
           As the SoFi Relay project got older with more features and onboarding
           flows added every quarter, it soon became unreasonable to deliver the
           JavaScript in one large file. The need for the fastest JavaScript
-          download possible became imperative when the web app started to be
-          served in the Relay tab of the native iOS and Android apps.
+          download possible especially became imperative when the web app
+          started to be served in the Relay tab of the native iOS and Android
+          apps.
         </ParagraphFont>
         <ParagraphFont>
           The app is bundled by Webpack with code-splitting by route. Using this

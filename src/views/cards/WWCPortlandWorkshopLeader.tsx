@@ -1,5 +1,5 @@
 import React from 'react';
-import { WWCNegotiationWorkshopSrc, ClaraLogo, SofiLogo } from '../../images';
+import { WWCReactWorkshopLeaderSrc, WWCLogo } from '../../images';
 import {
   HeaderFont,
   SubheaderFont,
@@ -9,66 +9,56 @@ import {
   Card,
   CardTextContent,
   CardImageContent,
-  gutter,
 } from '../../styles';
 
 const WWCPortlandWorkshopLeader: React.FC = () => {
   return (
-    <Card firstWidth={50} lastWidth={50} lastJustifyContentCenter>
-      <CardTextContent paddingTop={rhythm(1)}>
-        <span>
-          <HeaderFont>Sharing the good news</HeaderFont>
-          <LogoSubtitle>
-            <img
-              src={ClaraLogo}
-              alt="Clara Lending logo"
-              style={{
-                display: 'block',
-                maxWidth: '30px',
-                maxHeight: '30px',
-                width: '100%',
-                height: 'auto',
-                objectFit: 'contain',
-              }}
-            />
-            <SubheaderFont>Clara Lending </SubheaderFont>
-            <SubheaderFont style={{ marginLeft: `${gutter(1 / 2)}px` }}>
-              {' - '}
-            </SubheaderFont>
-            <img
-              src={SofiLogo}
-              alt="SoFi logo"
-              style={{
-                display: 'block',
-                maxWidth: '30px',
-                maxHeight: '30px',
-                width: '100%',
-                height: 'auto',
-                objectFit: 'contain',
-                marginLeft: `${gutter(1 / 2)}px`,
-              }}
-            />
-            <SubheaderFont>SoFi 2018</SubheaderFont>
-          </LogoSubtitle>
-        </span>
-        <ParagraphFont>...</ParagraphFont>
-        <ParagraphFont>...</ParagraphFont>
-        <ParagraphFont>...</ParagraphFont>
-      </CardTextContent>
+    <Card firstWidth={50} lastWidth={50} firstJustifyContentCenter>
       <CardImageContent>
         <img
-          src={WWCNegotiationWorkshopSrc}
-          alt="Dashboard with inputs and search results for flight arrivals and departures"
+          src={WWCReactWorkshopLeaderSrc}
+          alt="Shae leading group of people on their computers"
           style={{
             display: 'block',
-            maxWidth: '809px',
-            maxHeight: '450px',
+            maxWidth: '540px',
+            maxHeight: '689px',
             width: '100%',
             height: 'auto',
             objectFit: 'contain',
           }}
         />
       </CardImageContent>
+      <CardTextContent paddingTop={rhythm(3)}>
+        <span>
+          <HeaderFont>Leading React.js Workshops</HeaderFont>
+          <LogoSubtitle>
+            <img
+              src={WWCLogo}
+              alt="Women Who Code logo"
+              style={{
+                display: 'block',
+                maxWidth: '30px',
+                maxHeight: '30px',
+                width: '100%',
+                height: 'auto',
+                objectFit: 'contain',
+              }}
+            />
+            <SubheaderFont>Women Who Code Portland 2016</SubheaderFont>
+          </LogoSubtitle>
+        </span>
+        <ParagraphFont>
+          In Portland, I led monthly React.js workshops for Women Who Code. The
+          hands-on React development grew the interest and the aptitude of the
+          community for web development.
+        </ParagraphFont>
+        <ParagraphFont>
+          Leading these workshops allowed me to grow in my abilities as a
+          developer from the collaboration and ideas of the attendees. I grew as
+          a driver on the keyboard, learning how to confidently type and guide
+          development in front of a group of people.
+        </ParagraphFont>
+      </CardTextContent>
     </Card>
   );
 };

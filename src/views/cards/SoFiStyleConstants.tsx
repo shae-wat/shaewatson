@@ -8,8 +8,8 @@ import {
   Card,
   CardTextContent,
   CardImageContent,
-} from '../../styles';
-import { SofiSharingConstantsSrc, SofiLogo, ClaraLogo } from '../../images';
+} from 'styles';
+import { SofiSharingConstantsSrc, SofiLogo, ClaraLogo } from 'images';
 
 const SoFiStyleConstants: React.FC = () => {
   return (

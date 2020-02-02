@@ -10,7 +10,7 @@ import {
   mobileMediaQuery,
   desktopMediaQuery,
   finalSqueezeQuery,
-} from '../../styles';
+} from 'styles';
 
 export enum DropdownOptionKey {
   HIGHEST_RATED,

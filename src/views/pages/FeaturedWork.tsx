@@ -15,7 +15,7 @@ import {
   RelayChunkingCard,
   ClaraJSPluginCard,
   WWCPortlandWorkshopLeaderCard,
-} from '../cards';
+} from 'views/cards';
 
 const FeaturedWorkPage: React.FC = () => {
   return (

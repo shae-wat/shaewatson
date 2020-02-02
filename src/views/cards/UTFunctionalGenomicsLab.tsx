@@ -3,7 +3,7 @@ import {
   UTFunctionalGenomicsLabImageSrc,
   UTFunctionalGenomicsLabLogoSrc,
   UTLogo,
-} from '../../images';
+} from 'images';
 import {
   HeaderFont,
   SubheaderFont,
@@ -14,7 +14,7 @@ import {
   Card,
   CardTextContent,
   CardImageContent,
-} from '../../styles';
+} from 'styles';
 
 const UTFunctionalGenomicsLab: React.FC = () => {
   return (

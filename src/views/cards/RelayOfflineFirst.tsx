@@ -8,8 +8,8 @@ import {
   CardTextContent,
   CardImageContent,
   rhythm,
-} from '../../styles';
-import { RelayOfflineMobileDashboardSrc, SofiLogo } from '../../images';
+} from 'styles';
+import { RelayOfflineMobileDashboardSrc, SofiLogo } from 'images';
 
 const RelayOfflineFirst: React.FC = () => {
   return (

@@ -9,7 +9,7 @@ import {
   BoldText,
   mobileMediaQuery,
   finalSqueezeQuery,
-} from '../../styles';
+} from 'styles';
 
 const ColorPallette = styled.div`
   display: flex;

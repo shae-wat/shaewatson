@@ -4,8 +4,8 @@ import {
   SocialGithubImageSrc,
   SocialLinkedInImageSrc,
   SocialMediumImageSrc,
-} from '../../images';
-import { gutter, mobileMediaQuery, finalSqueezeQuery } from '../../styles';
+} from 'images';
+import { gutter, mobileMediaQuery, finalSqueezeQuery } from 'styles';
 
 const SocialIconGroupContainer = styled.div`
   > * {

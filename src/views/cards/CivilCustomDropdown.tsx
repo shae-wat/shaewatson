@@ -13,9 +13,9 @@ import {
   Card,
   CardTextContent,
   CardImageContent,
-} from '../../styles';
-import { AlaskaDispatchNewsDropdownImageSrc, CivilLogo } from '../../images';
-import { Dropdown, DropdownOptionKey, ColorSelector } from '../components';
+} from 'styles';
+import { AlaskaDispatchNewsDropdownImageSrc, CivilLogo } from 'images';
+import { Dropdown, DropdownOptionKey, ColorSelector } from 'views/components';
 
 const brandColors = [
   Colors.darkBlue,

@@ -1,5 +1,5 @@
 import React from 'react';
-import { ClaraCalculatorPluginSrc, ClaraLogo } from '../../images';
+import { ClaraCalculatorPluginSrc, ClaraLogo } from 'images';
 import {
   HeaderFont,
   SubheaderFont,
@@ -9,7 +9,7 @@ import {
   Card,
   CardTextContent,
   CardImageContent,
-} from '../../styles';
+} from 'styles';
 
 const ClaraJSPlugin: React.FC = () => {
   return (

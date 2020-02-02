@@ -8,8 +8,8 @@ import {
   Card,
   CardTextContent,
   CardImageContent,
-} from '../../styles';
-import { FSDepArrImageSrc, FlightStatsLogo } from '../../images';
+} from 'styles';
+import { FSDepArrImageSrc, FlightStatsLogo } from 'images';
 
 const FlightStatsArrivalsDepartures: React.FC = () => {
   return (

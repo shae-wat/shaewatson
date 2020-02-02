@@ -8,8 +8,8 @@ import {
   CardTextContent,
   CardImageContent,
   rhythm,
-} from '../../styles';
-import { RelayOverviewPageSrc, SofiLogo } from '../../images';
+} from 'styles';
+import { RelayOverviewPageSrc, SofiLogo } from 'images';
 
 const RelayChunking: React.FC = () => {
   return (

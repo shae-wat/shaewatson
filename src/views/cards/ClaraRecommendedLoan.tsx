@@ -7,8 +7,8 @@ import {
   Card,
   CardTextContent,
   CardImageContent,
-} from '../../styles';
-import { ClaraRecommendedLoanImageSrc, ClaraLogo } from '../../images';
+} from 'styles';
+import { ClaraRecommendedLoanImageSrc, ClaraLogo } from 'images';
 
 const ClaraRecommendedLoan: React.FC = () => {
   return (

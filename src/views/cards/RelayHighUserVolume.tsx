@@ -7,8 +7,8 @@ import {
   Card,
   CardTextContent,
   CardImageContent,
-} from '../../styles';
-import { RelaySuccessConnectedSrc, SofiLogo } from '../../images';
+} from 'styles';
+import { RelaySuccessConnectedSrc, SofiLogo } from 'images';
 
 const RelayHighUserVolume: React.FC = () => {
   return (

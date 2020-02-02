@@ -1,7 +1,7 @@
 import React from 'react';
 import _ from 'lodash';
 import styled from 'styled-components';
-import { Colors, column, gutter, rhythm, FontCSS } from '../../styles';
+import { Colors, column, gutter, rhythm, FontCSS } from 'styles';
 
 export enum DropdownOptionKey {
   HIGHEST_RATED,

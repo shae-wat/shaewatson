@@ -8,8 +8,8 @@ import {
   LinkText,
   LogoSubtitle,
   SubheaderFont,
-} from '../../styles';
-import { SauceLabsDashboardImageSrc, CivilLogo } from '../../images';
+} from 'styles';
+import { SauceLabsDashboardImageSrc, CivilLogo } from 'images';
 
 const SauceTesting: React.FC = () => {
   return (

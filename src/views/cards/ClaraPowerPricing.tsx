@@ -7,8 +7,8 @@ import {
   Card,
   CardTextContent,
   CardImageContent,
-} from '../../styles';
-import { PowerPricerImageSrc, ClaraLogo } from '../../images';
+} from 'styles';
+import { PowerPricerImageSrc, ClaraLogo } from 'images';
 
 const ClaraPowerPricing: React.FC = () => {
   return (

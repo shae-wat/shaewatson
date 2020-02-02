@@ -7,8 +7,8 @@ import {
   CardTextContent,
   CardImageContent,
   ParagraphFont,
-} from '../../styles';
-import { SofiSpendingBurdownSrc, SofiLogo } from '../../images';
+} from 'styles';
+import { SofiSpendingBurdownSrc, SofiLogo } from 'images';
 
 const RelayStrategiesStrategy: React.FC = () => {
   return (

@@ -12,9 +12,9 @@ import {
   mobileMediaQuery,
   tabletMediaQuery,
 } from '../styles';
-import { ReactLogoImageSrc } from '../images';
-import { FeaturedWorkPage } from './pages';
-import SocialIconGroup from './components/SocialIconGroup';
+import { ReactLogoImageSrc } from 'images';
+import { FeaturedWorkPage } from 'views/pages';
+import SocialIconGroup from 'views/components/SocialIconGroup';
 
 const HEADER_HEIGHT = 10;
 

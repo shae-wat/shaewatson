@@ -1,5 +1,5 @@
 import React from 'react';
-import { WWCReactWorkshopLeaderSrc, WWCLogo } from '../../images';
+import { WWCReactWorkshopLeaderSrc, WWCLogo } from 'images';
 import {
   HeaderFont,
   SubheaderFont,
@@ -9,7 +9,7 @@ import {
   Card,
   CardTextContent,
   CardImageContent,
-} from '../../styles';
+} from 'styles';
 
 const WWCPortlandWorkshopLeader: React.FC = () => {
   return (

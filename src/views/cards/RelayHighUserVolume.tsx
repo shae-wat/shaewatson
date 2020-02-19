@@ -52,16 +52,14 @@ const RelayHighUserVolume: React.FC = () => {
           error- it defeats the purpose of the app.
         </ParagraphFont>
         <ParagraphFont>
-          That is why when I set up New Relic to track errors in the project, an
-          alert was set to trigger in our Slack channel for each full page error
-          shown to a user. I am proud of this system because it demonstrates the
-          robustness of the app’s front-end architecture and how the team runs
-          after problems.
+          That is why when I set up error monitoring in the project, I set an
+          alert to trigger in our Slack channel on every full page error seen in
+          the UI. This rigorous system demonstrates the robustness of the
+          front-end architecture and how the team runs after problems.
         </ParagraphFont>
         <ParagraphFont>
-          Alerting in a Slack channel drives accountability because it is
-          visible and has a process where a discussion of the issue determines
-          the work to prevent the issue in the future.
+          Alerting in a Slack channel drives accountability because it creates a
+          visible thread of discussion that determines how to address an issue.
         </ParagraphFont>
       </CardTextContent>
     </Card>

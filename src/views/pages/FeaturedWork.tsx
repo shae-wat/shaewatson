@@ -15,12 +15,14 @@ import {
   RelayChunkingCard,
   ClaraJSPluginCard,
   WWCPortlandWorkshopLeaderCard,
+  SoFiBrandThoCard,
 } from 'views/cards';
 
 const FeaturedWorkPage: React.FC = () => {
   return (
     <Page>
       <PageCardLayout>
+        <SoFiBrandThoCard />
         <RelayOfflineFirstCard />
         <RelayChunkingCard />
         <RelayHighUserVolumeCard />

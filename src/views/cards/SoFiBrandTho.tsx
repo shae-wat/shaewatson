@@ -8,7 +8,7 @@ import {
   CardTextContent,
   CardImageContent,
 } from 'styles';
-import { RelaySuccessConnectedSrc, SofiLogo } from 'images';
+import { SoFiChartOnTVSrc, SofiLogo } from 'images';
 
 const SoFiBrandTho: React.FC = () => {
   return (
@@ -34,28 +34,29 @@ const SoFiBrandTho: React.FC = () => {
         </span>
         <ParagraphFont>
           It is really cool to contribute to an app with a spunky, sharp
-          financial voice. The SoFi brand has attracted many people to the app.
-          The rigor used to make the Relay web front-end was high from the
-          start, and that gave us good momentutom to make a product that is used
-          daily.
+          financial voice. The SoFi brand has attracted many people to the Relay
+          app.
         </ParagraphFont>
         <ParagraphFont>
           When launching the new credit score feature for Relay, the number of
           users that found the new feature in the first few months was in the
-          10,000's.
+          thousands.
         </ParagraphFont>
         <ParagraphFont>
-          Also, the chart in the app gets to be on TV!
+          <span role="img" aria-label="clapper board">
+            🎬
+          </span>
+          Also, sometimes the charts of the Relay app get to be on TV!{' '}
         </ParagraphFont>
       </CardTextContent>
       <CardImageContent>
         <img
-          src={RelaySuccessConnectedSrc}
-          alt="Relay web app"
+          src={SoFiChartOnTVSrc}
+          alt="Relay spending categories chart on TV screen during the USWNT World Cup June 2019"
           style={{
             display: 'block',
-            maxWidth: '766px',
-            maxHeight: '394px',
+            maxWidth: '600px',
+            maxHeight: '314px',
             width: '100%',
             height: 'auto',
             objectFit: 'contain',

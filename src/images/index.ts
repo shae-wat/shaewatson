@@ -24,3 +24,4 @@ export { default as RelayOfflineMobileDashboardSrc } from './relay-mobile-dashbo
 export { default as ClaraCalculatorPluginSrc } from './clara-calculator-plugin.png';
 export { default as WWCReactWorkshopLeaderSrc } from './wwc-react-workshop-leader.png';
 export { default as WWCLogo } from './wwc-logo.jpg';
+export { default as SoFiChartOnTVSrc } from './sofi-chart-on-tv.png';

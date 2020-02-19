@@ -34,8 +34,8 @@ const RelayChunking: React.FC = () => {
           </LogoSubtitle>
         </span>
         <ParagraphFont>
-          As the SoFi Relay project got older with more features and onboarding
-          flows added every quarter, it soon became unreasonable to deliver the
+          As the SoFi Relay project got larger with more features and onboarding
+          flows added every quarter, it became unreasonable to deliver the
           JavaScript in one large file. The need for the fastest JavaScript
           download possible especially became imperative when the web app
           started to be served in the Relay tab of the native iOS and Android
@@ -43,12 +43,13 @@ const RelayChunking: React.FC = () => {
         </ParagraphFont>
         <ParagraphFont>
           The app is bundled by Webpack with code-splitting by route. Using this
-          pattern, each page of the app is its own JavaScript file. This
-          improves load time over networks as the user does not have to wait for
-          the one large JavaScript file to download before seeing the content of
-          the page they are viewing. Instead the browser just has to load
-          multiple smaller JavaScript files based on which pages the user
-          visits.
+          pattern, each page of the app is its own JavaScript file.
+        </ParagraphFont>
+        <ParagraphFont>
+          This improves load time over networks as the user does not have to
+          wait for the large JavaScript files to download before seeing the
+          content of the page. Instead the browser loads many smaller JavaScript
+          files based on the pages needed for the user.
         </ParagraphFont>
       </CardTextContent>
       <CardImageContent>

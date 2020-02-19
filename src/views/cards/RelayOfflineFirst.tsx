@@ -59,17 +59,16 @@ const RelayOfflineFirst: React.FC = () => {
         </ParagraphFont>
         <ParagraphFont>
           Major feature data is eagerly requested and put into the Redux store.
-          If the app successfully requests all the pre-load data after the
+          When the app successfully requests all the pre-load data after the
           initial page draw, the user will not see any errors viewing feature
           pages.
         </ParagraphFont>
         <ParagraphFont>
           This offline experience is formalized as a strategy in the SoFi Relay
           front-end project. A strategy is a code pattern that results in the
-          best user experience possible, and are democratic team decisions that
-          are forever open to re-examination and iteration. A strategy update is
-          agreed upon by the team democratically and manifests as an update to
-          the source controlled strategies doc file.
+          best user experience possible. Strategies are democratic team
+          decisions forever open to re-examination and iteration, formalized
+          with an update to the source controlled strategies doc file.
         </ParagraphFont>
       </CardTextContent>
     </Card>

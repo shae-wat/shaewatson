@@ -13,3 +13,4 @@ export { default as RelayChunkingCard } from './RelayChunking';
 export { default as ClaraJSPluginCard } from './ClaraJSPlugin';
 export { default as WWCPortlandWorkshopLeaderCard } from './WWCPortlandWorkshopLeader';
 export { default as SoFiBrandThoCard } from './SoFiBrandTho';
+export { default as TitleCard } from './TitleCard';

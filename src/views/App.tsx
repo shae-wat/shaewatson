@@ -14,6 +14,7 @@ import {
 } from '../styles';
 import { ReactLogoImageSrc } from 'images';
 import { FeaturedWorkPage } from 'views/pages';
+import { TitleCard } from 'views/cards';
 import SocialIconGroup from 'views/components/SocialIconGroup';
 
 const HEADER_HEIGHT = 10;
@@ -103,7 +104,7 @@ const AppFooter = styled.footer`
     )}
   }
 `;
-const FooterSection = styled.div`
+const DetailsSection = styled.div`
   display: flex;
   flex-direction: column;
   > p {
@@ -123,6 +124,7 @@ const App: React.FC = () => {
           <SocialIconGroup />
         </AppHeader>
         <Main>
+          <TitleCard />
           <FeaturedWorkPage />
         </Main>
       </div>
@@ -143,7 +145,7 @@ const App: React.FC = () => {
           <ParagraphFont>Typescript</ParagraphFont>
           <ParagraphFont>React.js</ParagraphFont>
         </div>
-        <FooterSection>
+        <DetailsSection>
           <SubheaderFont>Handmade by Shae Watson</SubheaderFont>
           <SubheaderFont>2020</SubheaderFont>
           <ParagraphFont>
@@ -166,7 +168,7 @@ const App: React.FC = () => {
             understanding of the ideal code, architecture, and design for a
             scalable React.js web app. I also picked the colors!
           </ParagraphFont>
-        </FooterSection>
+        </DetailsSection>
       </AppFooter>
     </AppContainer>
   );

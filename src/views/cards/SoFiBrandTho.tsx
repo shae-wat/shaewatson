@@ -45,8 +45,8 @@ const SoFiBrandTho: React.FC = () => {
         <ParagraphFont>
           <span role="img" aria-label="clapper board">
             🎬
-          </span>
-          Also, sometimes the charts of the Relay app get to be on TV!{' '}
+          </span>{' '}
+          Also, sometimes the charts of the Relay app get to be on TV!
         </ParagraphFont>
       </CardTextContent>
       <CardImageContent>

@@ -3,14 +3,12 @@ import styled from 'styled-components';
 import {
   HeaderFont,
   SubheaderFont,
-  LogoSubtitle,
   ParagraphFont,
   Card,
   CardTextContent,
   CONTENT_MAX_WIDTH,
   rhythm,
 } from 'styles';
-import { SofiLogo } from 'images';
 
 const UncontainedCard = styled(Card)`
   margin-top: ${rhythm(1)}px;
@@ -21,32 +19,42 @@ const UncontainedCard = styled(Card)`
 
 const TitleCard: React.FC = () => {
   return (
-    <UncontainedCard
-      titleCard
-      lastJustifyContentCenter
-      lastWidth={50}
-      firstWidth={50}>
+    <UncontainedCard titleCard>
       <CardTextContent>
-        <span>
-          <HeaderFont>Shae Watson</HeaderFont>
-          <LogoSubtitle>
-            <img
-              src={SofiLogo}
-              alt="SoFi logo"
-              style={{
-                display: 'block',
-                maxWidth: '30px',
-                maxHeight: '30px',
-                width: '100%',
-                height: 'auto',
-                objectFit: 'contain',
-              }}
-            />
-            <SubheaderFont>SoFi 2020</SubheaderFont>
-          </LogoSubtitle>
-        </span>
-        <ParagraphFont>...</ParagraphFont>
-        <ParagraphFont>...</ParagraphFont>
+        <HeaderFont>Front-end engineer with product focus</HeaderFont>
+        <SubheaderFont>
+          <span role="img" aria-label="clapper board">
+            🎬
+          </span>{' '}
+          ...
+        </SubheaderFont>
+        <SubheaderFont>
+          <span role="img" aria-label="clapper board">
+            🎬
+          </span>{' '}
+          ...
+        </SubheaderFont>
+        <SubheaderFont>
+          <span role="img" aria-label="clapper board">
+            🎬
+          </span>{' '}
+          ...
+        </SubheaderFont>
+      </CardTextContent>
+      <CardTextContent>
+        <HeaderFont>...</HeaderFont>
+        <ParagraphFont>
+          <span role="img" aria-label="mobile phone">
+            📱
+          </span>{' '}
+          ....
+        </ParagraphFont>
+        <ParagraphFont>
+          <span role="img" aria-label="racecar">
+            🏎
+          </span>{' '}
+          .....
+        </ParagraphFont>
         <ParagraphFont>
           <span role="img" aria-label="clapper board">
             🎬

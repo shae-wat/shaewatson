@@ -37,7 +37,7 @@ export const Card = styled.section`
     titleCard?: boolean;
   }) => `
     background-color:${
-      titleCard ? Colors.footerBackground : Colors.cardBackground
+      titleCard ? Colors.titleCardBackground : Colors.cardBackground
     };
 
     > *:first-child {

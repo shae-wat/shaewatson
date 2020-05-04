@@ -30,7 +30,9 @@ const RelayOfflineFirst: React.FC = () => {
       </CardImageContent>
       <CardTextContent paddingTop={rhythm(3)}>
         <span>
-          <HeaderFont>Data Loading Strategy for Mobile-First</HeaderFont>
+          <HeaderFont>
+            Data Loading Strategy for a Robust High-touch App
+          </HeaderFont>
           <LogoSubtitle>
             <img
               src={SofiLogo}
@@ -48,8 +50,8 @@ const RelayOfflineFirst: React.FC = () => {
           </LogoSubtitle>
         </span>
         <ParagraphFont>
-          I have always wanted to build an offline-first app that continues to
-          work if internet is disconnected during a user session.
+          The ultimate test for a robust app is that it continues to work if
+          internet is disconnected.
         </ParagraphFont>
         <ParagraphFont>
           If there is any data from a previous request to display from the Redux
@@ -62,13 +64,6 @@ const RelayOfflineFirst: React.FC = () => {
           When the app successfully requests all the pre-load data after the
           initial page draw, the user will not see any errors viewing feature
           pages.
-        </ParagraphFont>
-        <ParagraphFont>
-          This offline experience is formalized as a strategy in the SoFi Relay
-          front-end project. A strategy is a code pattern that results in the
-          best user experience possible. Strategies are democratic team
-          decisions forever open to re-examination and iteration, formalized
-          with an update to the source controlled strategies doc file.
         </ParagraphFont>
       </CardTextContent>
     </Card>

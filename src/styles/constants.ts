@@ -16,3 +16,4 @@ export const rhythm = (numRhythms: number) => {
 };
 
 export const CONTENT_MAX_WIDTH = column(14) + gutter(13);
+export const HEADER_HEIGHT = 10;

@@ -28,27 +28,35 @@ export const Card = styled.section`
     firstJustifyContentCenter,
     lastWidth,
     lastJustifyContentCenter,
+    titleCard,
   }: {
     firstWidth?: number;
     firstJustifyContentCenter?: boolean;
     lastWidth?: number;
     lastJustifyContentCenter?: boolean;
-  }) => `> *:first-child {
-    display: flex;
-    justify-content: ${firstJustifyContentCenter ? 'center' : 'flex-start'};
-    align-items: ${firstJustifyContentCenter ? 'center' : 'flex-start'};
-    position: relative;
-    width: ${firstWidth || 60}%;
-    ${tabletMediaQuery(`width: auto;`)}
-  }
-  > *:last-child {
-    display: flex;
-    justify-content: ${lastJustifyContentCenter ? 'center' : 'flex-start'};
-    align-items: ${lastJustifyContentCenter ? 'center' : 'flex-start'};
-    position: relative;
-    width: ${lastWidth || 40}%;
-    ${tabletMediaQuery(`width: auto;`)}
-  }`}
+    titleCard?: boolean;
+  }) => `
+    background-color:${
+      titleCard ? Colors.titleCardBackground : Colors.cardBackground
+    };
+
+    > *:first-child {
+      display: flex;
+      justify-content: ${firstJustifyContentCenter ? 'center' : 'flex-start'};
+      align-items: ${firstJustifyContentCenter ? 'center' : 'flex-start'};
+      position: relative;
+      width: ${firstWidth || 60}%;
+      ${tabletMediaQuery(`width: auto;`)}
+    }
+    > *:last-child {
+      display: flex;
+      justify-content: ${lastJustifyContentCenter ? 'center' : 'flex-start'};
+      align-items: ${lastJustifyContentCenter ? 'center' : 'flex-start'};
+      position: relative;
+      width: ${lastWidth || 40}%;
+      ${tabletMediaQuery(`width: auto;`)}
+    }
+  `}
 `;
 
 export const CardTextContent = styled.div`

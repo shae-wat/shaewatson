@@ -56,7 +56,7 @@ export const MicroFont = styled.p`
 export const BoldText = styled.span`
   ${FontCSS}
   color: ${(props: { color?: typeof Colors.millenialPink }) =>
-    props.color || Colors.background};
+    props.color || Colors.white};
   /* TODO:  font-family: BoldFontFamily */
   font-weight: 700;
 `;

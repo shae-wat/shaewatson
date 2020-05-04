@@ -1,6 +1,7 @@
 export const Colors = {
   white: '#FDFFFC',
   background: '#282C34',
+  titleCardBackground: '#665F6B',
   cardBackground: '#685D6F',
   cardLink: '#C0E1F1',
   footerBackground: '#636363',

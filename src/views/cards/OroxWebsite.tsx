@@ -50,9 +50,9 @@ const OroxWebsite: React.FC = () => {
           </LogoSubtitle>
         </span>
         <ParagraphFont>
-          In my early career, I grew in basic but significant ways styling the{' '}
+          I grew in basic but significant ways styling the{' '}
           <LinkText
-            href="https://www.oroxleather.com/"
+            href="http://web.archive.org/web/20171023033504/https://www.oroxleather.com/"
             target="_blank"
             rel="noopener noreferrer">
             Orox Leather
@@ -60,10 +60,10 @@ const OroxWebsite: React.FC = () => {
           website.
         </ParagraphFont>
         <ParagraphFont>
-          After a lifetime of mostly academia up to this point, this project
-          from a local family-owned business helped me become a scrappy web
-          product owner and manage a website on my own. I experienced the pride
-          that comes from building and maintaining the UI of a business for the
+          After a lifetime of mostly academia up to this point in my career,
+          this project from a local family-owned business trained me to be a
+          scrappy IRL web product owner. I experienced the pride that comes from
+          building and maintaining the UI "face" of an organization for the
           first time.
         </ParagraphFont>
         <ParagraphFont>

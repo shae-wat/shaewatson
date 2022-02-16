@@ -21,7 +21,7 @@ const brandColors = [
   Colors.darkBlue,
   Colors.lightPurple,
   Colors.tanPink,
-  Colors.millenialPink,
+  Colors.cardBackground,
   Colors.red,
 ];
 

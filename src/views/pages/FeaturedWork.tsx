@@ -1,9 +1,7 @@
 import React from 'react';
 import { Page, PageCardLayout } from '.';
 import {
-  ClaraPowerPricingCard,
   CustomDropdownCard,
-  ClaraRecommendedLoanCard,
   FlightStatsArrivalsDeparturesCard,
   OroxWebsiteCard,
   UTFunctionalGenomicsLabCard,
@@ -11,6 +9,10 @@ import {
   RelayHighUserVolumeCard,
   RelayOfflineFirstCard,
   SoFiBrandThoCard,
+  ClaraJSPluginCard,
+  RelayChunkingCard,
+  SoFiStyleConstantsCard,
+  WWCPortlandWorkshopLeaderCard,
 } from 'views/cards';
 
 const FeaturedWorkPage: React.FC = () => {
@@ -19,11 +21,13 @@ const FeaturedWorkPage: React.FC = () => {
       <PageCardLayout>
         <SoFiBrandThoCard />
         <RelayOfflineFirstCard />
+        <RelayChunkingCard />
         <RelayHighUserVolumeCard />
         <RelayStrategiesStrategyCard />
-        <ClaraRecommendedLoanCard />
-        <ClaraPowerPricingCard />
+        <SoFiStyleConstantsCard />
+        <ClaraJSPluginCard />
         <CustomDropdownCard />
+        <WWCPortlandWorkshopLeaderCard />
         <FlightStatsArrivalsDeparturesCard />
         <OroxWebsiteCard />
         <UTFunctionalGenomicsLabCard />

@@ -83,12 +83,9 @@ const Footer: React.FC = () => {
             rel="noopener noreferrer">
             {' here'}
           </LinkText>
-          .
-        </ParagraphFont>
-        <ParagraphFont>
-          This website represents my personal preferences and current
+          . This website represents my personal preferences and current
           understanding of the ideal code, architecture, and design for a
-          scalable React.js web app. I also picked the colors!
+          scalable React.js web app.
         </ParagraphFont>
       </DetailsSection>
     </AppFooter>

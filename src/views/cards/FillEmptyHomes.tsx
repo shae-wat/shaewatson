@@ -48,14 +48,17 @@ const FillEmptyHomes: React.FC = () => {
           phonebanking to increase turnout to these events.
         </ParagraphFont>
         <ParagraphFont>
-          After managing a design process between the consultant, the DSA org,
-          and artists while working on the campaign, I was offered the
-          opportunity to run a parallel campaign for another ballot measure.
+          After managing a design process between the consultant, the DSA
+          organization, and artists while working on the Fill Empty Homes
+          campaign, I was available to accept the the opportunity to run a
+          parallel campaign for the Even Year Elections ballot measure, after it
+          surprisingly made it onto the ballot.
         </ParagraphFont>
         <ParagraphFont>
-          I ended up being the go-to for web help for 3 successful November 2022
-          campaigns- I built the user interface, contributed copy, gathered
-          translations, and maintained the donation page.
+          I ended up being the go-to for web and technical help for 3 successful
+          November 2022 campaigns- I polished the user interface for the
+          websites, contributed copy, gathered translations, and maintained the
+          donation page.
         </ParagraphFont>
         <LinkText
           color={Colors.lightBlue}

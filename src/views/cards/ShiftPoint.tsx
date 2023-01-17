@@ -30,7 +30,7 @@ const ShiftPoint: React.FC = () => {
       </CardImageContent>
       <CardTextContent>
         <span>
-          <HeaderFont>Living my life</HeaderFont>
+          <HeaderFont>Reflecting and living this one precious life</HeaderFont>
           <LogoSubtitle>
             <SubheaderFont>2021</SubheaderFont>
           </LogoSubtitle>

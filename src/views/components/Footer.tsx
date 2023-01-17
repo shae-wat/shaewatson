@@ -51,25 +51,11 @@ const DetailsSection = styled.div`
 const Footer: React.FC = () => {
   return (
     <AppFooter>
+      <div></div>
       <SocialIconGroup />
-      <div>
-        <SubheaderFont>Tech stack used for this site:</SubheaderFont>
-        <ParagraphFont>
-          <LinkText
-            color={Colors.lightBlue}
-            href="https://github.com/facebook/create-react-app"
-            target="_blank"
-            rel="noopener noreferrer">
-            Create React App
-          </LinkText>
-        </ParagraphFont>
-        <ParagraphFont>Node / Webpack / Babel</ParagraphFont>
-        <ParagraphFont>Typescript</ParagraphFont>
-        <ParagraphFont>React.js</ParagraphFont>
-      </div>
       <DetailsSection>
-        <SubheaderFont>Handmade by Shae Watson</SubheaderFont>
-        <SubheaderFont>2020</SubheaderFont>
+        <SubheaderFont>Shae Watson</SubheaderFont>
+        <SubheaderFont>2023</SubheaderFont>
         <ParagraphFont>
           This website and representation of my work for companies does not
           reflect or represent the opinions or plans of those companies.

@@ -9,45 +9,15 @@ import {
   CardTextContent,
   CardImageContent,
 } from 'styles';
-import { SofiSharingConstantsSrc, SofiLogo, ClaraLogo } from 'images';
+import { SofiSharingConstantsSrc, SofiLogo } from 'images';
 
 const SoFiStyleConstants: React.FC = () => {
   return (
-    <Card firstWidth={50} lastWidth={50} firstJustifyContentCenter>
-      <CardImageContent>
-        <img
-          src={SofiSharingConstantsSrc}
-          alt="Drake no to non-descriptive way of writing CSS, Drake yes to descriptive way of writing CSS with design constants"
-          style={{
-            display: 'block',
-            maxWidth: '1066px',
-            maxHeight: '824px',
-            width: '100%',
-            height: 'auto',
-            objectFit: 'contain',
-          }}
-        />
-      </CardImageContent>
+    <Card firstWidth={50} lastWidth={50}>
       <CardTextContent>
         <span>
           <HeaderFont>Sharing Constants with Design</HeaderFont>
           <LogoSubtitle>
-            <img
-              src={ClaraLogo}
-              alt="Clara Lending logo"
-              style={{
-                display: 'block',
-                maxWidth: '30px',
-                maxHeight: '30px',
-                width: '100%',
-                height: 'auto',
-                objectFit: 'contain',
-              }}
-            />
-            <SubheaderFont>Clara Lending </SubheaderFont>
-            <SubheaderFont style={{ marginLeft: `${gutter(1 / 2)}px` }}>
-              {' - '}
-            </SubheaderFont>
             <img
               src={SofiLogo}
               alt="SoFi logo"
@@ -82,6 +52,20 @@ const SoFiStyleConstants: React.FC = () => {
           and clear CSS syntax.
         </ParagraphFont>
       </CardTextContent>
+      <CardImageContent>
+        <img
+          src={SofiSharingConstantsSrc}
+          alt="Drake no to non-descriptive way of writing CSS, Drake yes to descriptive way of writing CSS with design constants"
+          style={{
+            display: 'block',
+            maxWidth: '1066px',
+            maxHeight: '824px',
+            width: '100%',
+            height: 'auto',
+            objectFit: 'contain',
+          }}
+        />
+      </CardImageContent>
     </Card>
   );
 };

@@ -1,13 +1,13 @@
 import React from 'react';
 import { Page, PageCardLayout } from '.';
 import {
+  FillEmptyHomesCard,
+  ShiftPointCard,
   CustomDropdownCard,
   FlightStatsArrivalsDeparturesCard,
   OroxWebsiteCard,
   UTFunctionalGenomicsLabCard,
   RelayStrategiesStrategyCard,
-  RelayHighUserVolumeCard,
-  RelayOfflineFirstCard,
   SoFiBrandThoCard,
   ClaraJSPluginCard,
   RelayChunkingCard,
@@ -19,12 +19,12 @@ const FeaturedWorkPage: React.FC = () => {
   return (
     <Page>
       <PageCardLayout>
+        <FillEmptyHomesCard />
+        <ShiftPointCard />
         <SoFiBrandThoCard />
-        <RelayOfflineFirstCard />
         <RelayChunkingCard />
-        <RelayHighUserVolumeCard />
-        <RelayStrategiesStrategyCard />
         <SoFiStyleConstantsCard />
+        <RelayStrategiesStrategyCard />
         <ClaraJSPluginCard />
         <CustomDropdownCard />
         <WWCPortlandWorkshopLeaderCard />

@@ -14,6 +14,21 @@ import { RelayOverviewPageSrc, SofiLogo } from 'images';
 const RelayChunking: React.FC = () => {
   return (
     <Card firstWidth={50} lastWidth={50} lastJustifyContentCenter>
+      <CardImageContent>
+        <img
+          src={RelayOverviewPageSrc}
+          alt="Relay web app"
+          style={{
+            display: 'block',
+            maxWidth: '640px',
+            maxHeight: '470px',
+            width: '100%',
+            height: 'auto',
+            objectFit: 'contain',
+          }}
+        />
+      </CardImageContent>
+
       <CardTextContent paddingTop={rhythm(2)}>
         <span>
           <HeaderFont>Reducing Time to First Paint with JS Chunks</HeaderFont>
@@ -52,20 +67,6 @@ const RelayChunking: React.FC = () => {
           files based on the pages needed for the user.
         </ParagraphFont>
       </CardTextContent>
-      <CardImageContent>
-        <img
-          src={RelayOverviewPageSrc}
-          alt="Relay web app"
-          style={{
-            display: 'block',
-            maxWidth: '640px',
-            maxHeight: '470px',
-            width: '100%',
-            height: 'auto',
-            objectFit: 'contain',
-          }}
-        />
-      </CardImageContent>
     </Card>
   );
 };

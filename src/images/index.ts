@@ -25,3 +25,6 @@ export { default as ClaraCalculatorPluginSrc } from './clara-calculator-plugin.p
 export { default as WWCReactWorkshopLeaderSrc } from './wwc-react-workshop-leader.png';
 export { default as WWCLogo } from './wwc-logo.jpg';
 export { default as SoFiChartOnTVSrc } from './sofi-chart-on-tv.png';
+export { default as FillEmptyHomesLogo } from './m-logo.png';
+export { default as FillEmptyHomesCampaignPic } from './eht-campaign.png';
+export { default as DadPlayhousePic } from './dad-playhouse.png';

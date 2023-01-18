@@ -47,9 +47,10 @@ const ShiftPoint: React.FC = () => {
           mass death.
         </ParagraphFont>
         <ParagraphFont>
-          I decided to buy myself time to care for the people sharing this world
-          and life with me and to re-align myself with my newfound deeper
-          understanding of the world and economic forces.
+          I decided to buy myself time to care for the people sharing this one
+          world and one life with me. The time allowed me to align myself with
+          my newfound deeper understanding of the world and economic forces, to
+          heal and process and grow.
         </ParagraphFont>
         <ParagraphFont>
           My father did not survive to retirement age, so I am glad I took this

@@ -84,4 +84,8 @@ export const CardTextContent = styled.div`
   }
 `;
 
-export const CardImageContent = styled.div``;
+export const CardImageContent = styled.div`
+  position: relative;
+  display: flex;
+  flex-direction: column;
+`;

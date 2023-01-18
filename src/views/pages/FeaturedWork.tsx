@@ -1,6 +1,7 @@
 import React from 'react';
 import { Page, PageCardLayout } from '.';
 import {
+  EvenYearElectionsCampaignCard,
   FillEmptyHomesCard,
   ShiftPointCard,
   CustomDropdownCard,
@@ -19,6 +20,7 @@ const FeaturedWorkPage: React.FC = () => {
   return (
     <Page>
       <PageCardLayout>
+        <EvenYearElectionsCampaignCard />
         <FillEmptyHomesCard />
         <ShiftPointCard />
         <SoFiBrandThoCard />

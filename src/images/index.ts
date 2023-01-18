@@ -28,3 +28,7 @@ export { default as SoFiChartOnTVSrc } from './sofi-chart-on-tv.png';
 export { default as FillEmptyHomesLogo } from './m-logo.png';
 export { default as FillEmptyHomesCampaignPic } from './eht-campaign.png';
 export { default as DadPlayhousePic } from './dad-playhouse.png';
+export { default as YesHLogo } from './logo-yes-h-square.png';
+export { default as Campaign2022Pic } from './campaign-2022.png';
+export { default as YesHWebsitePic } from './yes-h-website.png';
+export { default as StudentSuccessLogo } from './student-success-logo.png';

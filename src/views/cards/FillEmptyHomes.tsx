@@ -11,7 +11,12 @@ import {
   LinkText,
   Colors,
 } from 'styles';
-import { FillEmptyHomesCampaignPic, FillEmptyHomesLogo } from 'images';
+import {
+  FillEmptyHomesCampaignPic,
+  FillEmptyHomesLogo,
+  YesHLogo,
+  StudentSuccessLogo,
+} from 'images';
 
 const FillEmptyHomes: React.FC = () => {
   return (
@@ -35,6 +40,30 @@ const FillEmptyHomes: React.FC = () => {
                 marginLeft: `${gutter(1 / 2)}px`,
               }}
             />
+            <img
+              src={YesHLogo}
+              alt="Yes on H Double the vote in local elections"
+              style={{
+                display: 'block',
+                maxWidth: '30px',
+                maxHeight: '30px',
+                width: '100%',
+                height: 'auto',
+                objectFit: 'contain',
+              }}
+            />
+            <img
+              src={StudentSuccessLogo}
+              alt="Yes on G Student Success"
+              style={{
+                display: 'block',
+                maxWidth: '30px',
+                maxHeight: '30px',
+                width: '100%',
+                height: 'auto',
+                objectFit: 'contain',
+              }}
+            />
             <SubheaderFont>November 2022 Election Cycle</SubheaderFont>
           </LogoSubtitle>
         </span>
@@ -43,7 +72,7 @@ const FillEmptyHomes: React.FC = () => {
           Homes Campaign starting in February 2022 when I launched the website.
         </ParagraphFont>
         <ParagraphFont>
-          I made graphics and worked with graphic designers to promote the
+          I made graphics and worked with comms and artists to promote the
           kickoff and mobilization events and fundraisers. I participated in
           phonebanking to increase turnout to these events.
         </ParagraphFont>

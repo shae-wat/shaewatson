@@ -34,7 +34,7 @@ const ClaraJSPlugin: React.FC = () => {
           </LogoSubtitle>
         </span>
         <ParagraphFont>
-          A comman ask is for interactive content to be added to marketing CMS
+          A common ask is for interactive content to be added to marketing CMS
           websites.
         </ParagraphFont>
         <ParagraphFont>

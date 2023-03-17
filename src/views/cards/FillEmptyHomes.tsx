@@ -91,7 +91,7 @@ const FillEmptyHomes: React.FC = () => {
         </ParagraphFont>
         <LinkText
           color={Colors.lightBlue}
-          href="https://www.fillemptyhomes.com/"
+          href="https://web.archive.org/web/20221002190929/https://www.fillemptyhomes.com/"
           target="_blank"
           rel="noopener noreferrer">
           fillemptyhomes.com / llenarcasasvacias.com

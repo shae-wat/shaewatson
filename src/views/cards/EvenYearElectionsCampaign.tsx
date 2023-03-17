@@ -31,7 +31,7 @@ const EvenYearElectionsCampaign: React.FC = () => {
       <CardTextContent>
         <span>
           <HeaderFont>
-            "Most progressive measure on the San Francisco November 2022 ballot"
+            "Profound for the future of progressive politics in this city"
           </HeaderFont>
           <LogoSubtitle>
             <img

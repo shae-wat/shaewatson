@@ -29,6 +29,7 @@ export const SubheaderFont = styled.h2`
   font-weight: 600;
   font-size: 20px;
   line-height: 28px;
+  color: #e8e8e8;
 
   ${mobileMediaQuery(`font-size: 16px; line-height: 20px;`)}
   ${finalSqueezeQuery(`font-size: 14px; line-height: 18px;`)}
@@ -40,6 +41,7 @@ export const ParagraphFont = styled.p`
   font-size: 16px;
   line-height: 20px;
 
+  font-family: Droid Serif;
   ${mobileMediaQuery(`font-size: 14px; line-height: 18px;`)}
 `;
 

@@ -50,8 +50,9 @@ const EvenYearElectionsCampaign: React.FC = () => {
           </LogoSubtitle>
         </span>
         <ParagraphFont>
-          Being the campaign manager for the Even Years Election Campaign was
-          the most difficult and rewarding work I have done in my life.
+          Being the campaign manager for the Even Years Election Campaign in San
+          Francisco was the most difficult and rewarding work I have done in my
+          life.
         </ParagraphFont>
         <ParagraphFont>
           The campaign made me stretch in all my abilities from public speaking
@@ -59,7 +60,7 @@ const EvenYearElectionsCampaign: React.FC = () => {
         </ParagraphFont>
         <ParagraphFont>
           Between the ballot argument and endorsement process, mobilization
-          events, phonebanks, and fundraising, I grew my networks and enjoyed
+          events, phonebanks, and fundraising— I grew my networks and enjoyed
           working with lots of different people.
         </ParagraphFont>
         <img

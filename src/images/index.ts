@@ -32,3 +32,6 @@ export { default as YesHLogo } from './logo-yes-h-square.png';
 export { default as Campaign2022Pic } from './campaign-2022.png';
 export { default as YesHWebsitePic } from './yes-h-website.png';
 export { default as StudentSuccessLogo } from './student-success-logo.png';
+export { default as SFIJLogo } from './sfij-logo.png';
+export { default as SFIJVacacyArticle } from './sfij-vacancy-article.png';
+export { default as SFIJFrontpage } from './sfij-frontpage.png';

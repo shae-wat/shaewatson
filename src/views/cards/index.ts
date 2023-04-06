@@ -17,3 +17,5 @@ export { default as TitleCard } from './TitleCard';
 export { default as FillEmptyHomesCard } from './FillEmptyHomes';
 export { default as ShiftPointCard } from './ShiftPoint';
 export { default as EvenYearElectionsCampaignCard } from './EvenYearElectionsCampaign';
+export { default as SFIJWebsiteCard } from './SFIJWebsite';
+export { default as SFIJArticleCard } from './SFIJArticle';

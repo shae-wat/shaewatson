@@ -36,7 +36,7 @@ const SFIJWebsite: React.FC = () => {
               }}
             />
             <SubheaderFont>
-              2023 San Francisco Independent Journal
+              San Francisco Independent Journal 2023
             </SubheaderFont>
           </LogoSubtitle>
         </span>

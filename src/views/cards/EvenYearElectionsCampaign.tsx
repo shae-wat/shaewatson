@@ -46,7 +46,9 @@ const EvenYearElectionsCampaign: React.FC = () => {
                 objectFit: 'contain',
               }}
             />
-            <SubheaderFont>November 2022 Election Cycle</SubheaderFont>
+            <SubheaderFont>
+              Even Year Elections November 2022 Prop H Campaign
+            </SubheaderFont>
           </LogoSubtitle>
         </span>
         <ParagraphFont>

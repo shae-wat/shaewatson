@@ -15,11 +15,11 @@ import { SFIJFrontpage, SFIJLogo } from 'images';
 
 const SFIJWebsite: React.FC = () => {
   return (
-    <Card firstWidth={50} lastWidth={50}>
+    <Card firstWidth={40} lastWidth={60}>
       <CardTextContent>
         <span>
           <HeaderFont>
-            Tech help for leftist independent San Francisco newspaper
+            Update Wordpress design for Leftist Independent Newspaper
           </HeaderFont>
           <LogoSubtitle>
             <img
@@ -40,10 +40,13 @@ const SFIJWebsite: React.FC = () => {
             </SubheaderFont>
           </LogoSubtitle>
         </span>
+        <ParagraphFont>
+          After contributing an article educating about the vacancy tax, I
+          worked within the Wordpress site for SFIJ to clean up the front page
+          with new fontfaces that make the text easier to parse and reconfigure
+          article categories.
+        </ParagraphFont>
         <ParagraphFont>...</ParagraphFont>
-        <ParagraphFont>...</ParagraphFont>
-        <ParagraphFont>...</ParagraphFont>
-        <ParagraphFont>..</ParagraphFont>
         <LinkText
           color={Colors.lightBlue}
           href="https://sfindependentjournal.com/"
@@ -58,7 +61,7 @@ const SFIJWebsite: React.FC = () => {
           alt=""
           style={{
             display: 'block',
-            maxWidth: '500px',
+            maxWidth: '700px',
             width: '100%',
             height: 'auto',
             objectFit: 'contain',

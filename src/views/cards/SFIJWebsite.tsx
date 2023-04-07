@@ -19,7 +19,7 @@ const SFIJWebsite: React.FC = () => {
       <CardTextContent>
         <span>
           <HeaderFont>
-            Update Wordpress design for Leftist Independent Newspaper
+            Update Wordpress design for Leftist Independent Newspaper 💅
           </HeaderFont>
           <LogoSubtitle>
             <img
@@ -41,12 +41,12 @@ const SFIJWebsite: React.FC = () => {
           </LogoSubtitle>
         </span>
         <ParagraphFont>
-          After contributing an article educating about the vacancy tax, I
-          worked within the Wordpress site for SFIJ to clean up the front page
-          with new fontfaces that make the text easier to parse and reconfigure
-          article categories.
+          I worked within the Wordpress site for SFIJ to clean up the front
+          page. I switched up the serif of fonts to make the text easier to
+          parse. I also reconfigure article categories and the top navigation
+          bar to make it more clear to reporters how to properly tag their
+          articles.
         </ParagraphFont>
-        <ParagraphFont>...</ParagraphFont>
         <LinkText
           color={Colors.lightBlue}
           href="https://sfindependentjournal.com/"

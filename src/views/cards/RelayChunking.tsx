@@ -13,7 +13,7 @@ import { RelayOverviewPageSrc, SofiLogo } from 'images';
 
 const RelayChunking: React.FC = () => {
   return (
-    <Card firstWidth={50} lastWidth={50} lastJustifyContentCenter>
+    <Card firstWidth={50} lastWidth={50}>
       <CardImageContent>
         <img
           src={RelayOverviewPageSrc}

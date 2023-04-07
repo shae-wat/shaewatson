@@ -4,7 +4,6 @@ import {
   ParagraphFont,
   LogoSubtitle,
   SubheaderFont,
-  gutter,
   Card,
   CardTextContent,
   CardImageContent,
@@ -28,7 +27,6 @@ const SoFiStyleConstants: React.FC = () => {
                 width: '100%',
                 height: 'auto',
                 objectFit: 'contain',
-                marginLeft: `${gutter(1 / 2)}px`,
               }}
             />
             <SubheaderFont>SoFi 2018</SubheaderFont>

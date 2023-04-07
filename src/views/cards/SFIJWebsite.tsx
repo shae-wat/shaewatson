@@ -19,7 +19,10 @@ const SFIJWebsite: React.FC = () => {
       <CardTextContent>
         <span>
           <HeaderFont>
-            Update Wordpress design for Leftist Independent Newspaper 💅
+            Update Wordpress design for Leftist Independent Newspaper
+            <span role="img" aria-label="paint nails">
+              💅
+            </span>
           </HeaderFont>
           <LogoSubtitle>
             <img

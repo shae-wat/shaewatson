@@ -7,6 +7,7 @@ import {
   Card,
   CardTextContent,
   CardImageContent,
+  MicroFont,
 } from 'styles';
 import { DadPlayhousePic } from 'images';
 
@@ -27,6 +28,20 @@ const ShiftPoint: React.FC = () => {
             marginRight: 'auto',
           }}
         />
+        <MicroFont
+          style={{
+            display: 'block',
+            maxWidth: '500px',
+            width: '100%',
+            height: 'auto',
+            objectFit: 'contain',
+            marginLeft: 'auto',
+            marginRight: 'auto',
+            marginTop: '12px',
+            marginBottom: '12px',
+          }}>
+          My dad and I fixing up a playhouse for the kids in our family
+        </MicroFont>
       </CardImageContent>
       <CardTextContent>
         <span>

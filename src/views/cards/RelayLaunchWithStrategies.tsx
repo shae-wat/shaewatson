@@ -12,7 +12,7 @@ import { SofiSpendingBurdownSrc, SofiLogo } from 'images';
 
 const RelayStrategiesStrategy: React.FC = () => {
   return (
-    <Card firstWidth={50} lastWidth={50}>
+    <Card firstWidth={40} lastWidth={60}>
       <CardImageContent>
         <img
           src={SofiSpendingBurdownSrc}

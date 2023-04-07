@@ -126,17 +126,17 @@ const SFIJArticle: React.FC = () => {
           the vacancy problem in San Francisco statistically with data.
         </ParagraphFont>
         <ParagraphFont>
-          I worked with a local designer to develop graphics that illustrated
+          I worked with a local designer to develop graphics to illustrate
           important numbers from the report and choose to contrast that with the
           outrageous homeless count of SF. I wrote the SFIJ article and then
           used language from the article in an Instagram post that generated
           over 14k views.
         </ParagraphFont>
         <ParagraphFont>
-          This work pushed me to grow because I expressed my developed
-          socio-economic views and start developing rhetoric for the campaign. I
-          practiced conveying information succintly for social media so that
-          most people could understand the point being conveyed.
+          This work pushed me to grow as I wrote about socio-economic issues and
+          started developing rhetoric for the campaign. I practiced conveying
+          information succinctly for social media so that most people could
+          understand the point being conveyed.
         </ParagraphFont>
         <img
           src={IGVacancyPost}

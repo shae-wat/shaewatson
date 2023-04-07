@@ -43,9 +43,8 @@ const SFIJWebsite: React.FC = () => {
         <ParagraphFont>
           I worked within the Wordpress site for SFIJ to clean up the front
           page. I switched up the serif of fonts to make the text easier to
-          parse. I also reconfigure article categories and the top navigation
-          bar to make it more clear to reporters how to properly tag their
-          articles.
+          parse. I also reconfigured article categories and the top navigation
+          bar to make it more clear to reporters how to properly tag articles.
         </ParagraphFont>
         <LinkText
           color={Colors.lightBlue}

@@ -129,7 +129,7 @@ const SFIJArticle: React.FC = () => {
           I worked with a local designer to develop graphics that illustrated
           important numbers from the report and choose to contrast that with the
           outrageous homeless count of SF. I wrote the SFIJ article and then
-          used language from the article on viral Instagram post that generated
+          used language from the article in an Instagram post that generated
           over 14k views.
         </ParagraphFont>
         <ParagraphFont>

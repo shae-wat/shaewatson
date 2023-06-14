@@ -67,24 +67,6 @@ const SFIJArticle: React.FC = () => {
           </HeaderFont>
           <LogoSubtitle>
             <img
-              src={SFIJLogo}
-              alt=""
-              style={{
-                display: 'block',
-                maxWidth: '30px',
-                maxHeight: '30px',
-                width: '100%',
-                height: 'auto',
-                objectFit: 'contain',
-                marginLeft: `${gutter(1 / 2)}px`,
-              }}
-            />
-            <SubheaderFont>
-              San Francisco Independent Journal 2022
-            </SubheaderFont>
-          </LogoSubtitle>
-          <LogoSubtitle>
-            <img
               src={FillEmptyHomesLogo}
               alt="Fill Empty Homes, Yes on M Campaign logo"
               style={{
@@ -99,24 +81,6 @@ const SFIJArticle: React.FC = () => {
             />
             <SubheaderFont>
               Fill Empty Homes November 2022 Prop M Campaign
-            </SubheaderFont>
-          </LogoSubtitle>
-          <LogoSubtitle>
-            <img
-              src={DSASFLogo}
-              alt="Fill Empty Homes, Yes on M Campaign logo"
-              style={{
-                display: 'block',
-                maxWidth: '30px',
-                maxHeight: '30px',
-                width: '100%',
-                height: 'auto',
-                objectFit: 'contain',
-                marginLeft: `${gutter(1 / 2)}px`,
-              }}
-            />
-            <SubheaderFont>
-              Democratic Socialists of America San Francisco 2022
             </SubheaderFont>
           </LogoSubtitle>
         </span>

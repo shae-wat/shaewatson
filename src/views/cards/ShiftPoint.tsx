@@ -52,7 +52,7 @@ const ShiftPoint: React.FC = () => {
         </span>
         <ParagraphFont>
           After 10 years focusing on my technical software development, I took
-          time out of the traditional workforce. May things led to this— I
+          time out of the traditional workforce. Many things led to this— I
           provided care-taking and spent final days with my terminally ill
           father as the COVID-19 pandemic challenged the fabric of our society.
         </ParagraphFont>

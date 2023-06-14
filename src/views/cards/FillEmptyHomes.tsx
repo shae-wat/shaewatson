@@ -85,7 +85,7 @@ const FillEmptyHomes: React.FC = () => {
         </ParagraphFont>
         <ParagraphFont>
           I ended up being the go-to for web and technical help for 3 successful
-          November 2022 campaigns- I polished the user interface for the
+          November 2022 campaigns— I polished the user interface for the
           websites, contributed copy, gathered translations, and maintained the
           donation page.
         </ParagraphFont>

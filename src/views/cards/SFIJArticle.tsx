@@ -11,13 +11,7 @@ import {
   LinkText,
   Colors,
 } from 'styles';
-import {
-  SFIJVacacyArticle,
-  SFIJLogo,
-  FillEmptyHomesLogo,
-  IGVacancyPost,
-  DSASFLogo,
-} from 'images';
+import { SFIJVacacyArticle, IGVacancyPost, DSASFLogo } from 'images';
 
 const SFIJArticle: React.FC = () => {
   return (
@@ -67,8 +61,8 @@ const SFIJArticle: React.FC = () => {
           </HeaderFont>
           <LogoSubtitle>
             <img
-              src={FillEmptyHomesLogo}
-              alt="Fill Empty Homes, Yes on M Campaign logo"
+              src={DSASFLogo}
+              alt="DSA SF logo"
               style={{
                 display: 'block',
                 maxWidth: '30px',
@@ -80,7 +74,7 @@ const SFIJArticle: React.FC = () => {
               }}
             />
             <SubheaderFont>
-              Fill Empty Homes November 2022 Prop M Campaign
+              Democratic Socialists of America San Francisco 2022
             </SubheaderFont>
           </LogoSubtitle>
         </span>

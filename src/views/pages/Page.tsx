@@ -65,5 +65,7 @@ const StyledPage = styled.section`
 `;
 
 export const Page = (props: PageProps) => (
+  //TODO: add google analytics page tracking
+
   <StyledPage>{props.children}</StyledPage>
 );

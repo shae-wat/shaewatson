@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import {
   SocialGithubImageSrc,
   SocialLinkedInImageSrc,
-  SocialMediumImageSrc,
+  // SocialMediumImageSrc,
 } from 'images';
 import { gutter, mobileMediaQuery, finalSqueezeQuery } from 'styles';
 
@@ -15,9 +15,9 @@ const SocialIconGroupContainer = styled.div`
   }
 `;
 
-const StyledCustomIcon = styled.img`
-  border-radius: 33px;
-`;
+// const StyledCustomIcon = styled.img`
+//   border-radius: 33px;
+// `;
 
 const SocialIconGroup: React.FC = () => {
   return (
@@ -34,12 +34,14 @@ const SocialIconGroup: React.FC = () => {
         rel="noopener noreferrer">
         <img src={SocialLinkedInImageSrc} height={33} alt="logo" />
       </a>
+      {/*
       <a
         href="https://shaewat.medium.com/"
         target="_blank"
         rel="noopener noreferrer">
         <StyledCustomIcon src={SocialMediumImageSrc} height={33} alt="logo" />
       </a>
+      */}
     </SocialIconGroupContainer>
   );
 };

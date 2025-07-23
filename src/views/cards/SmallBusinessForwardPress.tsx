@@ -11,15 +11,28 @@ import {
   LinkText,
   Colors,
 } from 'styles';
-import { SFIJFrontpage, SBFLogo } from 'images';
+import { SBFLogo, SBFNo36Press, SBFUpzoningPress } from 'images';
 
 const SmallBusinessForwardPress: React.FC = () => {
   return (
     <Card firstWidth={50} lastWidth={50}>
       <CardImageContent>
         <img
-          src={SFIJFrontpage}
-          alt="Fill Empty Homes Campaign Website with pic of coalition of people and endorsed by Democratic Socialists of America, Faith in Action Bay Area, and SF Labor Council"
+          src={SBFUpzoningPress}
+          alt="San Francisco Examiner article screenshot, April 22, 2025"
+          style={{
+            display: 'block',
+            maxWidth: '500px',
+            width: '100%',
+            height: 'auto',
+            objectFit: 'contain',
+            marginLeft: 'auto',
+            marginRight: 'auto',
+          }}
+        />
+        <img
+          src={SBFNo36Press}
+          alt="SingTao article screenshot, Oct 23, 2024"
           style={{
             display: 'block',
             maxWidth: '500px',
@@ -34,7 +47,7 @@ const SmallBusinessForwardPress: React.FC = () => {
       <CardTextContent>
         <span>
           <HeaderFont>
-            Read All About It: Small Businesses In the News
+            Read all about it: Being a press contact for small businesses
           </HeaderFont>
           <LogoSubtitle>
             <img
@@ -53,48 +66,122 @@ const SmallBusinessForwardPress: React.FC = () => {
           </LogoSubtitle>
         </span>
         <ParagraphFont>
-          I am proud to have contributed to the early efforts of Small Business
-          Forward starting in August 2023 when I posted the group's first
-          Instagram story working as the group's coordinator.
-        </ParagraphFont>
-        <ParagraphFont>
-          I worked with the founders to define and illustrate the organizing
-          values that the group would base its advocacy on. I worked to promote
-          the kickoff, events and did internal group outreach phonebanking to
-          increase turnout to these events and awareness of our group.
-        </ParagraphFont>
-        <ParagraphFont>
-          I enjoyed writing the first draft of the newsletter the most, because
-          it allowed me to synthesize all the conversations I was having with
-          different small businesses and annouce our advocacy achievements, of
-          which there were many.
-        </ParagraphFont>
-        <ParagraphFont>
-          Helping the team lauch Small Business Forward allowed my experience in
-          technical startups to shine through as I was able to define all the
-          platforms the group needed and get them set up on those platforms for
-          maximum efficiency with minimal upkeep needed.
+          Working to respond to outreach for comment and send out press
+          releases, I connected small business speakers and quotes with media
+          outlets in San Francisco to give small businesses a voice to advocate
+          for themselves.
         </ParagraphFont>
         <LinkText
           color={Colors.lightBlue}
-          href="https://web.archive.org/web/20221002190929/https://www.fillemptyhomes.com/"
+          href="https://www.sfexaminer.com/news/housing/sf-upzoning-could-displace-small-businesses-advocates-warn/article_fd67588b-3246-49f2-9dda-9c4011d40e8c.html"
           target="_blank"
           rel="noopener noreferrer">
-          fillemptyhomes.com / llenarcasasvacias.com
+          San Francisco Examiner: SF upzoning could displace small businesses,
+          advocates warn, April 22, 2025
         </LinkText>
+
         <LinkText
           color={Colors.lightBlue}
-          href="https://web.archive.org/web/20221104174228/https://www.upthevotesf.com/"
+          href="https://48hills.org/2025/04/small-business-groups-push-for-protections-from-luries-upzoning-and-displacement/"
           target="_blank"
           rel="noopener noreferrer">
-          upthevotesf.com
+          48 Hills: Small business groups push for protections from Lurie’s
+          upzoning (and displacement), April 17, 2025
         </LinkText>
+
         <LinkText
           color={Colors.lightBlue}
-          href="https://web.archive.org/web/20220925231206/https://www.sfstudentsuccess.com/"
+          href="https://www.kqed.org/forum/2010101907916/what-it-takes-to-make-it-as-a-small-business-in-the-bay-area"
           target="_blank"
           rel="noopener noreferrer">
-          sfstudentsuccess.com
+          KQED's The Forum, "What It Takes to Make It as a Small Business in the
+          Bay Area", November 21, 2024
+        </LinkText>
+
+        <LinkText
+          color={Colors.lightBlue}
+          href="https://www.masslive.com/news/2024/11/boston-explores-fee-on-vacant-storefronts-to-revitalize-neighborhoods.html"
+          target="_blank"
+          rel="noopener noreferrer">
+          MassLive, November 17,2024, Boston explores fee on vacant storefronts
+          to revitalize neighborhoods
+        </LinkText>
+
+        <LinkText
+          color={Colors.lightBlue}
+          href="https://www.ktsf.com/2024/10/23/no-on-prop-36/"
+          target="_blank"
+          rel="noopener noreferrer">
+          KTSF26, Oct 23, 2024 ,【灣區新聞】有進步派華人組織反對36號提案
+          認為把盜賊送進監牢是治標不治本(視頻) [Bay Area News] A progressive
+          Chinese organization opposes Proposition 36 and believes that sending
+          thieves to prison is treating the symptoms rather than the root cause
+          (Video)
+        </LinkText>
+
+        <LinkText
+          color={Colors.lightBlue}
+          href="https://www.singtaousa.com/2024-10-23/%e5%a4%9a%e5%80%8b%e7%a4%be%e5%8d%80%e7%b5%84%e7%b9%94%e9%9b%86%e6%9c%83-%e5%8f%8d%e5%b0%8d%e4%b8%89%e5%8d%81%e5%85%ad%e8%99%9f%e6%8f%90%e6%a1%88/5031981#page2"
+          target="_blank"
+          rel="noopener noreferrer">
+          SingTao, Oct 23, 2024 多個社區組織集會 反對三十六號提案 , Multiple
+          community organizations rallied to oppose Proposition 36, gave org
+          Chinese name 小商業前進 (Small Business Forward)
+        </LinkText>
+
+        <LinkText
+          color={Colors.lightBlue}
+          href="https://www.kron4.com/news/bay-area/san-francisco-small-business-owners-rally-against-prop-36/"
+          target="_blank"
+          rel="noopener noreferrer">
+          KRON4, Oct 22, 2024, San Francisco small business owners rally against
+          Prop 36
+        </LinkText>
+
+        <LinkText
+          color={Colors.lightBlue}
+          href="https://www.sfexaminer.com/forum/neil-mehta-gaslighting-fillmore-about-neighborhood-land-grab/article_464f2ca2-8a25-11ef-9920-47b9271c7ade.html"
+          target="_blank"
+          rel="noopener noreferrer">
+          San Francisco Examiner, Opinion by By Justin Dolezal, Special to The
+          Examiner, Oct 14, 2024 Bar Part Time owner: Neil Mehta gaslighting
+          about Fillmore land grab
+        </LinkText>
+
+        <LinkText
+          color={Colors.lightBlue}
+          href="https://richmondsunsetnews.com/2024/10/03/eviction-protection-proposed-for-legacy-businesses/"
+          target="_blank"
+          rel="noopener noreferrer">
+          Richmond Review/Sunset Beacon, October 3, 2024, Eviction Protection
+          Proposed For Legacy Businesses
+        </LinkText>
+
+        <LinkText
+          color={Colors.lightBlue}
+          href="https://www.sfchronicle.com/sf/article/vc-hostile-takeover-fillmore-neighborhood-19719260.php"
+          target="_blank"
+          rel="noopener noreferrer">
+          San Francisco Chronicle, Aug 26, 2024: VC accused of ‘hostile
+          takeover’ of S.F. neighborhood. New proposal could help legacy
+          businesses
+        </LinkText>
+
+        <LinkText
+          color={Colors.lightBlue}
+          href="https://missionlocal.org/2024/06/mark-farrell-ballot-designation-challenge/"
+          target="_blank"
+          rel="noopener noreferrer">
+          Mission Local, June 24, 2024: Small-business owners challenge Mark
+          Farrell’s ballot designation
+        </LinkText>
+
+        <LinkText
+          color={Colors.lightBlue}
+          href="https://missionlocal.org/2024/05/meet-district-5-candidates-week14-business/"
+          target="_blank"
+          rel="noopener noreferrer">
+          Mission Local, May 7, 2024: District 5 candidates talk business
         </LinkText>
       </CardTextContent>
     </Card>

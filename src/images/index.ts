@@ -43,3 +43,6 @@ export { default as SBFWebsiteView0 } from './sbf-website-view-0.png';
 export { default as SBFWebsiteView1 } from './sbf-website-view-1.png';
 export { default as SBFWebsiteView2 } from './sbf-website-view-2.png';
 export { default as SBFWebsiteView3 } from './sbf-website-view-3.png';
+export { default as SBFNo36Press } from './sbf-no-36-press.png';
+export { default as SBFUpzoningPress } from './sbf-upzoning-press.png';
+export { default as SBFVCHostilePress } from './sbf-vc-hostile-press.png';

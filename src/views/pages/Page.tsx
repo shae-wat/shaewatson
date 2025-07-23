@@ -60,12 +60,10 @@ const StyledPage = styled.section`
   margin-left: auto;
   margin-right: auto;
   padding: ${rhythm(2)}px 0;
-  ${tabletMediaQuery(`padding: ${rhythm(2)}px ${gutter(1)}px`)};
-  ${mobileMediaQuery(`padding: ${rhythm(3 / 2)}px ${gutter(1 / 3)}px;`)};
+  ${tabletMediaQuery(`padding: ${rhythm(1)}px ${gutter(1)}px`)};
+  ${mobileMediaQuery(`padding: ${rhythm(1)}px ${gutter(1 / 4)}px;`)};
 `;
 
 export const Page = (props: PageProps) => (
-  //TODO: add google analytics page tracking
-
   <StyledPage>{props.children}</StyledPage>
 );

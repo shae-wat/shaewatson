@@ -19,3 +19,5 @@ export { default as ShiftPointCard } from './ShiftPoint';
 export { default as EvenYearElectionsCampaignCard } from './EvenYearElectionsCampaign';
 export { default as SFIJWebsiteCard } from './SFIJWebsite';
 export { default as SFIJArticleCard } from './SFIJArticle';
+export { default as SmallBusinessForwardCard } from './SmallBusinessForward';
+export { default as SmallBusinessForwardPressCard } from './SmallBusinessForwardPress';

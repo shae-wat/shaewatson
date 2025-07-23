@@ -41,7 +41,6 @@ export const ParagraphFont = styled.p`
   font-size: 16px;
   line-height: 20px;
 
-  font-family: Droid Serif;
   ${mobileMediaQuery(`font-size: 14px; line-height: 18px;`)}
 `;
 

@@ -14,12 +14,15 @@ import {
   RelayChunkingCard,
   WWCPortlandWorkshopLeaderCard,
   SFIJArticleCard,
+  SmallBusinessForwardCard,
+  // SmallBusinessForwardPressCard,
 } from 'views/cards';
 
 const FeaturedWorkPage: React.FC = () => {
   return (
     <Page>
       <PageCardLayout>
+        <SmallBusinessForwardCard />
         <EvenYearElectionsCampaignCard />
         <FillEmptyHomesCard />
         <SFIJArticleCard />

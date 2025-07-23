@@ -55,7 +55,7 @@ const Footer: React.FC = () => {
       <SocialIconGroup />
       <DetailsSection>
         <SubheaderFont>Shae Watson</SubheaderFont>
-        <SubheaderFont>2023</SubheaderFont>
+        <SubheaderFont>2025</SubheaderFont>
         <ParagraphFont>
           This website and representation of my work for companies does not
           reflect or represent the opinions or plans of those companies.

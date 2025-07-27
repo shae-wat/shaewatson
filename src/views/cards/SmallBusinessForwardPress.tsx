@@ -71,6 +71,18 @@ const SmallBusinessForwardPress: React.FC = () => {
           outlets in San Francisco to give small businesses a voice to advocate
           for themselves.
         </ParagraphFont>
+        <ParagraphFont>
+          For one advocacy effort, I oversaw over 100 San Francisco small
+          businesses signing onto a letter that was sent to the press.
+        </ParagraphFont>
+        <LinkText
+          color={Colors.lightBlue}
+          href="https://docs.google.com/forms/d/e/1FAIpQLSetVQOmOR67C2Fqy8U7npcBVOlsgtVqro1idjWWowX6X05jwQ/viewform"
+          target="_blank"
+          rel="noopener noreferrer">
+          Permanent Controls for Neighborhood-Serving Businesses Letter with
+          over 100 Small Business Sign-ons
+        </LinkText>
         <LinkText
           color={Colors.lightBlue}
           href="https://www.sfexaminer.com/news/housing/sf-upzoning-could-displace-small-businesses-advocates-warn/article_fd67588b-3246-49f2-9dda-9c4011d40e8c.html"

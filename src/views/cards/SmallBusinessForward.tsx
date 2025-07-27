@@ -67,7 +67,7 @@ const SmallBusinessForward: React.FC = () => {
         <ParagraphFont>
           Working with the small business founders to define and illustrate the
           organizing values that the group would base its advocacy on, I worked
-          to get the group legally defined as a Non-Profit 501c(4), run
+          to get the group legally defined as a Non-Profit 501(c)(4), run
           education sessions, and did membership outreach to increase turnout to
           events and awareness of the group and advocacy.
         </ParagraphFont>
@@ -85,8 +85,8 @@ const SmallBusinessForward: React.FC = () => {
           Small Business Forward Newsletter Collection
         </LinkText>
         <ParagraphFont>
-          Helping the team lauch Small Business Forward allowed my experience in
-          technical startups to shine through as I was able to define all the
+          Helping the team launch Small Business Forward allowed my experience
+          in technical startups to shine through as I was able to define all the
           platforms the group needed and get them set up on those platforms for
           maximum efficiency with minimal upkeep needed.
         </ParagraphFont>

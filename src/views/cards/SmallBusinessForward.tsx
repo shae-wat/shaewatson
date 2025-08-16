@@ -46,10 +46,10 @@ const SmallBusinessForward: React.FC = () => {
           </LogoSubtitle>
         </span>
         <ParagraphFont>
-          I am proud to have contributed to the early efforts of the Small
-          Business Forward San Francisco advocacy group starting in August 2023
-          when I posted the group's first Instagram story and launched the
-          website working as the group's coordinator.
+          I am proud to have developed the early efforts of the Small Business
+          Forward San Francisco advocacy group starting in August 2023 when I
+          posted the group's first Instagram story and launched the website
+          working as the group's coordinator.
         </ParagraphFont>
         <img
           src={SBFLaunchCardImage}
@@ -66,16 +66,15 @@ const SmallBusinessForward: React.FC = () => {
         />
         <ParagraphFont>
           Working with the small business founders to define and illustrate the
-          organizing values that the group would base its advocacy on, I worked
-          to get the group legally defined as a Non-Profit 501(c)(4), run
-          education sessions, and did membership outreach to increase turnout to
-          events and awareness of the group and advocacy.
+          organizing values that the group would base its advocacy on, I guided
+          the group through getting legally defined as a Non-Profit 501(c)(4),
+          running education sessions, and handling membership outreach to
+          increase turnout to events and awareness of the group and advocacy.
         </ParagraphFont>
         <ParagraphFont>
-          Writing the newsletter was enjoyable because it allowed me to
-          synthesize all the conversations I was having with different small
-          businesses and announce the group's advocacy achievements and efforts,
-          of which there were many.
+          Writing the newsletter allowed me to synthesize all the conversations
+          I was having with different small businesses and announce the group's
+          advocacy achievements and efforts, of which there were many.
         </ParagraphFont>
         <LinkText
           color={Colors.lightBlue}
@@ -85,10 +84,11 @@ const SmallBusinessForward: React.FC = () => {
           Small Business Forward Newsletter Collection
         </LinkText>
         <ParagraphFont>
-          Helping the team launch Small Business Forward allowed my experience
-          in technical startups to shine through as I was able to define all the
-          platforms the group needed and get them set up on those platforms for
-          maximum efficiency with minimal upkeep needed.
+          Coordinating the team through the launch of Small Business Forward
+          allowed my experience in technical startups to shine through as I was
+          able to establish all the platforms the group needed and get them set
+          up on those platforms for maximum efficiency with minimal upkeep
+          needed.
         </ParagraphFont>
         <LinkText
           color={Colors.lightBlue}

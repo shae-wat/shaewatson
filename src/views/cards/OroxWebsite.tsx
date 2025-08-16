@@ -52,7 +52,7 @@ const OroxWebsite: React.FC = () => {
         <ParagraphFont>
           I grew in basic but significant ways styling the{' '}
           <LinkText
-            href="http://web.archive.org/web/20171023033504/https://www.oroxleather.com/"
+            href="https://web.archive.org/web/20160510063744/http://www.oroxleather.com:80/"
             target="_blank"
             rel="noopener noreferrer">
             Orox Leather

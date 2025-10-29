@@ -3,7 +3,6 @@ import { Page, PageCardLayout } from '.';
 import {
   EvenYearElectionsCampaignCard,
   FillEmptyHomesCard,
-  ShiftPointCard,
   CustomDropdownCard,
   FlightStatsArrivalsDeparturesCard,
   OroxWebsiteCard,
@@ -20,18 +19,21 @@ import {
   CivilSauceTestingCard,
   ClaraPowerPricingCard,
   RelayOfflineFirstCard,
+  MontellWorkshop,
+  MercuryCafe,
 } from 'views/cards';
 
 const FeaturedWorkPage: React.FC = () => {
   return (
     <Page>
       <PageCardLayout>
+        <MercuryCafe />
         <SmallBusinessForwardPressCard />
         <SmallBusinessForwardCard />
         <EvenYearElectionsCampaignCard />
         <FillEmptyHomesCard />
         <SFIJArticleCard />
-        <ShiftPointCard />
+        <MontellWorkshop />
         <SoFiBrandThoCard />
         <RelayHighUserVolumeCard />
         <RelayOfflineFirstCard />

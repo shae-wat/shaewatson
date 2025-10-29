@@ -21,3 +21,5 @@ export { default as SFIJWebsiteCard } from './SFIJWebsite';
 export { default as SFIJArticleCard } from './SFIJArticle';
 export { default as SmallBusinessForwardCard } from './SmallBusinessForward';
 export { default as SmallBusinessForwardPressCard } from './SmallBusinessForwardPress';
+export { default as MontellWorkshop } from './MontellWorkshop';
+export { default as MercuryCafe } from './MercuryCafe';

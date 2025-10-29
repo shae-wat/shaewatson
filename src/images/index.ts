@@ -46,3 +46,5 @@ export { default as SBFWebsiteView3 } from './sbf-website-view-3.png';
 export { default as SBFNo36Press } from './sbf-no-36-press.png';
 export { default as SBFUpzoningPress } from './sbf-upzoning-press.png';
 export { default as SBFVCHostilePress } from './sbf-vc-hostile-press.png';
+export { default as MontellWorkshopPic } from './montell-workshop.png';
+export { default as MercuryCafeWebsitePic } from './mercury-cafe-website.png';

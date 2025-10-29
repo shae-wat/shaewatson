@@ -43,7 +43,7 @@ const RelayHighUserVolume: React.FC = () => {
                 objectFit: 'contain',
               }}
             />
-            <SubheaderFont>SoFi 2019</SubheaderFont>
+            <SubheaderFont>SoFi 2020</SubheaderFont>
           </LogoSubtitle>
         </span>
         <ParagraphFont>

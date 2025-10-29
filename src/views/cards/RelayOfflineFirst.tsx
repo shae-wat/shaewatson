@@ -7,31 +7,16 @@ import {
   Card,
   CardTextContent,
   CardImageContent,
-  rhythm,
 } from 'styles';
 import { RelayOfflineMobileDashboardSrc, SofiLogo } from 'images';
 
 const RelayOfflineFirst: React.FC = () => {
   return (
-    <Card firstWidth={50} lastWidth={50} firstJustifyContentCenter>
-      <CardImageContent>
-        <img
-          src={RelayOfflineMobileDashboardSrc}
-          alt="Relay web app"
-          style={{
-            display: 'block',
-            maxWidth: '404px',
-            maxHeight: '835px',
-            width: '100%',
-            height: 'auto',
-            objectFit: 'contain',
-          }}
-        />
-      </CardImageContent>
-      <CardTextContent paddingTop={rhythm(3)}>
+    <Card firstWidth={50} lastWidth={50}>
+      <CardTextContent>
         <span>
           <HeaderFont>
-            Data Loading Strategy for a Robust High-touch App
+            Data Loading Offline-first for a Robust High-touch App
           </HeaderFont>
           <LogoSubtitle>
             <img
@@ -66,6 +51,21 @@ const RelayOfflineFirst: React.FC = () => {
           pages.
         </ParagraphFont>
       </CardTextContent>
+      <CardImageContent>
+        <img
+          src={RelayOfflineMobileDashboardSrc}
+          alt="Relay web app"
+          style={{
+            display: 'block',
+            maxWidth: '300px',
+            width: '100%',
+            height: 'auto',
+            objectFit: 'contain',
+            marginLeft: 'auto',
+            marginRight: 'auto',
+          }}
+        />
+      </CardImageContent>
     </Card>
   );
 };

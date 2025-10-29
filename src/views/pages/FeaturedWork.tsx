@@ -16,6 +16,10 @@ import {
   SFIJArticleCard,
   SmallBusinessForwardCard,
   SmallBusinessForwardPressCard,
+  RelayHighUserVolumeCard,
+  CivilSauceTestingCard,
+  ClaraPowerPricingCard,
+  RelayOfflineFirstCard,
 } from 'views/cards';
 
 const FeaturedWorkPage: React.FC = () => {
@@ -29,9 +33,13 @@ const FeaturedWorkPage: React.FC = () => {
         <SFIJArticleCard />
         <ShiftPointCard />
         <SoFiBrandThoCard />
+        <RelayHighUserVolumeCard />
+        <RelayOfflineFirstCard />
         <RelayChunkingCard />
         <RelayStrategiesStrategyCard />
+        <ClaraPowerPricingCard />
         <ClaraJSPluginCard />
+        <CivilSauceTestingCard />
         <CustomDropdownCard />
         <WWCPortlandWorkshopLeaderCard />
         <FlightStatsArrivalsDeparturesCard />

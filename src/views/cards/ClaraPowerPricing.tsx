@@ -29,7 +29,7 @@ const ClaraPowerPricing: React.FC = () => {
       </CardImageContent>
       <CardTextContent>
         <span>
-          <HeaderFont>Mortgage Pricing: Loan Officer UI</HeaderFont>
+          <HeaderFont>Mortgage Pricing: Loan Officer User Interface</HeaderFont>
           <LogoSubtitle>
             <img
               src={ClaraLogo}

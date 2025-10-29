@@ -88,8 +88,8 @@ const SmallBusinessForwardPress: React.FC = () => {
           href="https://www.sfexaminer.com/news/housing/sf-upzoning-could-displace-small-businesses-advocates-warn/article_fd67588b-3246-49f2-9dda-9c4011d40e8c.html"
           target="_blank"
           rel="noopener noreferrer">
-          San Francisco Examiner: SF upzoning could displace small businesses,
-          advocates warn, April 22, 2025
+          San Francisco Examiner, Apr 22, 2025: SF upzoning could displace small
+          businesses, advocates warn
         </LinkText>
 
         <LinkText
@@ -97,8 +97,8 @@ const SmallBusinessForwardPress: React.FC = () => {
           href="https://48hills.org/2025/04/small-business-groups-push-for-protections-from-luries-upzoning-and-displacement/"
           target="_blank"
           rel="noopener noreferrer">
-          48 Hills: Small business groups push for protections from Lurie’s
-          upzoning (and displacement), April 17, 2025
+          48 Hills, Apr 17, 2025: Small business groups push for protections
+          from Lurie’s upzoning (and displacement)
         </LinkText>
 
         <LinkText
@@ -106,8 +106,8 @@ const SmallBusinessForwardPress: React.FC = () => {
           href="https://www.nytimes.com/2025/02/06/us/politics/daniel-lurie-san-francisco-mayor-levis.html"
           target="_blank"
           rel="noopener noreferrer">
-          New York Times: San Francisco’s New Mayor Is Rich. Is That a Good
-          Thing?, February 6, 2025
+          New York Times, Feb 6, 2025: San Francisco’s New Mayor Is Rich. Is
+          That a Good Thing?
         </LinkText>
 
         <LinkText
@@ -115,8 +115,8 @@ const SmallBusinessForwardPress: React.FC = () => {
           href="https://www.kqed.org/forum/2010101907916/what-it-takes-to-make-it-as-a-small-business-in-the-bay-area"
           target="_blank"
           rel="noopener noreferrer">
-          KQED's The Forum, "What It Takes to Make It as a Small Business in the
-          Bay Area", November 21, 2024
+          KQED's The Forum, Nov 21, 2024: "What It Takes to Make It as a Small
+          Business in the Bay Area"
         </LinkText>
 
         <LinkText
@@ -124,8 +124,8 @@ const SmallBusinessForwardPress: React.FC = () => {
           href="https://www.masslive.com/news/2024/11/boston-explores-fee-on-vacant-storefronts-to-revitalize-neighborhoods.html"
           target="_blank"
           rel="noopener noreferrer">
-          MassLive, November 17,2024, Boston explores fee on vacant storefronts
-          to revitalize neighborhoods
+          MassLive, Nov 17, 2024: Boston explores fee on vacant storefronts to
+          revitalize neighborhoods
         </LinkText>
 
         <LinkText
@@ -133,7 +133,7 @@ const SmallBusinessForwardPress: React.FC = () => {
           href="https://www.ktsf.com/2024/10/23/no-on-prop-36/"
           target="_blank"
           rel="noopener noreferrer">
-          KTSF26, Oct 23, 2024 ,【灣區新聞】有進步派華人組織反對36號提案
+          KTSF26, Oct 23, 2024:【灣區新聞】有進步派華人組織反對36號提案
           認為把盜賊送進監牢是治標不治本(視頻) [Bay Area News] A progressive
           Chinese organization opposes Proposition 36 and believes that sending
           thieves to prison is treating the symptoms rather than the root cause
@@ -145,7 +145,7 @@ const SmallBusinessForwardPress: React.FC = () => {
           href="https://www.singtaousa.com/2024-10-23/%e5%a4%9a%e5%80%8b%e7%a4%be%e5%8d%80%e7%b5%84%e7%b9%94%e9%9b%86%e6%9c%83-%e5%8f%8d%e5%b0%8d%e4%b8%89%e5%8d%81%e5%85%ad%e8%99%9f%e6%8f%90%e6%a1%88/5031981#page2"
           target="_blank"
           rel="noopener noreferrer">
-          SingTao, Oct 23, 2024 多個社區組織集會 反對三十六號提案 , Multiple
+          SingTao, Oct 23, 2024: 多個社區組織集會 反對三十六號提案 , Multiple
           community organizations rallied to oppose Proposition 36, gave org
           Chinese name 小商業前進 (Small Business Forward)
         </LinkText>
@@ -155,7 +155,7 @@ const SmallBusinessForwardPress: React.FC = () => {
           href="https://www.kron4.com/news/bay-area/san-francisco-small-business-owners-rally-against-prop-36/"
           target="_blank"
           rel="noopener noreferrer">
-          KRON4, Oct 22, 2024, San Francisco small business owners rally against
+          KRON4, Oct 22, 2024: San Francisco small business owners rally against
           Prop 36
         </LinkText>
 
@@ -165,7 +165,7 @@ const SmallBusinessForwardPress: React.FC = () => {
           target="_blank"
           rel="noopener noreferrer">
           San Francisco Examiner, Opinion by By Justin Dolezal, Special to The
-          Examiner, Oct 14, 2024 Bar Part Time owner: Neil Mehta gaslighting
+          Examiner, Bar Part Time owner, Oct 14, 2024: Neil Mehta gaslighting
           about Fillmore land grab
         </LinkText>
 
@@ -174,7 +174,7 @@ const SmallBusinessForwardPress: React.FC = () => {
           href="https://richmondsunsetnews.com/2024/10/03/eviction-protection-proposed-for-legacy-businesses/"
           target="_blank"
           rel="noopener noreferrer">
-          Richmond Review/Sunset Beacon, October 3, 2024, Eviction Protection
+          Richmond Review/Sunset Beacon, Oct 3, 2024: Eviction Protection
           Proposed For Legacy Businesses
         </LinkText>
 
@@ -193,7 +193,7 @@ const SmallBusinessForwardPress: React.FC = () => {
           href="https://missionlocal.org/2024/06/mark-farrell-ballot-designation-challenge/"
           target="_blank"
           rel="noopener noreferrer">
-          Mission Local, June 24, 2024: Small-business owners challenge Mark
+          Mission Local, Jun 24, 2024: Small-business owners challenge Mark
           Farrell’s ballot designation
         </LinkText>
 

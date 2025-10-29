@@ -103,6 +103,15 @@ const SmallBusinessForwardPress: React.FC = () => {
 
         <LinkText
           color={Colors.lightBlue}
+          href="https://www.nytimes.com/2025/02/06/us/politics/daniel-lurie-san-francisco-mayor-levis.html"
+          target="_blank"
+          rel="noopener noreferrer">
+          New York Times: San Francisco’s New Mayor Is Rich. Is That a Good
+          Thing?, February 6, 2025
+        </LinkText>
+
+        <LinkText
+          color={Colors.lightBlue}
           href="https://www.kqed.org/forum/2010101907916/what-it-takes-to-make-it-as-a-small-business-in-the-bay-area"
           target="_blank"
           rel="noopener noreferrer">

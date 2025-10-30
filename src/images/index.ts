@@ -49,3 +49,4 @@ export { default as SBFVCHostilePress } from './sbf-vc-hostile-press.png';
 export { default as MontellWorkshopPic } from './montell-workshop.png';
 export { default as MercuryCafeWebsitePic } from './mercury-cafe-website.png';
 export { default as SpendingCategoriesGif } from './spending-categories-2025.gif';
+export { default as MercuryCafeSeo } from './mercury-cafe-seo.png';

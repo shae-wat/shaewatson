@@ -56,13 +56,15 @@ const RelayHighUserVolume: React.FC = () => {
         </ParagraphFont>
         <ParagraphFont>
           That is why when I set up error monitoring in the project, I set an
-          alert to trigger in our Slack channel on every full page error seen by
-          the user. This rigorous system demonstrates the robustness of my
-          team's front-end architecture and how the team responds to problems.
+          alert to trigger in our Slack channel on every full page error shown—
+          a Rollbar error was set to trigger from the error page render. This
+          rigorous system demonstrates the robustness of my team's front-end
+          architecture and how the team responded to problems.
         </ParagraphFont>
         <ParagraphFont>
-          Alerting in a Slack channel drives accountability because it creates a
-          visible thread of discussion that determines how to address an issue.
+          Alerting in a Slack channel drove accountability because it created a
+          visible thread of discussion to determine how to address an issue and
+          we practiced not ignoring any alert.
         </ParagraphFont>
       </CardTextContent>
     </Card>

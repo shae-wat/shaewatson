@@ -10,7 +10,7 @@ import {
   LinkText,
   Colors,
 } from 'styles';
-import { MercuryCafeWebsitePic } from 'images';
+import { MercuryCafeWebsitePic, MercuryCafeSeo } from 'images';
 
 const MercuryCafe: React.FC = () => {
   return (
@@ -40,6 +40,21 @@ const MercuryCafe: React.FC = () => {
           and maintaining the user interface for businesses that are embedded in
           serving their local community.
         </ParagraphFont>
+        <img
+          src={MercuryCafeSeo}
+          alt="View of the Small Business Forward Instagram page"
+          style={{
+            display: 'block',
+            maxWidth: '400px',
+            width: '100%',
+            height: 'auto',
+            objectFit: 'contain',
+            marginLeft: 'auto',
+            marginRight: 'auto',
+            marginTop: '24px',
+            marginBottom: '24px',
+          }}
+        />
         <LinkText
           color={Colors.lightBlue}
           href="https://www.mercurycafe.net/"

@@ -7,26 +7,36 @@ import {
   Card,
   CardTextContent,
   CardImageContent,
+  LinkText,
+  Colors,
 } from 'styles';
-import { YesHLogo, Campaign2022Pic, YesHWebsitePic } from 'images';
+import { YesHLogo, Campaign2022Pic, PropHFaqGif } from 'images';
 
 const EvenYearElectionsCampaign: React.FC = () => {
   return (
-    <Card firstWidth={50} lastWidth={50} firstJustifyContentCenter>
+    <Card firstWidth={55} lastWidth={45} firstJustifyContentCenter>
       <CardImageContent>
         <img
-          src={YesHWebsitePic}
+          src={PropHFaqGif}
           alt="Yes H website"
           style={{
             display: 'block',
-            maxWidth: '500px',
+            maxWidth: '800px',
             width: '100%',
             height: 'auto',
             objectFit: 'contain',
             marginLeft: 'auto',
             marginRight: 'auto',
+            marginBottom: '24px',
           }}
         />
+        <LinkText
+          color={Colors.lightBlue}
+          href="https://web.archive.org/web/20221104174228/https://www.upthevotesf.com/"
+          target="_blank"
+          rel="noopener noreferrer">
+          upthevotesf.com
+        </LinkText>
       </CardImageContent>
       <CardTextContent>
         <span>
@@ -58,7 +68,12 @@ const EvenYearElectionsCampaign: React.FC = () => {
         </ParagraphFont>
         <ParagraphFont>
           The campaign made me stretch in all my abilities from public speaking
-          to event planning to rapid development with estimated timelines.
+          to event planning to rapid development with estimated timelines. I
+          edited and maintained ballot arguments to submit to the Department of
+          Elections for printing in the Voter Information Pamphlet mailed to all
+          San Francisco voters, with a form “wet” signed by each endorser whose
+          name is printed. I managed endorsements and these signatures again for
+          March 2024's Prop A $300M Affordable Housing Bond.
         </ParagraphFont>
         <ParagraphFont>
           Between the ballot argument and endorsement process, mobilization

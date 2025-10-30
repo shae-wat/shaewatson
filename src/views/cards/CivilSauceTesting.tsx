@@ -13,7 +13,7 @@ import { SauceLabsDashboardImageSrc, CivilLogo } from 'images';
 
 const SauceTesting: React.FC = () => {
   return (
-    <Card firstJustifyContentCenter>
+    <Card firstJustifyContentCenter firstWidth={50} lastWidth={50}>
       <CardImageContent>
         <img
           src={SauceLabsDashboardImageSrc}

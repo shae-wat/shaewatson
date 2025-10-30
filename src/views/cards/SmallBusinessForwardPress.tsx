@@ -15,7 +15,7 @@ import { SBFLogo, SBFNo36Press, SBFUpzoningPress } from 'images';
 
 const SmallBusinessForwardPress: React.FC = () => {
   return (
-    <Card firstWidth={50} lastWidth={50}>
+    <Card firstWidth={50} lastWidth={50} firstJustifyContentCenter>
       <CardImageContent>
         <img
           src={SBFUpzoningPress}
@@ -28,6 +28,7 @@ const SmallBusinessForwardPress: React.FC = () => {
             objectFit: 'contain',
             marginLeft: 'auto',
             marginRight: 'auto',
+            marginBottom: '24px',
           }}
         />
         <img

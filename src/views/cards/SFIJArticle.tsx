@@ -15,7 +15,7 @@ import { SFIJVacacyArticle, IGVacancyPost, DSASFLogo } from 'images';
 
 const SFIJArticle: React.FC = () => {
   return (
-    <Card firstWidth={40} lastWidth={60}>
+    <Card firstWidth={40} lastWidth={60} firstJustifyContentCenter>
       <CardImageContent
         style={{
           marginTop: 'auto',

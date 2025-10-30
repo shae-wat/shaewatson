@@ -12,7 +12,7 @@ import { SofiSpendingBurdownSrc, SofiLogo } from 'images';
 
 const RelayStrategiesStrategy: React.FC = () => {
   return (
-    <Card firstWidth={40} lastWidth={60}>
+    <Card firstWidth={50} lastWidth={50} lastJustifyContentCenter>
       <CardTextContent>
         <span>
           <HeaderFont>

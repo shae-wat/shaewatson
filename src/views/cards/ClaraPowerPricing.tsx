@@ -12,7 +12,7 @@ import { PowerPricerImageSrc, ClaraLogo } from 'images';
 
 const ClaraPowerPricing: React.FC = () => {
   return (
-    <Card>
+    <Card firstJustifyContentCenter>
       <CardImageContent>
         <img
           src={PowerPricerImageSrc}

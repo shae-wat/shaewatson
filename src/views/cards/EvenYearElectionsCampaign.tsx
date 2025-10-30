@@ -12,7 +12,7 @@ import { YesHLogo, Campaign2022Pic, YesHWebsitePic } from 'images';
 
 const EvenYearElectionsCampaign: React.FC = () => {
   return (
-    <Card firstWidth={50} lastWidth={50}>
+    <Card firstWidth={50} lastWidth={50} firstJustifyContentCenter>
       <CardImageContent>
         <img
           src={YesHWebsitePic}

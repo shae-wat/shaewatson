@@ -12,7 +12,7 @@ import { MercuryCafeWebsitePic } from 'images';
 
 const MercuryCafe: React.FC = () => {
   return (
-    <Card firstWidth={50} lastWidth={50}>
+    <Card firstWidth={50} lastWidth={50} lastJustifyContentCenter>
       <CardTextContent>
         <span>
           <HeaderFont>Mercury Cafe Customized Website</HeaderFont>

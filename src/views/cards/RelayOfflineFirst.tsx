@@ -12,7 +12,7 @@ import { RelayOfflineMobileDashboardSrc, SofiLogo } from 'images';
 
 const RelayOfflineFirst: React.FC = () => {
   return (
-    <Card firstWidth={50} lastWidth={50}>
+    <Card lastJustifyContentCenter>
       <CardTextContent>
         <span>
           <HeaderFont>

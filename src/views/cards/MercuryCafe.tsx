@@ -7,6 +7,8 @@ import {
   Card,
   CardTextContent,
   CardImageContent,
+  LinkText,
+  Colors,
 } from 'styles';
 import { MercuryCafeWebsitePic } from 'images';
 
@@ -38,6 +40,13 @@ const MercuryCafe: React.FC = () => {
           and maintaining the user interface for businesses that are embedded in
           serving their local community.
         </ParagraphFont>
+        <LinkText
+          color={Colors.lightBlue}
+          href="https://www.mercurycafe.net/"
+          target="_blank"
+          rel="noopener noreferrer">
+          mercurycafe.net
+        </LinkText>
       </CardTextContent>
       <CardImageContent>
         <img

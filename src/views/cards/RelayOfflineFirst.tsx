@@ -8,15 +8,16 @@ import {
   CardTextContent,
   CardImageContent,
 } from 'styles';
-import { RelayOfflineMobileDashboardSrc, SofiLogo } from 'images';
+import { SpendingCategoriesGif, SofiLogo } from 'images';
 
 const RelayOfflineFirst: React.FC = () => {
   return (
-    <Card lastJustifyContentCenter>
+    <Card firstWidth={50} lastWidth={50} lastJustifyContentCenter>
       <CardTextContent>
         <span>
           <HeaderFont>
-            Data Loading Offline-first for a Robust High-touch App
+            Data Loading Offline-first for a Chart in Production for (Almost) a
+            Decade
           </HeaderFont>
           <LogoSubtitle>
             <img
@@ -50,19 +51,32 @@ const RelayOfflineFirst: React.FC = () => {
           initial page draw, the user will not see any errors viewing feature
           pages.
         </ParagraphFont>
+        <ParagraphFont>
+          Between the eager data requests and the React Javascript seamlessly
+          redrawing with new data, the spending categories chart has been
+          difficult to replace with mobile infrastructure, with SoFi rolling
+          back attempts to release new versions of the spending categories chart
+          over the years.
+        </ParagraphFont>
+        <ParagraphFont>
+          However, the ability to recategorize transactions and see the chart
+          update immediately and for the chart to persist in network request
+          failure has not be robustly replicated by other engineers on other
+          platforms, leaving the spending categories chart I built in 2018
+          running still in 2025 on web and app versions of the SoFi app.
+        </ParagraphFont>
       </CardTextContent>
       <CardImageContent>
         <img
-          src={RelayOfflineMobileDashboardSrc}
+          src={SpendingCategoriesGif}
           alt="Relay web app"
           style={{
             display: 'block',
-            maxWidth: '300px',
+            maxWidth: '640px',
+            maxHeight: '470px',
             width: '100%',
             height: 'auto',
             objectFit: 'contain',
-            marginLeft: 'auto',
-            marginRight: 'auto',
           }}
         />
       </CardImageContent>

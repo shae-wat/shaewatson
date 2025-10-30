@@ -9,14 +9,14 @@ import {
   CardImageContent,
   rhythm,
 } from 'styles';
-import { RelayOverviewPageSrc, SofiLogo } from 'images';
+import { RelayOverviewPageGif, SofiLogo } from 'images';
 
 const RelayChunking: React.FC = () => {
   return (
     <Card firstWidth={50} lastWidth={50} firstJustifyContentCenter>
       <CardImageContent>
         <img
-          src={RelayOverviewPageSrc}
+          src={RelayOverviewPageGif}
           alt="Relay web app"
           style={{
             display: 'block',
@@ -31,7 +31,9 @@ const RelayChunking: React.FC = () => {
 
       <CardTextContent paddingTop={rhythm(2)}>
         <span>
-          <HeaderFont>Reducing Time to First Paint with JS Chunks</HeaderFont>
+          <HeaderFont>
+            Reducing Time to First Paint with JavaScript Chunks
+          </HeaderFont>
           <LogoSubtitle>
             <img
               src={SofiLogo}

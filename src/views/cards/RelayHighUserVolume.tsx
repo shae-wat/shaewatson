@@ -47,15 +47,18 @@ const RelayHighUserVolume: React.FC = () => {
           </LogoSubtitle>
         </span>
         <ParagraphFont>
-          SoFi Relay drives daily user engagement for SoFi's 1 million members.
-          If a user has a bad experience- and especially if they see a full page
-          error- it defeats the purpose of the app.
+          SoFi Relay drives daily user engagement for SoFi's over 1 million
+          members. During my time, the web app was shown on iOS and Android
+          through webviews in addition to the website so that the product could
+          be released as quickly as possible. If a user has a bad experience—
+          and especially if they see a full page error— it defeats the purpose
+          of the app.
         </ParagraphFont>
         <ParagraphFont>
           That is why when I set up error monitoring in the project, I set an
-          alert to trigger in our Slack channel on every full page error seen in
-          the UI. This rigorous system demonstrates the robustness of the
-          front-end architecture and how the team runs after problems.
+          alert to trigger in our Slack channel on every full page error seen by
+          the user. This rigorous system demonstrates the robustness of my
+          team's front-end architecture and how the team responds to problems.
         </ParagraphFont>
         <ParagraphFont>
           Alerting in a Slack channel drives accountability because it creates a

@@ -53,7 +53,7 @@ const SmallBusinessForwardPress: React.FC = () => {
           <LogoSubtitle>
             <img
               src={SBFLogo}
-              alt="Yes on H Double the vote in local elections"
+              alt="Small Business Forward Logo"
               style={{
                 display: 'block',
                 maxWidth: '30px',

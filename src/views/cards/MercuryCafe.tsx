@@ -43,7 +43,7 @@ const MercuryCafe: React.FC = () => {
         </ParagraphFont>
         <img
           src={MercuryCafeSeo}
-          alt="View of the Small Business Forward Instagram page"
+          alt="View of the Mercury Cafe search result in Google 2025"
           style={{
             display: 'block',
             maxWidth: '400px',

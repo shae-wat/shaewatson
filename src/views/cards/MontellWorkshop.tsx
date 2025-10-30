@@ -16,7 +16,7 @@ const MontellWorkshop: React.FC = () => {
       <CardImageContent>
         <img
           src={MontellWorkshopPic}
-          alt="Dad and I working on playhouse"
+          alt="Screenshot of writing workshop with Amanda Montell"
           style={{
             display: 'block',
             maxWidth: '500px',

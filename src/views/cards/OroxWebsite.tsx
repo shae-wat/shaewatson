@@ -18,7 +18,7 @@ const OroxWebsite: React.FC = () => {
       <CardImageContent>
         <img
           src={OroxWebsiteImageSrc}
-          alt="Dashboard with inputs and search results for mortgage products at Clara Lending"
+          alt="Orox Leather website view"
           style={{
             display: 'block',
             maxWidth: '500px',

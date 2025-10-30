@@ -23,7 +23,7 @@ const SFIJArticle: React.FC = () => {
         }}>
         <img
           src={SFIJVacacyArticle}
-          alt=""
+          alt="San Francisco Independent Journal view of article"
           style={{
             display: 'block',
             maxWidth: '350px',
@@ -98,7 +98,7 @@ const SFIJArticle: React.FC = () => {
         </ParagraphFont>
         <img
           src={IGVacancyPost}
-          alt=""
+          alt="DSA Instagram post with over 2,000 likes"
           style={{
             display: 'block',
             maxWidth: '550px',

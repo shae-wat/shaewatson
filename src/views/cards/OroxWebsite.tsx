@@ -63,8 +63,8 @@ const OroxWebsite: React.FC = () => {
           After a lifetime of mostly academia up to this point in my career,
           this project from a local family-owned business trained me to be a
           scrappy IRL web product owner. I experienced the pride that comes from
-          building and maintaining the UI "face" of an organization for the
-          first time.
+          building and maintaining the user interface "face" of an organization
+          for the first time.
         </ParagraphFont>
         <ParagraphFont>
           I made CSS and JS changes to an existing Shopify theme to match the

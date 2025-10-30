@@ -20,12 +20,29 @@ const MercuryCafe: React.FC = () => {
             <SubheaderFont>2025</SubheaderFont>
           </LogoSubtitle>
         </span>
-        <ParagraphFont>...</ParagraphFont>
+        <ParagraphFont>
+          Working on the website of a small business a decade into my career
+          demonstrates how far I have come, after first managing websites for
+          small businesses at the beginning of my web development career.
+        </ParagraphFont>
+        <ParagraphFont>
+          Applying changes is quick and executed with surgical prudence and
+          precision, and I am able to advise and direct the work from a place of
+          deeply understanding long-term infrastructure support from the
+          technology platforms.
+        </ParagraphFont>
+        <ParagraphFont>
+          Building for longevity and ease of understanding for busy small
+          business owners allows me to be resourceful and work within my values
+          locally for family-owned small businesses. I take pride in building
+          and maintaining the user interface for businesses that are embedded in
+          serving their local community.
+        </ParagraphFont>
       </CardTextContent>
       <CardImageContent>
         <img
           src={MercuryCafeWebsitePic}
-          alt="Dad and I working on playhouse"
+          alt="Mercury Cafe website"
           style={{
             display: 'block',
             maxWidth: '300px',

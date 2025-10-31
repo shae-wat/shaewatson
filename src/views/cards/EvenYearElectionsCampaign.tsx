@@ -72,8 +72,9 @@ const EvenYearElectionsCampaign: React.FC = () => {
           edited and maintained ballot arguments to submit to the Department of
           Elections for printing in the Voter Information Pamphlet mailed to all
           San Francisco voters, with a form “wet” signed by each endorser whose
-          name is printed. I managed endorsements and these signatures again for
-          March 2024's Prop A $300M Affordable Housing Bond.
+          name is printed. I managed endorsements, ballot arguments, and
+          endorser signatures again for March 2024's Prop A $300M Affordable
+          Housing Bond.
         </ParagraphFont>
         <ParagraphFont>
           Between the ballot argument and endorsement process, mobilization

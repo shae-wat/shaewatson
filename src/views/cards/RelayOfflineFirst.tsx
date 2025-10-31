@@ -63,7 +63,7 @@ const RelayOfflineFirst: React.FC = () => {
           update immediately and for the chart to persist in network request
           failure has not be robustly replicated by other engineers on other
           platforms, leaving the spending categories chart I built in 2018
-          running still in 2025 on web and app versions of the SoFi app.
+          running still in 2025 on web and mobile app versions of the Relay app.
         </ParagraphFont>
       </CardTextContent>
       <CardImageContent>
